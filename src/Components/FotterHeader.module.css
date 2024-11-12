@@ -1,0 +1,197 @@
+@media screen and (min-width: 480px) {
+  .header {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: ;
+    background-color: #f2f6f8;
+    color: gray;
+    height: 50px;
+    border-top: 1px solid rgb(226, 224, 224);
+  }
+
+  .trackDiv {
+    display: flex;
+    justify-content: right;
+    flex: 1;
+  }
+
+  .footerDiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .footerDiv i {
+    width: 30px;
+    cursor: pointer;
+    background-color: rgb(216, 155, 48);
+    border-radius: 100%;
+    padding: 6px 0px 6px 8px;
+    color: white;
+    font-size: 26px;
+  }
+
+  .headerLogo3 {
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .footerSubDiv2 {
+    display: flex;
+    justify-content: right;
+    flex: 1;
+  }
+
+  .notifyDivSub {
+    margin-left: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+
+  .trackDiv i {
+    font-size: 24px;
+    color: gray;
+  }
+
+  .notifyDivSub i {
+    color: rgb(216, 155, 48);
+    margin-top: 5px;
+  }
+
+  .notifyDiv i {
+    margin-top: 5px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .notifyDiv i:hover,
+  .notifyDivSub i:hover,
+  .trackDiv i:hover {
+    color: rgb(0, 183, 255);
+  }
+
+  .menuList {
+    position: absolute;
+    bottom: 0;
+    height: 395px;
+    background-color: #f2f6f8;
+
+    opacity: 1;
+    z-index: 2;
+    margin-bottom: 60px;
+    font-size: 16px;
+  }
+
+  .times {
+    display: flex;
+    justify-content: right;
+    margin: 5px 15px -15px 0px;
+    font-size: 40px;
+    color: rgb(244, 82, 82);
+    cursor: pointer;
+  }
+
+  .times:hover {
+    color: black;
+  }
+
+  .menuListSub div p {
+    padding: 10px 180px 10px 10px;
+    width: 100px;
+    cursor: pointer;
+    margin: -1px 0px;
+  }
+
+  .menuListSub div:hover {
+    background-color: white;
+    transition: all 0.8s;
+  }
+
+  .menuListSub div {
+    display: flex;
+    align-items: center;
+  }
+
+  .icons i {
+    font-size: 15px;
+    margin: 0px -6px 0px 5px;
+    color: gray;
+  }
+
+  .icons {
+    width: 15px;
+    margin: 0px -6px 0px 10px;
+    color: gray;
+  }
+
+  .notifyDiv2 {
+    position: fixed;
+    bottom: 0;
+    background-color: #f2f6f8;
+    margin-bottom: 115px;
+    width: 470px;
+    border-radius: 5px;
+    margin-left: -340px;
+  }
+
+  .waiterDiv2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    color: gray;
+    background-color: #ffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .waiterDiv2 button {
+    border: none;
+    background-color: #ffff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .selectDiv select {
+    display: flex;
+    margin-top: 15px;
+    padding: 9px 310px 9px 10px;
+    margin-left: 15px;
+    font-size: 17px;
+    color: gray;
+    border: 1px solid rgb(22, 164, 252);
+    outline: none;
+    box-shadow: 1px 0px 3px 0px;
+  }
+
+  .callDiv {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgb(226, 224, 224);
+    display: flex;
+    justify-content: right;
+  }
+
+  .callDiv button {
+    cursor: pointer;
+    padding: 11px 25px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: gray;
+    color: #ffff;
+    border: none;
+    border-radius: 3px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    opacity: 0;
+  }
+}

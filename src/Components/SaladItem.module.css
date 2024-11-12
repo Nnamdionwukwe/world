@@ -1,0 +1,86 @@
+@media screen and (min-width: 480px) {
+  .note {
+    font-size: 13px;
+    font-weight: 100;
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .saladMainLi {
+    width: 255px;
+    border-radius: 5px;
+  }
+
+  .note {
+    width: 160px;
+  }
+
+  .details {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    color: red;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    color: yellow;
+  }
+}
+
+.saladMainLi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffff;
+  box-shadow: 0px 1px 2px 2px #e1dfdf;
+  margin-bottom: 25px;
+  margin-left: -30px;
+  margin-top: -10px;
+  cursor: pointer;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.li {
+  display: flex;
+  align-items: center;
+  height: 96px;
+  margin-top: 9px;
+}
+
+.li div img {
+  width: 80px;
+  height: 105px;
+  object-fit: cover;
+  margin: -9px 0px -5px 0px;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.li div img:hover {
+  width: 85px;
+  height: 110;
+  transition: 0.6s;
+}
+
+.dishName {
+  font-weight: bold;
+  margin-top: -6px;
+}
+
+.priceDiv {
+  margin: 0px 15px;
+}
+
+.price {
+  margin: -20px 0px;
+  font-size: 13px;
+  color: rgb(87, 87, 250);
+}

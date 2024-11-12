@@ -1,0 +1,46 @@
+/* eslint-disable react/prop-types */
+import styles from "./CartItem.module.css";
+
+export default function CartItem({ cart, handleDeleteItem, handleAddQty }) {
+  const { dishName, price, image, id, qty } = cart;
+  const qtyLen = cart.length;
+  console.log(qty);
+
+  const total = Number(price) * qty;
+
+  return (
+    <div>
+      <div className={styles.main}>
+        <div className={styles.mainImgDiv}>
+          <div className={styles.coverDiv}>
+            <div className={styles.plusDiv}>
+              <h5 onClick={() => handleAddQty(id)}>+</h5>
+
+              <p>{qty}</p>
+
+              <h4>&minus;</h4>
+            </div>
+
+            <div className={styles.imgDiv}>
+              <img src={image} alt={`${dishName} image`} />
+            </div>
+
+            <div className={styles.nameDiv}>
+              <p>{dishName}</p>
+
+              <p className={styles.qty}>qty: {qty}</p>
+
+              <p>
+                # {price} &times; {qty} = {total}
+              </p>
+            </div>
+          </div>
+
+          <button className={styles.btn} onClick={() => handleDeleteItem(id)}>
+            &times;
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}

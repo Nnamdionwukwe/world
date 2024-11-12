@@ -1,0 +1,14 @@
+.mainDiv {
+  margin: 0px 25px 0px 15px;
+  font-size: 17px;
+}
+
+.textDiv {
+  opacity: 0.8;
+  border-bottom: 0.2px solid rgb(209, 208, 208);
+  padding-bottom: -9px;
+}
+
+.text {
+  margin-bottom: 8px;
+}

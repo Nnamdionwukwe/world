@@ -1,0 +1,176 @@
+@media screen and (min-width: 480px) {
+  .homeFooterMain {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: white;
+    margin-left: -0.5rem;
+    margin-right: -1rem;
+  }
+
+  .business {
+    margin-left: 5rem;
+  }
+
+  .daysList {
+    display: flex;
+    align-items: center;
+    padding-left: 3.5rem;
+    font-size: 1rem;
+  }
+
+  .timeDiv {
+    display: flex;
+    align-items: center;
+  }
+
+  .headerSub {
+    margin-right: 1.5rem;
+  }
+
+  .subArrow {
+    display: flex;
+    font-size: 1rem;
+  }
+
+  .barcodeDiv {
+    justify-items: center;
+  }
+
+  .footerDiv2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(214, 212, 212);
+    height: 10px;
+  }
+
+  .footerDiv2 p {
+    margin-top: 60px;
+    margin-right: 5px;
+    color: rgb(80, 80, 80);
+  }
+
+  .stanforde {
+    color: black;
+  }
+
+  .independDiv {
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
+    margin-bottom: -25px;
+    color: rgb(95, 93, 93);
+  }
+
+  .independDiv div {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+  }
+
+  .independDiv div i {
+    margin-right: 5px;
+    font-size: 15px;
+  }
+
+  .mailDiv {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 157, 255);
+    margin-bottom: 20px;
+  }
+
+  .mailDiv p {
+    text-decoration: none;
+  }
+
+  .mailDiv i {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+
+  .floatCart {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .homeFooterMain {
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: white;
+    margin-left: -0.5rem;
+    margin-right: -1rem;
+  }
+
+  .daysList {
+    display: block;
+    padding-left: 4rem;
+    font-size: 1rem;
+  }
+
+  .business {
+    margin-left: 3rem;
+  }
+
+  .headerSub {
+    margin-left: 5rem;
+  }
+
+  .barcodeDiv {
+    justify-items: left;
+  }
+
+  .floatCart {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .floatCart {
+    position: fixed;
+    opacity: 1;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 11rem;
+    margin-right: 4rem;
+    background-color: white;
+    padding-left: 0.5rem;
+    border-radius: 100%;
+    width: 2.5rem;
+    height: 3rem;
+    box-shadow: rgb(150, 149, 149) 1px 2px 6px 2px;
+    cursor: pointer;
+  }
+
+  .floatCart p {
+    margin-bottom: -0.5rem;
+    margin-left: 0.8rem;
+    color: white;
+    background-color: green;
+    width: 0.8rem;
+    padding-left: 0.4rem;
+    padding-bottom: 0.1rem;
+    padding-right: 0.01rem;
+    padding-top: 0.1rem;
+    font-size: 0.9rem;
+    border-radius: 100%;
+  }
+
+  .floatCart i {
+    color: green;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .daysList {
+    display: flex;
+    align-items: center;
+    padding-left: 7rem;
+    font-size: 1rem;
+  }
+}

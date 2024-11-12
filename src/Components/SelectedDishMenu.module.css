@@ -1,0 +1,172 @@
+.selectMai1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  background-color: red;
+}
+
+.menu {
+  background-color: red;
+}
+
+@media screen and (min-width: 480px) {
+  .menuHeader {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 20px;
+    z-index: 1;
+    width: 391px;
+    height: 561px;
+    background-color: rgb(233, 238, 238);
+    color: gray;
+    border-radius: 5px;
+    margin-right: 22px;
+    margin-left: 12px;
+  }
+
+  .menuHeader {
+    overflow: scroll;
+  }
+
+  .menuLi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffff;
+    width: 418px;
+    height: 70px;
+    margin-left: -42px;
+    margin-top: -1px;
+    border-top-left-radius: 5px;
+  }
+
+  .menuLi h3 {
+    margin-left: 15px;
+  }
+
+  .menuLi button {
+    margin-right: 15px;
+    font-size: 23px;
+    font-weight: bold;
+    border: none;
+    background-color: #ffff;
+    color: gray;
+  }
+
+  .menuHeader img {
+    width: 415px;
+    height: 321px;
+    object-fit: cover;
+    margin-left: -41px;
+    margin-bottom: -15px;
+  }
+
+  .dishSub {
+    margin-left: -25px;
+  }
+
+  .dishSub h5 {
+    margin: -21px 0px 0px 0px;
+  }
+
+  .commentDiv {
+    margin: -15px 0px 30px -25px;
+  }
+
+  .commentDiv p {
+    margin-bottom: 8px;
+  }
+
+  .commentDiv input {
+    width: 379px;
+    padding: 4px 0px 39px 11px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 0.5px solid rgb(216, 214, 214);
+  }
+
+  .addMainDiv {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: #ffff;
+    width: 418px;
+    height: 70px;
+    margin-left: -42px;
+    margin-top: -1px;
+    border-top-left-radius: 5px;
+    border-top: 1px solid rgb(216, 214, 214);
+  }
+
+  .addMainDiv button {
+    padding: 11px;
+    border: none;
+    margin-right: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #ffff;
+    background-color: blue;
+    cursor: pointer;
+  }
+
+  .addMainDiv div img {
+    width: 21px;
+    height: 11px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+  }
+
+  .addMainDiv div {
+    display: flex;
+    align-items: center;
+    padding: 1px 17px 1px 51px;
+    height: 35px;
+    border: none;
+    margin-right: 15px;
+    border-radius: 5px;
+    background-color: rgb(229, 155, 18);
+    font-size: 15px;
+    color: #ffff;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .selectMain1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 250px;
+    background-color: red;
+  }
+
+  .saladMainLi {
+    width: 255px;
+    border-radius: 5px;
+  }
+
+  .note {
+    width: 160px;
+  }
+
+  .details {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    color: red;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    color: yellow;
+  }
+}
