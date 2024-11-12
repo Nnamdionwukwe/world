@@ -155,7 +155,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route
-            path="HomePages"
+            path="/"
             element={
               <HomePages
                 handleSelectId={handleSelectId}
