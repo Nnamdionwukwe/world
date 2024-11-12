@@ -140,7 +140,6 @@ export default function App() {
   return (
     <div className={styles.mainDiv}>
 
-      <h1>hello vercel</h1>
       <>
         {selectedId && <SpinnerFullPage /> && (
           <div className={styles.enu}>
