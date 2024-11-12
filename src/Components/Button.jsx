@@ -6,7 +6,7 @@ export default function Button() {
     <nav>
       <ul className={styles.list}>
         <li>
-          <NavLink to="/HomePages">
+          <NavLink to="/">
             <button className={styles.list1}>All</button>
           </NavLink>
         </li>

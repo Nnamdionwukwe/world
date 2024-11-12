@@ -26,9 +26,7 @@ export default function Header() {
     <div className={styles.header}>
       <div className={styles.lazeDiv}>
         <div className={styles.logo}>
-          <NavLink to="/HomePages">
-            <img src="https://menu.stanfordelaze.ng/uploads/thumb/6ca252f775ee8306d1981e6ee2d0d3c7.png" />
-          </NavLink>
+          <img src="https://menu.stanfordelaze.ng/uploads/thumb/6ca252f775ee8306d1981e6ee2d0d3c7.png" />
         </div>
 
         <div className={styles.lazeMain}>
@@ -155,7 +153,7 @@ export default function Header() {
         <div className={styles.thirdHeaderSubDiv}>
           <div>
             <div>
-              <NavLink to="/HomePages">
+              <NavLink to="/">
                 <img
                   className={styles.logo3}
                   src="https://menu.stanfordelaze.ng/uploads/thumb/6ca252f775ee8306d1981e6ee2d0d3c7.png"
