@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import FullPage from "./FullPage";
 import LocalDishLoop from "./LocalDishLoop";
 import styles from "./HomePages.module.css";
@@ -13,7 +14,7 @@ export default function MainDishes({ localDish, handleSelectId }) {
         <SaladComponent>Main Dishes / Local Dishes</SaladComponent>
 
         <div className={styles.more}>
-          See More <p>>></p>
+          See More <p>&gt;</p>
         </div>
       </div>
 

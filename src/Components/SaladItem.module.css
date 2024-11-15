@@ -21,18 +21,6 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    color: red;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  body {
-    color: yellow;
-  }
-}
-
 .saladMainLi {
   display: flex;
   justify-content: space-between;

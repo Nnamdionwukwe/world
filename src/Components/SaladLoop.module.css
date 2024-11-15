@@ -1,9 +1,3 @@
-@media screen and (min-width: 480px) {
-  body {
-    color: green;
-  }
-}
-
 @media screen and (min-width: 577px) {
   body {
     margin: 0px 20px;
@@ -13,17 +7,5 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    color: red;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  body {
-    color: yellow;
   }
 }
