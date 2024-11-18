@@ -139,8 +139,6 @@ export default function App() {
 
   return (
     <div className={styles.mainDiv}>
-
-
       <>
         {selectedId && <SpinnerFullPage /> && (
           <div className={styles.enu}>
@@ -153,8 +151,6 @@ export default function App() {
           </div>
         )}
       </>
-
-      
 
       <BrowserRouter>
         <Routes>
@@ -172,7 +168,13 @@ export default function App() {
 
           <Route
             path="salads"
-            element={<Salads handleSelectId={handleSelectId} salad={salad} />}
+            element={
+              <Salads
+                handleSelectId={handleSelectId}
+                salad={salad}
+                cart={cart}
+              />
+            }
           />
 
           <Route
@@ -181,6 +183,7 @@ export default function App() {
               <MainDishes
                 handleSelectId={handleSelectId}
                 localDish={localDish}
+                cart={cart}
               />
             }
           />

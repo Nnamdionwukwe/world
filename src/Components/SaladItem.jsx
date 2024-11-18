@@ -3,7 +3,7 @@ import DetailsButton from "./DetailsButton";
 import styles from "./SaladItem.module.css";
 
 export default function SaladItem({ salad, handleSelectId }) {
-  const { dishName, price, image, note, qty } = salad;
+  const { dishName, price, image, note } = salad;
 
   return (
     <li onClick={() => handleSelectId(salad)} className={styles.saladMainLi}>

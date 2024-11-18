@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+/* eslint-disable react/prop-types */
 import FullPage from "./FullPage";
 import styles from "./HomePages.module.css";
 import LocalDishLoop from "./LocalDishLoop";
@@ -20,7 +20,7 @@ export default function HomePages({ salad, localDish, handleSelectId, cart }) {
         <SaladComponent>Main Dishes / Local Dishes</SaladComponent>
 
         <div className={styles.more}>
-          See More <p>>></p>
+          See More <p>&gt; &gt;</p>
         </div>
       </div>
 

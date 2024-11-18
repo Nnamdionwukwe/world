@@ -3,8 +3,6 @@ import styles from "./CartItem.module.css";
 
 export default function CartItem({ cart, handleDeleteItem, handleAddQty }) {
   const { dishName, price, image, id, qty } = cart;
-  const qtyLen = cart.length;
-  console.log(qty);
 
   const total = Number(price) * qty;
 

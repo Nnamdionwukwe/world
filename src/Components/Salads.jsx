@@ -6,8 +6,9 @@ import SearchBox from "./SearchBox";
 import SaladComponent from "./SaladComponentt";
 import SaladLoop from "./SaladLoop";
 import FooterHeader from "./FotterHeader";
+import HomeFooter from "./HomeFooter";
 
-export default function Salads({ salad, handleSelectId }) {
+export default function Salads({ salad, handleSelectId, cart }) {
   return (
     <div>
       <Header />
@@ -16,7 +17,8 @@ export default function Salads({ salad, handleSelectId }) {
       <Button />
       <SaladComponent>Salads</SaladComponent>
       <SaladLoop handleSelectId={handleSelectId} salad={salad} />
-      <FooterHeader />
+      <FooterHeader cart={cart} />
+      <HomeFooter cart={cart} />
     </div>
   );
 }

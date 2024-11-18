@@ -4,8 +4,9 @@ import LocalDishLoop from "./LocalDishLoop";
 import styles from "./HomePages.module.css";
 import SaladComponent from "./SaladComponentt";
 import FooterHeader from "./FotterHeader";
+import HomeFooter from "./HomeFooter";
 
-export default function MainDishes({ localDish, handleSelectId }) {
+export default function MainDishes({ localDish, handleSelectId, cart }) {
   return (
     <div>
       <FullPage />
@@ -18,9 +19,15 @@ export default function MainDishes({ localDish, handleSelectId }) {
         </div>
       </div>
 
-      <LocalDishLoop handleSelectId={handleSelectId} localDish={localDish} />
+      <LocalDishLoop
+        cart={cart}
+        handleSelectId={handleSelectId}
+        localDish={localDish}
+      />
 
-      <FooterHeader />
+      <FooterHeader cart={cart} />
+
+      <HomeFooter cart={cart} />
     </div>
   );
 }

@@ -9,6 +9,10 @@
     margin-right: -1rem;
   }
 
+  .floatCart {
+    opacity: 0;
+  }
+
   .business {
     margin-left: 5rem;
   }
