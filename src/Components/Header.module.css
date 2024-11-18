@@ -1,70 +1,72 @@
-.thirdHeader {
-  display: none;
-}
+@media screen and (min-width: 320px) {
+  .thirdHeader {
+    display: none;
+  }
 
-.mainHeader {
-  display: none;
-}
+  .mainHeader {
+    display: none;
+  }
 
-.header {
-  background-image: url("https://menu.stanfordelaze.ng/uploads/site_banners/647df4c40e0cc94eee7d215d9322a13a.jpg");
-  height: 10%;
-  width: 110%;
-  object-fit: cover;
-  font-size: 16px;
-  margin: -10px;
-  color: #ffff;
-  margin-left: 2px;
-}
+  .header {
+    background-image: url("https://menu.stanfordelaze.ng/uploads/site_banners/647df4c40e0cc94eee7d215d9322a13a.jpg");
+    height: 10%;
+    width: 110%;
+    object-fit: cover;
+    font-size: 16px;
+    margin: -10px;
+    color: #ffff;
+    margin-left: 2px;
+  }
 
-.lazeDiv {
-  justify-items: center;
-  align-items: center;
-}
+  .lazeDiv {
+    justify-items: center;
+    align-items: center;
+  }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.logo img {
-  width: 80px;
-  padding-top: 30px;
-  margin-bottom: -10px;
-  object-fit: cover;
-}
+  .logo img {
+    width: 80px;
+    padding-top: 30px;
+    margin-bottom: -10px;
+    object-fit: cover;
+  }
 
-.laze {
-  display: flex;
-  justify-content: center;
-}
+  .laze {
+    display: flex;
+    justify-content: center;
+  }
 
-.home {
-  display: flex;
-  align-items: center;
-  margin: -30px 0px -25px -20px;
-}
+  .home {
+    display: flex;
+    align-items: center;
+    margin: -30px 0px -25px -20px;
+  }
 
-.home i {
-  margin-right: 10px;
-  color: rgb(231, 44, 24);
-}
+  .home i {
+    margin-right: 10px;
+    color: rgb(231, 44, 24);
+  }
 
-.number {
-  display: flex;
-  align-items: center;
+  .number {
+    display: flex;
+    align-items: center;
 
-  margin: -13px 10px -13px -20px;
-}
+    margin: -13px 10px -13px -20px;
+  }
 
-.number i {
-  margin-right: 10px;
-  color: rgb(63, 207, 63);
-}
+  .number i {
+    margin-right: 10px;
+    color: rgb(63, 207, 63);
+  }
 
-.number h3 {
-  margin-right: 20px;
+  .number h3 {
+    margin-right: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
