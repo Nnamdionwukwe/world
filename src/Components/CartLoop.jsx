@@ -10,7 +10,6 @@ export default function CartLoop({ cart, handleDeleteItem, handleAddQty }) {
         <div>
           <p>My Cart</p>
         </div>
-        <h1>{cart.length}</h1>
 
         <div className={styles.nav}>
           <NavLink to="/">

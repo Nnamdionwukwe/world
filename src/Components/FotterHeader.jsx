@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 
 import styles from "./FotterHeader.module.css";
 import { useState } from "react";
 
-export default function FooterHeader() {
+export default function FooterHeader({ cart }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen1, setIsOpen1] = useState(false);
 
@@ -38,7 +39,7 @@ export default function FooterHeader() {
             </div>
 
             <div className={styles.menuListSub}>
-              <NavLink to="/HomePages">
+              <NavLink to="/">
                 <div>
                   <img className={styles.icons} src="hamburger.svg" />
                   <p>Menu</p>
@@ -157,6 +158,9 @@ export default function FooterHeader() {
 
         <div className={styles.notifyDivSub}>
           <NavLink to="/cartloop">
+            {cart.length > 0 && (
+              <div className={styles.zero}>{cart.length}</div>
+            )}
             <i className="fa fa-cart-plus" aria-hidden="true"></i>
           </NavLink>
         </div>

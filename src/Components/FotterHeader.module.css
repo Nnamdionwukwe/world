@@ -48,10 +48,22 @@
   }
 
   .notifyDivSub {
+    position: relative;
     margin-left: 60px;
     margin-right: 10px;
     cursor: pointer;
     font-size: 25px;
+  }
+
+  .zero {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 13px;
+    background-color: rgb(216, 155, 48);
+    color: #ffff;
+    padding: 1px 5px 0px 5px;
+    border-radius: 100%;
   }
 
   .trackDiv i {
@@ -192,6 +204,6 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    opacity: 0;
+    display: none;
   }
 }

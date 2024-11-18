@@ -30,9 +30,13 @@ export default function CartItem({ cart, handleDeleteItem, handleAddQty }) {
 
               <p className={styles.qty}>qty: {qty}</p>
 
-              <p>
-                # {price} &times; {qty} = {total}
-              </p>
+              <div className={styles.nairaDi}>
+                <i className="fa-solid fa-naira-sign"></i>
+
+                <p>
+                  {price}.00 &times; {qty} = {total}
+                </p>
+              </div>
             </div>
           </div>
 

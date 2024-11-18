@@ -23,28 +23,30 @@ export default function Header() {
   }
 
   return (
-    <div className={styles.header}>
-      <div className={styles.lazeDiv}>
-        <div className={styles.logo}>
-          <img src="https://menu.stanfordelaze.ng/uploads/thumb/6ca252f775ee8306d1981e6ee2d0d3c7.png" />
-        </div>
+    <>
+      <div className={styles.header}>
+        <div className={styles.lazeDiv}>
+          <div className={styles.logo}>
+            <img src="https://menu.stanfordelaze.ng/uploads/thumb/6ca252f775ee8306d1981e6ee2d0d3c7.png" />
+          </div>
 
-        <div className={styles.lazeMain}>
-          <div>
-            <h1 className={styles.laze}>Standforde Laze</h1>
+          <div className={styles.lazeMain}>
+            <div>
+              <h1 className={styles.laze}>Standforde Laze</h1>
 
-            <div className={styles.home}>
-              <img className={styles.img} src="home.svg" />
-              <h3>27 Independence Avenue, Independence Layout Enugu</h3>
-            </div>
+              <div className={styles.home}>
+                <i className="fa fa-map-marker" aria-hidden="true"></i>
+                <h3>27 Independence Avenue, Independence Layout Enugu</h3>
+              </div>
 
-            <div className={styles.number}>
-              <img className={styles.img} src="gear-solid.svg" />
+              <div className={styles.number}>
+                <i className="fa fa-phone" aria-hidden="true"></i>
 
-              <h3>+234 8037748573</h3>
-              <img className={styles.img} src="box-open-solid.svg" />
+                <h3>+234 8037748573</h3>
+                <i className="fa fa-envelope" aria-hidden="true"></i>
 
-              <h3>standfordelaze@gmail.com</h3>
+                <h3>standfordelaze@gmail.com</h3>
+              </div>
             </div>
           </div>
         </div>
@@ -155,7 +157,7 @@ export default function Header() {
             <div>
               <NavLink to="/">
                 <img
-                  className={styles.logo3}
+                  className={styles.dis}
                   src="https://menu.stanfordelaze.ng/uploads/thumb/6ca252f775ee8306d1981e6ee2d0d3c7.png"
                 />
               </NavLink>
@@ -163,7 +165,7 @@ export default function Header() {
           </div>
 
           <div>
-            <NavLink to="/HomePages">
+            <NavLink to="/">
               <button className={styles.menuButtons}>Menu</button>
             </NavLink>
 
@@ -188,15 +190,12 @@ export default function Header() {
           </div>
 
           <div>
-            <NavLink to="/Login">
-              <img
-                className={styles.login}
-                src="https://cdn.icon-icons.com/icons2/1372/PNG/512/arrow-12_91092.png"
-              />
+            <NavLink className={styles.logoDiv} to="/Login">
+              <i className="fa fa-sign-in" aria-hidden="true"></i>
             </NavLink>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -90,10 +90,6 @@
     font-size: 15px;
     margin-right: 10px;
   }
-
-  .floatCart {
-    opacity: 0;
-  }
 }
 
 @media screen and (min-width: 577px) {
@@ -123,10 +119,6 @@
 
   .barcodeDiv {
     justify-items: left;
-  }
-
-  .floatCart {
-    opacity: 0;
   }
 }
 

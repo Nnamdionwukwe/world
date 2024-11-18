@@ -7,7 +7,7 @@ import SaladLoop from "./SaladLoop";
 import FooterHeader from "./FotterHeader";
 import HomeFooter from "./HomeFooter";
 
-export default function HomePages({ salad, localDish, handleSelectId }) {
+export default function HomePages({ salad, localDish, handleSelectId, cart }) {
   return (
     <div>
       <FullPage />
@@ -26,9 +26,9 @@ export default function HomePages({ salad, localDish, handleSelectId }) {
 
       <LocalDishLoop handleSelectId={handleSelectId} localDish={localDish} />
 
-      <FooterHeader />
+      <FooterHeader cart={cart} />
 
-      <HomeFooter />
+      <HomeFooter cart={cart} />
     </div>
   );
 }

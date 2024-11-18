@@ -90,3 +90,13 @@
   color: brown;
   cursor: pointer;
 }
+
+.nairaDi {
+  display: flex;
+  align-items: center;
+}
+
+.nairaDi i {
+  font-size: 12px;
+  margin-right: 3px;
+}

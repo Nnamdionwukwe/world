@@ -161,6 +161,7 @@ export default function App() {
                 handleSelectId={handleSelectId}
                 salad={salad}
                 localDish={localDish}
+                cart={cart}
               />
             }
           />

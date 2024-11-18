@@ -31,7 +31,10 @@ export default function SelectedDishMenu({
           <div className={styles.dishSub}>
             <h2>{dishName}</h2>
 
-            <h5># {price}.00</h5>
+            <div className={styles.nairaDi}>
+              <i className="fa-solid fa-naira-sign"></i>
+              <h5 className={styles.nairaDiv}> {price}.00</h5>
+            </div>
 
             <p>{note}</p>
           </div>
@@ -46,8 +49,8 @@ export default function SelectedDishMenu({
             <div className={styles.addMainDiv}>
               <button onClick={handleDishClose}>Close</button>
 
-              <div onClick={handleAddDish}>
-                <img src="home.svg" />
+              <div className={styles.cartLogo} onClick={handleAddDish}>
+                <i className="fa-solid fa-cart-plus"></i>
                 <p>Add to Cart</p>
               </div>
             </div>

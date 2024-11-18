@@ -1,7 +1,8 @@
-import { Link, NavLink } from "react-router-dom";
+/* eslint-disable react/prop-types */
+import { NavLink } from "react-router-dom";
 import styles from "./HomeFooter.module.css";
 
-export default function HomeFooter() {
+export default function HomeFooter({ cart }) {
   return (
     <div>
       <div className={styles.homeFooterMain}>
@@ -78,7 +79,8 @@ export default function HomeFooter() {
 
       <div className={styles.floatCart}>
         <NavLink to="/CartLoop">
-          <p>6</p>
+          <div className={styles.zero}>{<p>{cart.length}</p>}</div>
+
           <i className="fa fa-cart-plus" aria-hidden="true"></i>
         </NavLink>
       </div>

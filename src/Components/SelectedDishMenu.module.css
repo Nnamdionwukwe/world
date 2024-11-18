@@ -3,12 +3,22 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-
-  background-color: red;
 }
 
-.menu {
-  background-color: red;
+.nairaDi {
+  display: flex;
+  align-items: center;
+}
+
+.nairaDi i {
+  font-size: 12px;
+  margin-right: 3px;
+  margin-top: -19px;
+}
+
+.cartLogo i {
+  color: rgb(13, 98, 13);
+  margin-right: 5px;
 }
 
 @media screen and (min-width: 480px) {
@@ -123,7 +133,7 @@
   .addMainDiv div {
     display: flex;
     align-items: center;
-    padding: 1px 17px 1px 51px;
+    padding: 1px 17px 1px 10px;
     height: 35px;
     border: none;
     margin-right: 15px;
@@ -141,8 +151,8 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    width: 250px;
-    background-color: red;
+    margin-top: 50px;
+    margin-right: 370px;
   }
 
   .saladMainLi {

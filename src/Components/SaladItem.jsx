@@ -15,7 +15,10 @@ export default function SaladItem({ salad, handleSelectId }) {
         <div className={styles.priceDiv}>
           <h5 className={styles.dishName}>{dishName}</h5>
 
-          <h5 className={styles.price}># {price}.00</h5>
+          <div className={styles.nairaDiv}>
+            <i className="fa-solid fa-naira-sign"></i>
+            <h5 className={styles.price}> {price}.00</h5>
+          </div>
 
           <h5 className={styles.note}>{note}</h5>
         </div>
