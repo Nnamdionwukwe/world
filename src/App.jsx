@@ -139,6 +139,8 @@ export default function App() {
 
   return (
     <div className={styles.mainDiv}>
+
+
       <>
         {selectedId && <SpinnerFullPage /> && (
           <div className={styles.enu}>
@@ -151,6 +153,8 @@ export default function App() {
           </div>
         )}
       </>
+
+      
 
       <BrowserRouter>
         <Routes>
