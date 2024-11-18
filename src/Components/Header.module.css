@@ -12,10 +12,9 @@
     height: 10%;
     width: 100%;
     object-fit: cover;
-    font-size: 16px;
-    margin: -20px;
     color: #ffff;
-    margin-left: 2px;
+    margin-left: -8px;
+    margin-top: -10px;
   }
 
   .lazeDiv {
@@ -100,6 +99,26 @@
 }
 
 @media screen and (min-width: 768px) {
+  .lazeDiv {
+    display: flex;
+    align-items: center;
+  }
+
+  .lazeMain {
+    margin-top: 110px;
+  }
+
+  .home {
+    display: flex;
+    align-items: center;
+    margin-top: -30px;
+  }
+
+  .number {
+    display: flex;
+    align-items: center;
+  }
+
   .thirdHeader {
     display: none;
   }
@@ -142,15 +161,6 @@
     margin: -10px;
     color: #ffff;
     margin-left: -21px;
-  }
-
-  .lazeDiv {
-    display: flex;
-    align-items: center;
-  }
-
-  .lazeMain {
-    margin-top: 50px;
   }
 
   .logo1 img {
