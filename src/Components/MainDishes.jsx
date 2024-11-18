@@ -15,7 +15,7 @@ export default function MainDishes({ localDish, handleSelectId, cart }) {
         <SaladComponent>Main Dishes / Local Dishes</SaladComponent>
 
         <div className={styles.more}>
-          See More <p>&gt;</p>
+          See More <p>&gt; &gt;</p>
         </div>
       </div>
 
