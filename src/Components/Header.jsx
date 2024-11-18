@@ -35,17 +35,26 @@ export default function Header() {
               <h1 className={styles.laze}>Standforde Laze</h1>
 
               <div className={styles.home}>
-                <i className="fa fa-map-marker" aria-hidden="true"></i>
-                <h3>27 Independence Avenue, Independence Layout Enugu</h3>
+                <div className={styles.homeDiv}>
+                  <i className="fa fa-map-marker" aria-hidden="true"></i>
+                  <h3>27 Independence Avenue,</h3>
+                </div>
+
+                <h3 className={styles.indepen}> Independence Layout Enugu</h3>
               </div>
 
               <div className={styles.number}>
-                <i className="fa fa-phone" aria-hidden="true"></i>
+                <div className={styles.numberDiv1}>
+                  <i className="fa fa-phone" aria-hidden="true"></i>
 
-                <h3>+234 8037748573</h3>
-                <i className="fa fa-envelope" aria-hidden="true"></i>
+                  <h3>+234 8037748573</h3>
+                </div>
 
-                <h3>standfordelaze@gmail.com</h3>
+                <div className={styles.numberDiv2}>
+                  <i className="fa fa-envelope" aria-hidden="true"></i>
+
+                  <h3>standfordelaze@gmail.com</h3>
+                </div>
               </div>
             </div>
           </div>
