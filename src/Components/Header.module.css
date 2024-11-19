@@ -112,11 +112,17 @@
     display: flex;
     align-items: center;
     margin-top: -30px;
+    margin-left: -20px;
+  }
+
+  .indepen {
+    margin-left: 5px;
   }
 
   .number {
     display: flex;
     align-items: center;
+    margin-left: -10px;
   }
 
   .thirdHeader {
@@ -155,7 +161,7 @@
     align-items: center;
     background-image: url("https://menu.stanfordelaze.ng/uploads/site_banners/647df4c40e0cc94eee7d215d9322a13a.jpg");
     height: 250px;
-    width: 110%;
+    width: 100%;
     object-fit: cover;
     font-size: 16px;
     margin: -10px;
