@@ -3,7 +3,7 @@ import styles from "./Button.module.css";
 
 export default function Button() {
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul className={styles.list}>
         <li>
           <NavLink to="/">

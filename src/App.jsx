@@ -8,7 +8,7 @@ import MainDishes from "./Components/MainDishes";
 import SidesExtra from "./Components/SideExtra";
 import GrillHouse from "./Components/GrillHouse";
 import QuickChinese from "./Components/QuickChinese";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SelectedDishMenu from "./Components/SelectedDishMenu";
 import SpinnerFullPage from "../components/SpinnerFullPage";
 import CartLoop from "./Components/CartLoop";
@@ -19,92 +19,78 @@ import Reservations from "./Components/Reservations";
 import Contacts from "./Components/Contacts";
 import Login from "./Components/Login";
 import AboutUs from "./Components/AboutUs";
-
-const salads = [
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/3efc548a7601ac563d18cd3af549f31e.jpeg",
-    dishName: "Chefs Grilled Chicken Salad",
-    price: "10,000",
-    note: "Tossed",
-    id: crypto.randomUUID(),
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/e3737de2f87a40b97f3eca0ff12e10c7.jpeg",
-    dishName: "Turkey and Egg Salad",
-    price: "12,000",
-    id: crypto.randomUUID(),
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/36e3e2939aba6b83f53281cff327728e.jpeg",
-    dishName: "Vegan Delight",
-    price: "9,000",
-    id: crypto.randomUUID(),
-  },
-];
-
-const localDishes = [
-  {
-    id: crypto.randomUUID(),
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/3d380af34d37be5a7bbe18102f02140b.jpg",
-    dishName: " Egusi Soup",
-    price: "8,000",
-    note: "Egusi soup loaded with crayfish, Beef, Dry fish,",
-  },
-
-  {
-    id: crypto.randomUUID(),
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/8d0fefdb487fa8c1daebae62c4d43c54.jfif",
-    dishName: "Special Vegetable Soup",
-    price: "8,500",
-    note: "Vegetable soup loaded with crayfish, Beef, Dry fish,",
-  },
-
-  {
-    id: crypto.randomUUID(),
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/a0b510d534f7371b62032bf4940e98a0.jfif",
-    dishName: "Seafood Okoro",
-    price: "25,000",
-    note: "Delicious Okro soup loaded with an assortment of fish,",
-  },
-];
-
-const CartItem = [
-  {
-    id: crypto.randomUUID(),
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/8d0fefdb487fa8c1daebae62c4d43c54.jfif",
-    dishName: "Special Vegetable Soup",
-    price: Number("25, 000"),
-    note: "Vegetable soup loaded with crayfish, Beef, Dry fish,",
-    qty: 1,
-  },
-
-  {
-    id: crypto.randomUUID(),
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/a0b510d534f7371b62032bf4940e98a0.jfif",
-    dishName: "Seafood Okoro",
-    price: Number("25, 000"),
-    note: "Delicious Okro soup loaded with an assortment of fish,",
-    qty: 1,
-  },
-];
+import Spinner from "./Components/Spinner";
+import ErrorMessage from "./Components/ErrorMessage";
 
 export default function App() {
-  const [salad, setSalad] = useState(salads);
-  const [localDish, setLocalDish] = useState(localDishes);
+  const [salad, setSalad] = useState([]);
+  const [localDish, setLocalDish] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
   const [selectedId, setSelectedId] = useState(null);
   const [cart, setCart] = useState([]);
 
   const [qty, setQty] = useState(1);
+
+  const BASE_URL = "http://localhost:5000";
+
+  useEffect(function () {
+    async function fetchSalads() {
+      try {
+        setIsLoading(true);
+        setError("");
+        const res = await fetch(`${BASE_URL}/salads`);
+
+        if (!res.ok)
+          throw new Error("Something went wrong with fetching dishes");
+
+        const data = await res.json();
+
+        if (data.Reponse === "False")
+          throw new Error("Dish not Found, Try new Dish");
+
+        setSalad(data);
+        setError("");
+      } catch (err) {
+        console.error(err.message);
+
+        setError(err.message);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    fetchSalads();
+  }, []);
+
+  useEffect(function () {
+    async function fetchSalads() {
+      try {
+        setIsLoading(true);
+        setError("");
+        const res = await fetch(`${BASE_URL}/localDishes`);
+
+        if (!res.ok)
+          throw new Error("Something went wrong with fetching dishes");
+
+        const data = await res.json();
+
+        if (data.Reponse === "False")
+          throw new Error("Dish not Found, Try new Dish");
+
+        setLocalDish(data);
+        setError("");
+      } catch (err) {
+        console.error(err.message);
+
+        setError(err.message);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    fetchSalads();
+  }, []);
 
   function handleAddToCart(dish) {
     setCart((cart) => [...cart, dish]);
@@ -119,12 +105,6 @@ export default function App() {
 
   function handleDeleteItem(id) {
     setCart((cart) => cart.filter((cart) => cart.id !== id));
-  }
-
-  function handleUpdateCart(id) {
-    setCart((cart) =>
-      cart.map((cart) => (cart.id === id ? { ...cart, qty: qty + 1 } : cart))
-    );
   }
 
   function handleDishClose() {
@@ -157,34 +137,61 @@ export default function App() {
           <Route
             path="/"
             element={
-              <HomePages
-                handleSelectId={handleSelectId}
-                salad={salad}
-                localDish={localDish}
-                cart={cart}
-              />
+              <>
+                {isLoading && <Spinner />}
+
+                {error && <ErrorMessage message={error} />}
+
+                {!isLoading && !error && (
+                  <HomePages
+                    handleSelectId={handleSelectId}
+                    salad={salad}
+                    localDish={localDish}
+                    cart={cart}
+                    isLoading={isLoading}
+                  />
+                )}
+              </>
             }
           />
 
           <Route
             path="salads"
             element={
-              <Salads
-                handleSelectId={handleSelectId}
-                salad={salad}
-                cart={cart}
-              />
+              <>
+                {isLoading && <Spinner />}
+
+                {error && <ErrorMessage />}
+
+                {!isLoading && !error && (
+                  <Salads
+                    handleSelectId={handleSelectId}
+                    salad={salad}
+                    cart={cart}
+                    isLoading={isLoading}
+                  />
+                )}
+              </>
             }
           />
 
           <Route
             path="maindishes"
             element={
-              <MainDishes
-                handleSelectId={handleSelectId}
-                localDish={localDish}
-                cart={cart}
-              />
+              <>
+                {isLoading && <Spinner />}
+
+                {error && <ErrorMessage />}
+
+                {!isLoading && !error && (
+                  <MainDishes
+                    handleSelectId={handleSelectId}
+                    localDish={localDish}
+                    cart={cart}
+                    isLoading={isLoading}
+                  />
+                )}
+              </>
             }
           />
 
