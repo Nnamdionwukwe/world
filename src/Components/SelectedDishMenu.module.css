@@ -68,7 +68,7 @@
   }
 
   .menuHeader img {
-    width: 415px;
+    width: 400px;
     height: 300px;
     object-fit: cover;
     margin-left: -41px;
@@ -93,7 +93,7 @@
 
   .commentDiv input {
     width: 379px;
-    padding: 4px 0px 39px 11px;
+    padding: 4px 0px 30px 11px;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -105,7 +105,7 @@
     align-items: center;
     justify-content: right;
     background-color: #ffff;
-    width: 418px;
+    width: 400px;
     height: 70px;
     margin-left: -42px;
     margin-top: -1px;
