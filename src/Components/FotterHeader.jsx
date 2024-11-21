@@ -148,6 +148,7 @@ export default function FooterHeader({ cart }) {
 
                 <div className={styles.callDiv}>
                   <button>Call</button>
+                  <i className="fa-sharp fa-solid fa-hand-back-point-up"></i>
                 </div>
               </div>
             </div>
