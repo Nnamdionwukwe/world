@@ -11,7 +11,7 @@
 }
 
 .nairaDi i {
-  font-size: 12px;
+  font-size: 12.5px;
   margin-right: 3px;
   margin-top: -19px;
 }
@@ -37,7 +37,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-
     width: 380px;
     margin-top: 10px;
     z-index: 1;
@@ -107,9 +106,6 @@
     outline: none;
     border-radius: 5px;
     border: 0.5px solid rgb(216, 214, 214);
-  }
-
-  .addMainDiv1 {
   }
 
   .addMainDiv {
