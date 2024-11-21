@@ -159,7 +159,6 @@
   .callDivMain {
     display: flex;
     justify-content: center;
-    margin-right: 5px;
   }
 
   .notifyDiv2 {
@@ -169,7 +168,9 @@
     right: 0;
     background-color: #f2f6f8;
     margin-bottom: 200px;
-    border-radius: 5px;
+    border-radius: 8px;
+    margin-left: 8px;
+    margin-right: 5px;
   }
 
   .waiterDiv2 {
