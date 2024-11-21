@@ -37,7 +37,7 @@ export default function App() {
   const [salad, setSalad] = useState([]);
   const [localDish, setLocalDish] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState("");
+  // const [error, setError] = useState("");
   const [selectedId, setSelectedId] = useState(null);
   const [cart, setCart] = useState([]);
 
@@ -49,7 +49,6 @@ export default function App() {
     async function fetchSalads() {
       try {
         setIsLoading(true);
-        setError("");
         const res = await fetch(`${BASE_URL}/salads`);
 
         if (!res.ok)
@@ -57,15 +56,9 @@ export default function App() {
 
         const data = await res.json();
 
-        if (data.Reponse === "False")
-          throw new Error("Dish not Found, Try new Dish");
-
         setSalad(data);
-        setError("");
       } catch (err) {
         console.error(err.message);
-
-        setError(err.message);
       } finally {
         setIsLoading(false);
       }
@@ -78,7 +71,6 @@ export default function App() {
     async function fetchSalads() {
       try {
         setIsLoading(true);
-        setError("");
         const res = await fetch(`${BASE_URL}/localDishes`);
 
         if (!res.ok)
@@ -86,15 +78,9 @@ export default function App() {
 
         const data = await res.json();
 
-        if (data.Reponse === "False")
-          throw new Error("Dish not Found, Try new Dish");
-
         setLocalDish(data);
-        setError("");
       } catch (err) {
         console.error(err.message);
-
-        setError(err.message);
       } finally {
         setIsLoading(false);
       }
@@ -151,9 +137,9 @@ export default function App() {
               <>
                 {isLoading && <Spinner />}
 
-                {error && <ErrorMessage message={error} />}
+                {/* {error && <ErrorMessage message={error} />} */}
 
-                {!isLoading && !error && (
+                {!isLoading && (
                   <HomePages
                     handleSelectId={handleSelectId}
                     salad={salad}
@@ -172,9 +158,9 @@ export default function App() {
               <>
                 {isLoading && <Spinner />}
 
-                {error && <ErrorMessage />}
+                {/* {error && <ErrorMessage />} */}
 
-                {!isLoading && !error && (
+                {!isLoading && (
                   <Salads
                     handleSelectId={handleSelectId}
                     salad={salad}
@@ -192,9 +178,9 @@ export default function App() {
               <>
                 {isLoading && <Spinner />}
 
-                {error && <ErrorMessage />}
+                {/* {error && <ErrorMessage />} */}
 
-                {!isLoading && !error && (
+                {!isLoading && (
                   <MainDishes
                     handleSelectId={handleSelectId}
                     localDish={localDish}
