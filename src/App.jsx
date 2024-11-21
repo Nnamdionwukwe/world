@@ -20,7 +20,33 @@ import Contacts from "./Components/Contacts";
 import Login from "./Components/Login";
 import AboutUs from "./Components/AboutUs";
 import Spinner from "./Components/Spinner";
-import ErrorMessage from "./Components/ErrorMessage";
+
+const salads = [
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/3efc548a7601ac563d18cd3af549f31e.jpeg",
+    dishName: "Chefs Grilled Chicken Salad",
+    price: "10,000",
+    note: "Tossed",
+    id: 2736454,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/e3737de2f87a40b97f3eca0ff12e10c7.jpeg",
+    dishName: "Turkey and Egg Salad",
+    price: "12,000",
+    id: 273645434,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/36e3e2939aba6b83f53281cff327728e.jpeg",
+    dishName: "Vegan Delight",
+    price: "9,000",
+    id: 27364548745,
+  },
+];
 
 const localDishes = [
   {
@@ -31,11 +57,28 @@ const localDishes = [
     price: "8,000",
     note: "Egusi soup loaded with crayfish, Beef, Dry fish,",
   },
+  {
+    id: 4775869864,
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/8d0fefdb487fa8c1daebae62c4d43c54.jfif",
+    dishName: "Special Vegetable Soup",
+    price: "8,500",
+    note: "Vegetable soup loaded with crayfish, Beef, Dry fish,",
+  },
+
+  {
+    id: 4775869095,
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/a0b510d534f7371b62032bf4940e98a0.jfif",
+    dishName: "Seafood Okoro",
+    price: "25,000",
+    note: "Delicious Okro soup loaded with an assortment of fish,",
+  },
 ];
 
 export default function App() {
-  const [salad, setSalad] = useState([]);
-  const [localDish, setLocalDish] = useState([]);
+  const [salad, setSalad] = useState(salads);
+  const [localDish, setLocalDish] = useState(localDishes);
   const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState("");
   const [selectedId, setSelectedId] = useState(null);
@@ -43,6 +86,7 @@ export default function App() {
 
   const [qty, setQty] = useState(1);
 
+  /*
   const BASE_URL = "http://localhost:5000";
 
   useEffect(function () {
@@ -88,6 +132,7 @@ export default function App() {
 
     fetchSalads();
   }, []);
+*/
 
   function handleAddToCart(dish) {
     setCart((cart) => [...cart, dish]);
