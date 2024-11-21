@@ -7,7 +7,7 @@ export default function HomeFooter({ cart }) {
     <div>
       <div className={styles.homeFooterMain}>
         <div>
-          <p className={styles.business}>Business Hours</p>
+          <h5 className={styles.business}>Business Hours</h5>
 
           <div className={styles.daysList}>
             <p>Sunday</p>
