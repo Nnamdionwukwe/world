@@ -8,8 +8,32 @@
     margin-bottom: -20px;
   }
 
-  .daysList p {
+  .days1 {
     margin-right: 40px;
+  }
+
+  .days2 {
+    margin-right: 36px;
+  }
+
+  .days3 {
+    margin-right: 36px;
+  }
+
+  .days4 {
+    margin-right: 18.5px;
+  }
+
+  .days5 {
+    margin-right: 36px;
+  }
+
+  .days6 {
+    margin-right: 47px;
+  }
+
+  .days7 {
+    margin-right: 34px;
   }
 
   .timeDiv {
@@ -20,7 +44,7 @@
   .timeDiv i {
     color: rgb(179, 156, 25);
     margin-right: 10px;
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .homeFooterMain {

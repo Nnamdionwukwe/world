@@ -10,23 +10,19 @@ export default function HomeFooter({ cart }) {
           <h5 className={styles.business}>Business Hours</h5>
 
           <div className={styles.daysList}>
-            <p>Sunday</p>
+            <p className={styles.days1}>Sunday</p>
 
             <div className={styles.timeDiv}>
-              <div>
-                <i className="fa-regular fa-clock"></i>
-              </div>
+              <i className="fa-regular fa-clock"></i>
 
-              <div>
-                <p>
-                  open <span>24</span> <span>hours</span>
-                </p>
-              </div>
+              <span>
+                open <span>24</span> <span>hours</span>
+              </span>
             </div>
           </div>
 
           <div className={styles.daysList}>
-            <p>Monday</p>
+            <p className={styles.days2}>Monday</p>
 
             <div className={styles.timeDiv}>
               <i className="fa-regular fa-clock"></i>
@@ -37,7 +33,7 @@ export default function HomeFooter({ cart }) {
           </div>
 
           <div className={styles.daysList}>
-            <p>Tuesday</p>
+            <p className={styles.days3}>Tuesday</p>
 
             <div className={styles.timeDiv}>
               <i className="fa-regular fa-clock"></i>
@@ -48,7 +44,7 @@ export default function HomeFooter({ cart }) {
           </div>
 
           <div className={styles.daysList}>
-            <p>Wednesday</p>
+            <p className={styles.days4}>Wednesday</p>
 
             <div className={styles.timeDiv}>
               <i className="fa-regular fa-clock"></i>
@@ -59,7 +55,7 @@ export default function HomeFooter({ cart }) {
           </div>
 
           <div className={styles.daysList}>
-            <p>Thurday</p>
+            <p className={styles.days5}>Thurday</p>
 
             <div className={styles.timeDiv}>
               <i className="fa-regular fa-clock"></i>
@@ -70,7 +66,7 @@ export default function HomeFooter({ cart }) {
           </div>
 
           <div className={styles.daysList}>
-            <p>Friday</p>
+            <p className={styles.days6}>Friday</p>
 
             <div className={styles.timeDiv}>
               <i className="fa-regular fa-clock"></i>
@@ -81,7 +77,7 @@ export default function HomeFooter({ cart }) {
           </div>
 
           <div className={styles.daysList}>
-            <p>Saturday</p>
+            <p className={styles.days7}>Saturday</p>
 
             <div className={styles.timeDiv}>
               <i className="fa-regular fa-clock"></i>
