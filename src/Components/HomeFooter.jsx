@@ -91,15 +91,19 @@ export default function HomeFooter({ cart }) {
         <div className={styles.headerSub}>
           <h5 className={styles.quick}>Quick Links</h5>
 
-          <div className={styles.subArrow}>
-            <p className={styles.gt}>&gt;</p>
-            <p>track order</p>
-          </div>
+          <NavLink to="/trackorder" className={styles.navLink}>
+            <div className={styles.subArrow}>
+              <p className={styles.gt}>&gt;</p>
+              <p>track order</p>
+            </div>
+          </NavLink>
 
-          <div className={styles.subArrow}>
-            <p className={styles.gt}>&gt;</p>
-            <p>contacts</p>
-          </div>
+          <NavLink to="/contacts" className={styles.navLink}>
+            <div className={styles.subArrow}>
+              <p className={styles.gt}>&gt;</p>
+              <p>contacts</p>
+            </div>
+          </NavLink>
         </div>
       </div>
 
