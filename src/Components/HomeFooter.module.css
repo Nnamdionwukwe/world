@@ -1,4 +1,28 @@
 @media screen and (min-width: 320px) {
+  .daysList {
+    display: flex;
+    align-items: center;
+    padding-left: 3.5rem;
+    font-size: 0.9rem;
+    color: rgb(74, 74, 74);
+    margin-bottom: -20px;
+  }
+
+  .daysList p {
+    margin-right: 40px;
+  }
+
+  .timeDiv {
+    display: flex;
+    align-items: center;
+  }
+
+  .timeDiv i {
+    color: rgb(179, 156, 25);
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
   .homeFooterMain {
     display: flex;
     justify-content: space-between;
@@ -7,6 +31,7 @@
     background-color: white;
     margin-left: -0.5rem;
     margin-right: -1rem;
+    padding-bottom: 45px;
   }
 
   .floatCart {
@@ -15,13 +40,7 @@
 
   .business {
     margin-left: 5rem;
-  }
-
-  .daysList {
-    display: flex;
-    align-items: center;
-    padding-left: 3.5rem;
-    font-size: 1rem;
+    margin-bottom: 1px;
   }
 
   .timeDiv {

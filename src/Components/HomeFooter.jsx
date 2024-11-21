@@ -13,26 +13,81 @@ export default function HomeFooter({ cart }) {
             <p>Sunday</p>
 
             <div className={styles.timeDiv}>
-              <p>time</p>
-              <p>Sunday</p>
+              <div>
+                <i className="fa-regular fa-clock"></i>
+              </div>
+
+              <div>
+                <p>
+                  open <span>24</span> <span>hours</span>
+                </p>
+              </div>
             </div>
           </div>
 
           <div className={styles.daysList}>
-            <p>Sunday</p>
+            <p>Monday</p>
 
             <div className={styles.timeDiv}>
-              <p>time</p>
-              <p>Sunday</p>
+              <i className="fa-regular fa-clock"></i>
+              <p>
+                open <span>24</span> <span>hours</span>
+              </p>
             </div>
           </div>
 
           <div className={styles.daysList}>
-            <p>Sunday</p>
+            <p>Tuesday</p>
 
             <div className={styles.timeDiv}>
-              <p>time</p>
-              <p>Sunday</p>
+              <i className="fa-regular fa-clock"></i>
+              <p>
+                open <span>24</span> <span>hours</span>
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.daysList}>
+            <p>Wednesday</p>
+
+            <div className={styles.timeDiv}>
+              <i className="fa-regular fa-clock"></i>
+              <p>
+                open <span>24</span> <span>hours</span>
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.daysList}>
+            <p>Thurday</p>
+
+            <div className={styles.timeDiv}>
+              <i className="fa-regular fa-clock"></i>
+              <p>
+                open <span>24</span> <span>hours</span>
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.daysList}>
+            <p>Friday</p>
+
+            <div className={styles.timeDiv}>
+              <i className="fa-regular fa-clock"></i>
+              <p>
+                open <span>24</span> <span>hours</span>
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.daysList}>
+            <p>Saturday</p>
+
+            <div className={styles.timeDiv}>
+              <i className="fa-regular fa-clock"></i>
+              <p>
+                open <span>24</span> <span>hours</span>
+              </p>
             </div>
           </div>
         </div>
