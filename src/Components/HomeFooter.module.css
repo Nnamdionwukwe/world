@@ -84,6 +84,7 @@
   .mailDiv {
     display: flex;
     align-items: center;
+    align-items: center;
     color: rgb(0, 157, 255);
     margin-bottom: 20px;
   }
