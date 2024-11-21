@@ -35,7 +35,7 @@ const localDishes = [
 
 export default function App() {
   const [salad, setSalad] = useState([]);
-  const [localDish, setLocalDish] = useState(localDishes);
+  const [localDish, setLocalDish] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [selectedId, setSelectedId] = useState(null);
@@ -45,8 +45,7 @@ export default function App() {
 
   //const BASE_URL = "http://localhost:5000";
 
-  {
-    /* useEffect(function () {
+  useEffect(function () {
     async function fetchSalads() {
       try {
         setIsLoading(true);
@@ -102,8 +101,7 @@ export default function App() {
     }
 
     fetchSalads();
-  }, []); */
-  }
+  }, []);
 
   function handleAddToCart(dish) {
     setCart((cart) => [...cart, dish]);
