@@ -156,6 +156,11 @@
     color: gray;
   }
 
+  .callDivMain {
+    display: flex;
+    justify-content: center;
+  }
+
   .notifyDiv2 {
     position: fixed;
     bottom: 0;
@@ -163,7 +168,7 @@
     margin-bottom: 115px;
     width: 420px;
     border-radius: 5px;
-    margin-left: -340px;
+    margin-left: -300px;
   }
 
   .waiterDiv2 {

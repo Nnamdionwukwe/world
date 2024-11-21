@@ -129,24 +129,26 @@ export default function FooterHeader({ cart }) {
           ></i>
 
           {isOpen && (
-            <div className={styles.notifyDiv2}>
-              <div className={styles.waiterDiv2}>
-                <h3>Call Waiter</h3>
+            <div className={styles.callDivMain}>
+              <div className={styles.notifyDiv2}>
+                <div className={styles.waiterDiv2}>
+                  <h3>Call Waiter</h3>
 
-                <button onClick={handleIsOpen}>&times;</button>
-              </div>
+                  <button onClick={handleIsOpen}>&times;</button>
+                </div>
 
-              <div className={styles.selectDiv}>
-                <select>
-                  <option>Select Table</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
-              </div>
+                <div className={styles.selectDiv}>
+                  <select>
+                    <option>Select Table</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
 
-              <div className={styles.callDiv}>
-                <button>Call</button>
+                <div className={styles.callDiv}>
+                  <button>Call</button>
+                </div>
               </div>
             </div>
           )}
