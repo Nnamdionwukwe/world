@@ -41,8 +41,8 @@
     width: 380px;
     margin-top: 10px;
     z-index: 1;
-    background-color: rgb(216, 218, 218);
-    color: gray;
+    background-color: rgb(211, 223, 223);
+    color: rgb(87, 86, 86);
     border-radius: 5px;
     margin-right: 12px;
     margin-left: 12px;
@@ -117,7 +117,7 @@
     align-items: center;
     justify-content: right;
     background-color: #ffff;
-    width: 400px;
+    width: 399px;
     height: 70px;
     margin-left: -38px;
     margin-top: -1px;
