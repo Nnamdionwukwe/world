@@ -45,7 +45,7 @@ export default function SelectedDishMenu({
             <input type="text" />
           </div>
 
-          <div>
+          <div className={styles.addMainDiv1}>
             <div className={styles.addMainDiv}>
               <button onClick={handleDishClose}>Close</button>
 

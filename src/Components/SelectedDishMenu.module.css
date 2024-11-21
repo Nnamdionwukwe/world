@@ -102,11 +102,16 @@
 
   .commentDiv input {
     width: 379px;
-    padding: 4px 0px 30px 11px;
+    padding: 4px 0px 30px 1px;
     border: none;
     outline: none;
     border-radius: 5px;
     border: 0.5px solid rgb(216, 214, 214);
+  }
+
+  .addMainDiv1 {
+    display: flex;
+    justify-content: center;
   }
 
   .addMainDiv {
@@ -116,9 +121,9 @@
     background-color: #ffff;
     width: 400px;
     height: 70px;
-    margin-left: -42px;
+    margin-left: -45px;
     margin-top: -1px;
-    border-top-left-radius: 5px;
+    margin-right: -9px;
     border-top: 1px solid rgb(216, 214, 214);
   }
 
