@@ -135,6 +135,14 @@
     color: gray;
   }
 
+  .navLinkDiv i {
+    font-size: 12px;
+    background-color: #f2f6f8;
+    color: gray;
+    margin-left: 5px;
+    margin-right: -23px;
+  }
+
   .icons i {
     font-size: 15px;
     margin: 0px -6px 0px 5px;

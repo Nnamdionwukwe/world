@@ -110,11 +110,8 @@ export default function FooterHeader({ cart }) {
               </NavLink>
 
               <NavLink className={styles.navLink} to="/Login">
-                <div>
-                  <img
-                    className={styles.icons}
-                    src="https://cdn.icon-icons.com/icons2/1372/PNG/512/arrow-12_91092.png"
-                  />
+                <div className={styles.navLinkDiv}>
+                  <i className="fa-solid fa-right-to-bracket"></i>
                   <p> Login</p>
                 </div>
               </NavLink>
