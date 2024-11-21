@@ -22,9 +22,20 @@ import AboutUs from "./Components/AboutUs";
 import Spinner from "./Components/Spinner";
 import ErrorMessage from "./Components/ErrorMessage";
 
+const localDishes = [
+  {
+    id: 4775869,
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/3d380af34d37be5a7bbe18102f02140b.jpg",
+    dishName: " Egusi Soup",
+    price: "8,000",
+    note: "Egusi soup loaded with crayfish, Beef, Dry fish,",
+  },
+];
+
 export default function App() {
   const [salad, setSalad] = useState([]);
-  const [localDish, setLocalDish] = useState([]);
+  const [localDish, setLocalDish] = useState(localDishes);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [selectedId, setSelectedId] = useState(null);
@@ -32,9 +43,10 @@ export default function App() {
 
   const [qty, setQty] = useState(1);
 
-  const BASE_URL = "http://localhost:5000";
+  //const BASE_URL = "http://localhost:5000";
 
-  useEffect(function () {
+  {
+    /* useEffect(function () {
     async function fetchSalads() {
       try {
         setIsLoading(true);
@@ -90,7 +102,8 @@ export default function App() {
     }
 
     fetchSalads();
-  }, []);
+  }, []); */
+  }
 
   function handleAddToCart(dish) {
     setCart((cart) => [...cart, dish]);
