@@ -60,7 +60,7 @@
   }
 
   .floatCart {
-    opacity: 0;
+    display: none;
   }
 
   .business {
@@ -156,6 +156,10 @@
   }
 
   .navLink {
+    text-decoration: none;
+  }
+
+  .email {
     text-decoration: none;
   }
 }
