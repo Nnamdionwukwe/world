@@ -39,7 +39,8 @@
   }
 
   .barcodeDiv {
-    justify-items: center;
+    display: flex;
+    justify-content: center;
   }
 
   .footerDiv2 {
@@ -57,7 +58,8 @@
   }
 
   .stanforde {
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     color: black;
   }
 
