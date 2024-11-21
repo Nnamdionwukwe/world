@@ -43,7 +43,7 @@ export default function App() {
 
   const [qty, setQty] = useState(1);
 
-  //const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "http://localhost:5000";
 
   useEffect(function () {
     async function fetchSalads() {
