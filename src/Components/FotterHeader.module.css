@@ -93,6 +93,7 @@
     bottom: 0;
     height: 395px;
     background-color: #f2f6f8;
+    border-radius: 3px;
 
     opacity: 1;
     z-index: 2;
@@ -160,7 +161,7 @@
     bottom: 0;
     background-color: #f2f6f8;
     margin-bottom: 115px;
-    width: 470px;
+    width: 420px;
     border-radius: 5px;
     margin-left: -340px;
   }
