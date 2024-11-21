@@ -130,6 +130,11 @@
     align-items: center;
   }
 
+  .navLink {
+    text-decoration: none;
+    color: gray;
+  }
+
   .icons i {
     font-size: 15px;
     margin: 0px -6px 0px 5px;

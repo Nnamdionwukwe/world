@@ -122,7 +122,7 @@ export default function HomeFooter({ cart }) {
 
           <div className={styles.mailDiv}>
             <i className="fa fa-envelope" aria-hidden="true"></i>
-            <a href="www.gmail.com">
+            <a className={styles.email} href="www.gmail.com">
               <p>standfordelaze&#64;gmail.com</p>
             </a>
           </div>

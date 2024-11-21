@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
-
 import styles from "./FotterHeader.module.css";
 import { useState } from "react";
 
@@ -39,14 +38,14 @@ export default function FooterHeader({ cart }) {
             </div>
 
             <div className={styles.menuListSub}>
-              <NavLink to="/">
+              <NavLink className={styles.navLink} to="/">
                 <div>
                   <img className={styles.icons} src="hamburger.svg" />
                   <p>Menu</p>
                 </div>
               </NavLink>
 
-              <NavLink to="/Packages">
+              <NavLink className={styles.navLink} to="/Packages">
                 <div>
                   <img
                     className={styles.icons}
@@ -56,7 +55,7 @@ export default function FooterHeader({ cart }) {
                 </div>
               </NavLink>
 
-              <NavLink to="/Specialities">
+              <NavLink className={styles.navLink} to="/Specialities">
                 <div>
                   <img
                     className={styles.icons}
@@ -66,7 +65,7 @@ export default function FooterHeader({ cart }) {
                 </div>
               </NavLink>
 
-              <NavLink to="/TrackOrder">
+              <NavLink className={styles.navLink} to="/TrackOrder">
                 <div>
                   <img
                     className={styles.icons}
@@ -76,13 +75,13 @@ export default function FooterHeader({ cart }) {
                 </div>
               </NavLink>
 
-              <NavLink to="/Reservations">
+              <NavLink className={styles.navLink} to="/Reservations">
                 <div>
                   <p>Reservation</p>
                 </div>
               </NavLink>
 
-              <NavLink to="/Contacts">
+              <NavLink className={styles.navLink} to="/Contacts">
                 <div>
                   <img
                     className={styles.icons}
@@ -100,7 +99,7 @@ export default function FooterHeader({ cart }) {
                 <p>Call Waiter</p>
               </div>
 
-              <NavLink to="/AboutUs">
+              <NavLink className={styles.navLink} to="/AboutUs">
                 <div>
                   <img
                     className={styles.icons}
@@ -110,7 +109,7 @@ export default function FooterHeader({ cart }) {
                 </div>
               </NavLink>
 
-              <NavLink to="/Login">
+              <NavLink className={styles.navLink} to="/Login">
                 <div>
                   <img
                     className={styles.icons}
