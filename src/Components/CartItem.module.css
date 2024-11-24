@@ -81,10 +81,3 @@
   font-size: 12px;
   margin-right: 3px;
 }
-
-.totalSub {
-  display: flex;
-  justify-content: center;
-  color: rgb(49, 49, 49);
-  margin-bottom: 5px;
-}

@@ -6,6 +6,9 @@ import CartHeader from "./CartHeader";
 import EmptyCart from "./EmptyCart";
 
 export default function CartLoop({ cart, handleDeleteItem, handleAddQty }) {
+  const { qty, price } = cart;
+  console.log(cart);
+
   return (
     <>
       {cart.length === 0 ? (
@@ -29,11 +32,17 @@ export default function CartLoop({ cart, handleDeleteItem, handleAddQty }) {
             ))}
           </div>
 
-          <Link to="/checkout">
-            <div className={styles.mainDiv}>
-              <button>Checkout</button>
+          <div className={styles.mainDiv}>
+            <div className={styles.totalSub}>
+              Total: qyt: {qty} = Price #{price}.00
             </div>
-          </Link>
+
+            <Link to="/checkout">
+              <div className={styles.mainDivButtonSub}>
+                <button className={styles.mainDivButton}>Checkout</button>
+              </div>
+            </Link>
+          </div>
         </>
       )}
     </>
