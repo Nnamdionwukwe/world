@@ -30,18 +30,18 @@ export default function CartLoop({ cart, handleDeleteItem, handleAddQty }) {
                 handleAddQty={handleAddQty}
               />
             ))}
-          </div>
 
-          <div className={styles.mainDiv}>
-            <div className={styles.totalSub}>
-              Total: qyt: {qty} = Price #{price}.00
-            </div>
-
-            <Link to="/checkout">
-              <div className={styles.mainDivButtonSub}>
-                <button className={styles.mainDivButton}>Checkout</button>
+            <div className={styles.mainDiv}>
+              <div className={styles.totalSub}>
+                Total: qyt: {qty} = Price #{price}.00
               </div>
-            </Link>
+
+              <Link className={styles.mainLink} to="/checkout">
+                <div className={styles.mainDivButtonSub}>
+                  <button className={styles.mainDivButton}>Checkout</button>
+                </div>
+              </Link>
+            </div>
           </div>
         </>
       )}

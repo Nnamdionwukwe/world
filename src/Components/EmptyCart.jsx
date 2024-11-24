@@ -9,7 +9,7 @@ export default function EmptyCart() {
 
       <Link to="/">
         <div className={styles.mainDiv}>
-          <button>New Cart</button>
+          <button className={styles.mainDiv}>New Cart</button>
         </div>
       </Link>
     </div>
