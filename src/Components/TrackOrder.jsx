@@ -18,6 +18,10 @@ export default function TrackOrder(cart) {
               Phone Number <span>*</span>
             </p>
           </div>
+
+          <div>
+            <input type="text" placeholder="Phone Number" />
+          </div>
         </div>
       </div>
 

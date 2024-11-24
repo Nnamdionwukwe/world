@@ -1,41 +1,43 @@
-.main {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
+@media screen and (min-width: 320px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
 
-.mainSub {
-  border: 1px solid rgb(201, 199, 199);
-  width: 480px;
-  border-radius: 3.5px;
-}
+  .mainSub {
+    border: 1px solid rgb(201, 199, 199);
+    width: 480px;
+    border-radius: 3.5px;
+  }
 
-.mainTrack {
-  border-bottom: 1px solid rgb(201, 199, 199);
-  display: flex;
-  align-items: center;
-  width: 480px;
-  height: 50px;
-  background-color: rgb(231, 231, 231);
-}
+  .mainTrack {
+    border-bottom: 1px solid rgb(201, 199, 199);
+    display: flex;
+    align-items: center;
+    width: 480px;
+    height: 50px;
+    background-color: rgb(231, 231, 231);
+  }
 
-.mainTrack p {
-  margin-left: 20px;
-  color: rgb(93, 92, 92);
-  font-weight: bold;
-}
+  .mainTrack p {
+    margin-left: 20px;
+    color: rgb(93, 92, 92);
+    font-weight: bold;
+  }
 
-.phoneDiv {
-  margin-left: 10px;
-  margin-top: -10px;
-}
+  .phoneDiv {
+    margin-left: 10px;
+    margin-top: -10px;
+  }
 
-.phoneDiv p {
-  color: rgb(54, 53, 53);
-  font-size: 17px;
-}
+  .phoneDiv p {
+    color: rgb(54, 53, 53);
+    font-size: 17px;
+  }
 
-.phoneDiv p span {
-  font-size: 13px;
-  color: red;
+  .phoneDiv p span {
+    font-size: 13px;
+    color: red;
+  }
 }
