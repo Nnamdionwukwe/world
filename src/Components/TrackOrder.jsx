@@ -24,7 +24,12 @@ export default function TrackOrder(cart) {
           </div>
 
           <div>
-            <input type="text" placeholder="Phone Number" />
+            <input
+              value={phoneNumber}
+              onClick={(e) => setPhoneNumber(e.target.value)}
+              type="text"
+              placeholder="Phone Number"
+            />
           </div>
         </div>
       </div>
