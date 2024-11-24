@@ -73,12 +73,25 @@
     color: rgb(54, 53, 53);
   }
 
-  .checkButtton {
+  .checkButton {
     display: flex;
-    flex: ;
-    justify-items: right;
-    background-color: red;
+    justify-content: right;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+
+  .checkButton button {
     color: #ffff;
-    width: 300px;
+    cursor: pointer;
+    border: none;
+    padding: 13px 40px;
+    background-color: rgb(153, 165, 42);
+    border-radius: 5px;
+  }
+
+  .checkButton button:hover {
+    background-color: rgb(6, 111, 167);
+    transition: 1s;
   }
 }
