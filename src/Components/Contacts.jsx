@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import FooterHeader from "./FotterHeader";
 import HomeFooter from "./HomeFooter";
-import styles from "./AboutUs.module.css";
+import styles from "./Contacts.module.css";
 import PagesHeader from "./PagesHeader";
 
 export default function Contacts({ cart }) {
@@ -11,7 +11,7 @@ export default function Contacts({ cart }) {
 
       <div className={styles.menuLetter}>
         <div>
-          <h3>ABOUT US </h3>
+          <h3>CONTACTS </h3>
 
           <div className={styles.div1}>
             <div className={styles.div}></div>
