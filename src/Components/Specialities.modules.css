@@ -1,0 +1,35 @@
+.menuLetter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 170px;
+}
+
+.menuLetter div h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.div1 {
+  display: flex;
+  align-items: center;
+  margin-top: -15px;
+  margin-bottom: -10px;
+  margin-left: 0px;
+  width: 130px;
+}
+
+.div {
+  width: 70px;
+  height: 3px;
+  background-color: rgb(222, 175, 118);
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.div2 {
+  width: 100px;
+  height: 0.5px;
+  background-color: rgb(222, 175, 118);
+  opacity: 0.6;
+}
