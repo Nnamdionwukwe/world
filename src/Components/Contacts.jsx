@@ -31,6 +31,26 @@ export default function Contacts({ cart }) {
               <p>+2348037748573</p>
             </div>
           </div>
+
+          <div className={styles.phoneDiv}>
+            <div>
+              <i className="fa-solid fa-location-dot"></i>
+            </div>
+            <div className={styles.phoneDivSub}>
+              <h2>Address</h2>
+              <p>+2348037748573</p>
+            </div>
+          </div>
+
+          <div className={styles.phoneDiv}>
+            <div>
+              <i className="fa-solid fa-phone"></i>
+            </div>
+            <div className={styles.phoneDivSub}>
+              <h2>Phone</h2>
+              <p>+2348037748573</p>
+            </div>
+          </div>
         </div>
       </div>
 
