@@ -9,13 +9,27 @@ export default function Contacts({ cart }) {
     <div>
       <PagesHeader />
 
-      <div className={styles.menuLetter}>
-        <div>
-          <h3>CONTACTS </h3>
+      <div>
+        <div className={styles.menuLetter}>
+          <div>
+            <h3>CONTACTS </h3>
 
-          <div className={styles.div1}>
-            <div className={styles.div}></div>
-            <div className={styles.div2}></div>
+            <div className={styles.div1}>
+              <div className={styles.div}></div>
+              <div className={styles.div2}></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div className={styles.phoneDiv}>
+            <div>
+              <i className="fa-solid fa-phone"></i>
+            </div>
+            <div className={styles.phoneDivSub}>
+              <h2>Phone</h2>
+              <p>+2348037748573</p>
+            </div>
           </div>
         </div>
       </div>

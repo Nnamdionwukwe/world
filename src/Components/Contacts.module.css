@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 170px;
+  margin-bottom: 20px;
   margin-top: 50px;
 }
 
@@ -33,4 +33,29 @@
   height: 0.5px;
   background-color: rgb(222, 175, 118);
   opacity: 0.6;
+}
+
+.phoneDiv {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(35, 35, 35);
+  font-size: 17px;
+}
+
+.phoneDiv div i {
+  margin-right: 20px;
+  background-color: rgb(232, 211, 211);
+  color: brown;
+  padding: 15px;
+  border-radius: 100%;
+}
+
+.phoneDivSub h2 {
+  margin-bottom: -15px;
+}
+
+.phoneDiv i:hover {
+  background-color: rgb(92, 23, 23);
+  color: #ffff;
 }
