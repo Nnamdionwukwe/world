@@ -50,6 +50,14 @@
   border-radius: 100%;
 }
 
+.phoneDi i {
+  margin-right: 20px;
+  background-color: rgb(232, 211, 211);
+  color: red;
+  padding: 25px;
+  border-radius: 100%;
+}
+
 .phoneDivSub h2 {
   margin-bottom: -15px;
 }
@@ -57,4 +65,8 @@
 .phoneDiv i:hover {
   background-color: rgb(92, 23, 23);
   color: #ffff;
+}
+
+.phoneDivSub p {
+  margin-bottom: -15px;
 }
