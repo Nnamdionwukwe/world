@@ -267,7 +267,7 @@ export default function App() {
 
           <Route path="packages" element={<Packages cart={cart} />} />
 
-          <Route path="specialities" element={<Specialities />} />
+          <Route path="specialities" element={<Specialities cart={cart} />} />
 
           <Route path="trackoder" element={<TrackOrder cart={cart} />} />
 
