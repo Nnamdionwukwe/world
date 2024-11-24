@@ -8,6 +8,7 @@ export default function SelectedDishMenu({
   qty,
 }) {
   const { dishName, price, image, note, id } = selectedId;
+  console.log(selectedId);
 
   function handleAddDish(e) {
     e.preventDefault();
@@ -26,7 +27,9 @@ export default function SelectedDishMenu({
             <button onClick={handleDishClose}>&times;</button>
           </div>
 
-          <img src={image} alt={`${dishName} image`} />
+          <a href="/FullDishImg">
+            <img src={image} alt={`${dishName} image`} />
+          </a>
 
           <div className={styles.dishSub}>
             <h2>{dishName}</h2>

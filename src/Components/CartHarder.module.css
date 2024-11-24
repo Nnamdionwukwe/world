@@ -1,0 +1,19 @@
+.myCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(92, 91, 91);
+}
+
+.myCart div p {
+  font-size: 25px;
+}
+
+.nav button {
+  font-size: 22px;
+  margin-right: 30px;
+  padding: 0px 8px;
+  border: 1px solid brown;
+  color: brown;
+  cursor: pointer;
+}

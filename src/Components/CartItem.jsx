@@ -43,6 +43,10 @@ export default function CartItem({ cart, handleDeleteItem, handleAddQty }) {
           </button>
         </div>
       </div>
+
+      <div className={styles.totalSub}>
+        Total: qyt: {qty} = Price #{price}.00
+      </div>
     </div>
   );
 }

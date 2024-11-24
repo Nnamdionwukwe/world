@@ -20,6 +20,8 @@ import Contacts from "./Components/Contacts";
 import Login from "./Components/Login";
 import AboutUs from "./Components/AboutUs";
 import Spinner from "./Components/Spinner";
+import FullDishImg from "./Components/FullDishImg";
+import CheckOut from "./Components/CheckOut";
 
 const salads = [
   {
@@ -162,22 +164,24 @@ export default function App() {
   return (
     <div className={styles.mainDiv}>
       <>
-        {selectedId && <SpinnerFullPage /> && (
-          <div className={styles.enu}>
+        {!selectedId && <Spinner />}
+
+        <div className={styles.enu}>
+          {selectedId && (
             <SelectedDishMenu
               handleDishClose={handleDishClose}
               selectedId={selectedId}
               handleAddToCart={handleAddToCart}
               qty={qty}
             />
-          </div>
-        )}
+          )}
+        </div>
       </>
 
       <BrowserRouter>
         <Routes>
           <Route
-            path="/"
+            index
             element={
               <>
                 {isLoading && <Spinner />}
@@ -248,6 +252,11 @@ export default function App() {
             }
           />
 
+          <Route
+            path="fulldishimg"
+            element={<FullDishImg selectedId={selectedId} />}
+          />
+
           <Route path="sidesextra" element={<SidesExtra />} />
 
           <Route path="grillhouse" element={<GrillHouse />} />
@@ -269,6 +278,8 @@ export default function App() {
           <Route path="aboutus" element={<AboutUs />} />
 
           <Route path="login" element={<Login />} />
+
+          <Route path="checkout" element={<CheckOut />} />
 
           <Route path="*" element={<PageNotFound />} />
         </Routes>

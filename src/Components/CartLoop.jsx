@@ -1,31 +1,41 @@
 /* eslint-disable react/prop-types */
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import styles from "./EmptyCart.module.css";
 import CartItem from "./CartItem";
-import styles from "./CartItem.module.css";
+import CartHeader from "./CartHeader";
+import EmptyCart from "./EmptyCart";
 
 export default function CartLoop({ cart, handleDeleteItem, handleAddQty }) {
   return (
-    <div>
-      <div className={styles.myCart}>
-        <div>
-          <p>My Cart</p>
-        </div>
+    <>
+      {cart.length === 0 ? (
+        <>
+          <CartHeader />
 
-        <div className={styles.nav}>
-          <NavLink to="/">
-            <button>&times;</button>
-          </NavLink>
-        </div>
-      </div>
+          <EmptyCart />
+        </>
+      ) : (
+        <>
+          <CartHeader />
 
-      {cart.map((cart) => (
-        <CartItem
-          cart={cart}
-          key={cart.id}
-          handleDeleteItem={handleDeleteItem}
-          handleAddQty={handleAddQty}
-        />
-      ))}
-    </div>
+          <div>
+            {cart.map((cart) => (
+              <CartItem
+                cart={cart}
+                key={cart.id}
+                handleDeleteItem={handleDeleteItem}
+                handleAddQty={handleAddQty}
+              />
+            ))}
+          </div>
+
+          <Link to="/checkout">
+            <div className={styles.mainDiv}>
+              <button>Checkout</button>
+            </div>
+          </Link>
+        </>
+      )}
+    </>
   );
 }

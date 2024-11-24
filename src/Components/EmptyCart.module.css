@@ -1,0 +1,36 @@
+.main {
+  margin-top: -30px;
+}
+
+.main h2 {
+  margin-left: 40px;
+  color: rgb(90, 88, 88);
+  margin-bottom: -18px;
+}
+
+.main p {
+  margin-left: 40px;
+  color: rgb(90, 88, 88);
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(75, 109, 82);
+  padding: 7px 0px 7px 0px;
+  border-top: 2px solid rgb(187, 246, 91);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.mainDiv button {
+  border: none;
+  background-color: rgb(75, 109, 82);
+  font-size: 16px;
+  color: #ffff;
+  cursor: pointer;
+}
