@@ -6,7 +6,6 @@ import styles from "./TrackOrder.module.css";
 export default function TrackOrder(cart) {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [orderId, setOrderId] = useState("");
-
   return (
     <>
       <PagesHeader />
@@ -23,13 +22,30 @@ export default function TrackOrder(cart) {
             </p>
           </div>
 
-          <div>
+          <div className={styles.phoneNumberDiv}>
             <input
               value={phoneNumber}
-              onClick={(e) => setPhoneNumber(e.target.value)}
+              onChange={(e) => setPhoneNumber(e.target.value)}
               type="text"
               placeholder="Phone Number"
             />
+          </div>
+
+          <div className={styles.orderDiv}>
+            <p>Order ID</p>
+          </div>
+
+          <div className={styles.phoneNumberDiv}>
+            <input
+              value={orderId}
+              onChange={(e) => setOrderId(e.target.value)}
+              type="text"
+              placeholder="Order ID"
+            />
+          </div>
+
+          <div className={styles.checkButton}>
+            <button>Check</button>
           </div>
         </div>
       </div>
