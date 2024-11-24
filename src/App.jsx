@@ -269,7 +269,7 @@ export default function App() {
 
           <Route path="specialities" element={<Specialities />} />
 
-          <Route path="trackoder" element={<TrackOrder />} />
+          <Route path="trackoder" element={<TrackOrder cart={cart} />} />
 
           <Route path="reservations" element={<Reservations />} />
 
