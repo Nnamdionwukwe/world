@@ -26,7 +26,7 @@ export default function PagesHeader() {
     <>
       <div className={styles.mainHeader}>
         <div>
-          <NavLink>
+          <NavLink to="/">
             <img
               className={styles.headerLogo1}
               src="https://menu.stanfordelaze.ng/uploads/thumb/6ca252f775ee8306d1981e6ee2d0d3c7.png"

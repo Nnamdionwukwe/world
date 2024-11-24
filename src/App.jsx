@@ -273,7 +273,7 @@ export default function App() {
 
           <Route path="reservations" element={<Reservations />} />
 
-          <Route path="contacts" element={<Contacts />} />
+          <Route path="contacts" element={<Contacts cart={cart} />} />
 
           <Route path="aboutus" element={<AboutUs cart={cart} />} />
 
