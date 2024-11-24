@@ -2,7 +2,7 @@
 import FooterHeader from "./FotterHeader";
 import Header from "./Header";
 import HomeFooter from "./HomeFooter";
-import styles from "./Specialities.modules.css";
+import styles from "./Specialities.module.css";
 
 export default function Specialities({ cart }) {
   return (
