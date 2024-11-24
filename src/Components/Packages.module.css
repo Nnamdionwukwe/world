@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 170px;
 }
 
 .menuLetter div h3 {
@@ -12,15 +13,14 @@
 .div1 {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-top: -15px;
   margin-bottom: -10px;
   margin-left: 0px;
-  width: 235px;
+  width: 130px;
 }
 
 .div {
-  width: 150px;
+  width: 70px;
   height: 3px;
   background-color: rgb(222, 175, 118);
   opacity: 1;
@@ -28,13 +28,8 @@
 }
 
 .div2 {
-  width: 100%;
+  width: 100px;
   height: 0.5px;
   background-color: rgb(222, 175, 118);
   opacity: 0.6;
-}
-
-.menuLetter div h5 {
-  display: flex;
-  justify-content: center;
 }

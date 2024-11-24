@@ -2,7 +2,7 @@
 import FooterHeader from "./FotterHeader";
 import Header from "./Header";
 import HomeFooter from "./HomeFooter";
-import styles from "./MenuLetter.module.css";
+import styles from "./Packages.module.css";
 
 export default function Packages({ cart }) {
   return (
