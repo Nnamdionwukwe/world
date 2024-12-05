@@ -94,6 +94,7 @@ section img {
 .phone {
   padding-left: 10px;
   font-size: 18px;
+  padding: 0px 10px;
 }
 
 .phone div i {
@@ -111,4 +112,32 @@ section img {
 
 .phone div span {
   color: rgb(0, 140, 255);
+}
+
+.signIn {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(15, 199, 215);
+  padding: 10px 0px;
+  margin: 0px 10px;
+  font-size: 16px;
+  color: #ffff;
+  margin-bottom: 20px;
+}
+
+.signIn i {
+  margin-right: 10px;
+}
+
+.deliver {
+  padding: 10px 10px 50px 40px;
+  font-size: 15px;
+}
+
+.deliver1 {
+  margin-right: 10px;
+}
+
+.deliver1 i {
+  font-size: 12px;
 }

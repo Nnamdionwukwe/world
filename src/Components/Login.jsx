@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Login.module.css";
 import { NavLink } from "react-router-dom";
 
 export default function Login() {
   const [isOpen, setIsOpen] = useState(false);
+  const [phone, setPhone] = useState("");
+  const [password, setPassword] = useState(false);
 
   return (
     <div className={styles.mainHeader}>
@@ -41,7 +43,12 @@ export default function Login() {
         </div>
 
         <div>
-          <input type="text" placeholder="Phone" />
+          <input
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            type="text"
+            placeholder="Phone"
+          />
         </div>
 
         <div>
@@ -50,8 +57,35 @@ export default function Login() {
         </div>
 
         <div>
-          <input type="password" placeholder="Password" />
+          <input
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            type="password"
+            placeholder="Password"
+          />
         </div>
+      </div>
+
+      <div className={styles.signIn}>
+        <i className="fa fa-sign-in" aria-hidden="true"></i>
+        <span>Sign in</span>
+      </div>
+
+      <div className={styles.deliver}>
+        <NavLink className={styles.deliver1}>
+          <i className="fa fa-user" aria-hidden="true"></i>
+          Customer Login
+        </NavLink>
+
+        <NavLink className={styles.deliver1}>
+          <i className="fa fa-users" aria-hidden="true"></i>
+          Customer Login
+        </NavLink>
+
+        <NavLink className={styles.deliver1}>
+          <i className="fa fa-truck" aria-hidden="true"></i>
+          Delvery Guy Login
+        </NavLink>
       </div>
     </div>
   );
