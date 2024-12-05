@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useState } from "react";
 
 import styles from "./App.module.css";
 import Salads from "./Components/Salads";
@@ -8,7 +9,6 @@ import MainDishes from "./Components/MainDishes";
 import SidesExtra from "./Components/SideExtra";
 import GrillHouse from "./Components/GrillHouse";
 import QuickChinese from "./Components/QuickChinese";
-import { useState } from "react";
 import SelectedDishMenu from "./Components/SelectedDishMenu";
 import CartLoop from "./Components/CartLoop";
 import TrackOrder from "./Components/TrackOrder";
@@ -21,6 +21,7 @@ import AboutUs from "./Components/AboutUs";
 import Spinner from "./Components/Spinner";
 import FullDishImg from "./Components/FullDishImg";
 import CheckOut from "./Components/CheckOut";
+import SignUp from "./Components/SignUp";
 
 const salads = [
   {
@@ -279,6 +280,8 @@ export default function App() {
           <Route path="aboutus" element={<AboutUs cart={cart} />} />
 
           <Route path="login" element={<Login />} />
+
+          <Route path="signup" element={<SignUp />} />
 
           <Route path="checkout" element={<CheckOut />} />
 

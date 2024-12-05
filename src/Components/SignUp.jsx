@@ -1,25 +1,15 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
+
 import styles from "./Login.module.css";
 
-export default function Login() {
+export default function SignUp() {
   const [isOpen, setIsOpen] = useState(false);
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
 
-  // useEffect(function () {
-
-  //   }
-  // }, []);
-
-  // if (!phone || !password) {
-  //   setPhone("");
-  //   setPassword("");
-  //   return;
-  // }
-
   return (
-    <div className={styles.mainHeader}>
+    <div>
       <header className={styles.header}>
         <div>
           <img src="quickmenu.png" />
@@ -41,19 +31,16 @@ export default function Login() {
 
       <section className={styles.section}>
         <div>
-          <div>
-            <img src="https://menu.stanfordelaze.ng/assets/frontend/images/customer.svg" />
-          </div>
-          <h3>CUSTOMER LOGIN</h3>
+          <h3 className={styles.in}>SIGN IN</h3>
 
-          <p>SignUp to dscover your shop</p>
+          <p>Login to your Dashboard & Manage your Menu</p>
         </div>
       </section>
 
       <div className={styles.phone}>
         <div>
-          <i className="fa fa-mobile" aria-hidden="true"></i>
-          Phone
+          <i className="fa fa-user" aria-hidden="true"></i>
+          Username/ Email
         </div>
 
         <div>
@@ -61,7 +48,7 @@ export default function Login() {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             type="text"
-            placeholder="Phone"
+            placeholder=" Username/ Email"
           />
         </div>
 
@@ -84,6 +71,10 @@ export default function Login() {
         <i className="fa fa-sign-in" aria-hidden="true"></i>
         <span>Sign in</span>
       </NavLink>
+
+      <div className={styles.account}>
+        Don't have account? <span>Signup</span>
+      </div>
 
       <div className={styles.deliver}>
         <NavLink className={styles.deliver1}>

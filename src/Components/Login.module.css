@@ -151,3 +151,19 @@
 .deliver1 i {
   font-size: 12px;
 }
+
+.account {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  font-size: 15px;
+  color: rgb(80, 79, 79);
+}
+
+.account span {
+  color: rgb(0, 140, 255);
+}
+
+.in {
+  display: flex;
+  justify-content: center;
+}
