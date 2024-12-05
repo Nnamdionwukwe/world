@@ -41,8 +41,9 @@ export default function Login() {
 
       <section className={styles.section}>
         <div>
-          <img src="https://menu.stanfordelaze.ng/assets/frontend/images/customer.svg" />
-
+          <div>
+            <img src="https://menu.stanfordelaze.ng/assets/frontend/images/customer.svg" />
+          </div>
           <h3>CUSTOMER LOGIN</h3>
 
           <p>SignUp to dscover your shop</p>
