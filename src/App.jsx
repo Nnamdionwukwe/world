@@ -8,9 +8,8 @@ import MainDishes from "./Components/MainDishes";
 import SidesExtra from "./Components/SideExtra";
 import GrillHouse from "./Components/GrillHouse";
 import QuickChinese from "./Components/QuickChinese";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import SelectedDishMenu from "./Components/SelectedDishMenu";
-import SpinnerFullPage from "../components/SpinnerFullPage";
 import CartLoop from "./Components/CartLoop";
 import TrackOrder from "./Components/TrackOrder";
 import Packages from "./Components/Packages";
@@ -109,6 +108,8 @@ export default function App() {
         setIsLoading(false);
       }
     }
+
+
 
     fetchSalads();
   }, []);

@@ -1,0 +1,78 @@
+.mainHeader {
+  background-color: #ffff;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 8px 7px 0px;
+  background-color: rgb(237, 234, 234);
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.header div img {
+  width: 110px;
+  cursor: pointer;
+}
+
+.header div i {
+  font-size: 25px;
+  color: rgb(144, 144, 144);
+  padding: 7px 17px 7px 17px;
+  border: 1px solid rgb(196, 195, 195);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: rgb(237, 234, 234);
+  border-bottom: 1px solid rgb(218, 218, 218);
+  margin-top: 170px;
+  padding: 40px;
+  text-decoration: none;
+}
+
+.login div i {
+  font-size: 13px;
+  border: none;
+  background-color: rgb(15, 199, 215);
+  border-radius: 0px;
+  color: #ffff;
+  margin-right: -20px;
+  padding: 13px 20px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.login button {
+  border: none;
+  color: #ffff;
+  background-color: rgb(15, 199, 215);
+  font-size: 16px;
+  padding: 10.5px 10px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+}
+
+.section {
+  justify-items: center;
+  margin-top: 120px;
+}
+
+section img {
+  width: 80px;
+  border-radius: 100%;
+  padding: 6px;
+  border: 1px solid rgb(244, 242, 242);
+}
