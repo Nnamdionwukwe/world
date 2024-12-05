@@ -66,11 +66,16 @@
 }
 
 .section {
-  justify-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 120px;
 }
 
 section img {
+  display: flex;
+  align-items: center;
+  justify-items: center;
   width: 80px;
   border-radius: 100%;
   padding: 6px;

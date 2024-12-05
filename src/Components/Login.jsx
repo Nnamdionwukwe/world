@@ -3,7 +3,7 @@ import styles from "./Login.module.css";
 import { NavLink } from "react-router-dom";
 
 export default function Login() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className={styles.mainHeader}>
@@ -27,11 +27,13 @@ export default function Login() {
       </header>
 
       <section className={styles.section}>
-        <img src="https://menu.stanfordelaze.ng/assets/frontend/images/customer.svg" />
+        <div>
+          <img src="https://menu.stanfordelaze.ng/assets/frontend/images/customer.svg" />
 
-        <h3>CUSTOMER LOGIN</h3>
+          <h3>CUSTOMER LOGIN</h3>
 
-        <p>SignUp to dscover your shop</p>
+          <p>SignUp to dscover your shop</p>
+        </div>
       </section>
     </div>
   );
