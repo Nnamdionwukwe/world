@@ -66,18 +66,49 @@
 }
 
 .section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 120px;
+  justify-items: center;
+  margin-top: 70px;
+  padding-top: 30px;
 }
 
 section img {
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   width: 80px;
   border-radius: 100%;
   padding: 6px;
   border: 1px solid rgb(244, 242, 242);
+}
+
+.section h3 {
+  font-size: 23px;
+  font-weight: 20;
+}
+
+.section p {
+  font-size: 16px;
+  margin-top: -15px;
+}
+
+.phone {
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.phone div i {
+  margin-right: 8px;
+  color: rgb(45, 45, 46);
+}
+
+.phone div input {
+  display: flex;
+  border: 1px solid rgb(226, 225, 225);
+  outline: none;
+  padding: 13px 60% 13px 10px;
+  margin: 10px 0px 20px 0px;
+}
+
+.phone div span {
+  color: rgb(0, 140, 255);
 }

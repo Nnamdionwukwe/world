@@ -27,14 +27,32 @@ export default function Login() {
       </header>
 
       <section className={styles.section}>
-        <div>
-          <img src="https://menu.stanfordelaze.ng/assets/frontend/images/customer.svg" />
+        <img src="https://menu.stanfordelaze.ng/assets/frontend/images/customer.svg" />
 
-          <h3>CUSTOMER LOGIN</h3>
+        <h3>CUSTOMER LOGIN</h3>
 
-          <p>SignUp to dscover your shop</p>
-        </div>
+        <p>SignUp to dscover your shop</p>
       </section>
+
+      <div className={styles.phone}>
+        <div>
+          <i className="fa fa-mobile" aria-hidden="true"></i>
+          Phone
+        </div>
+
+        <div>
+          <input type="text" placeholder="Phone" />
+        </div>
+
+        <div>
+          <i className="fa fa-key" aria-hidden="true"></i>
+          Password <span>forgot?</span>
+        </div>
+
+        <div>
+          <input type="password" placeholder="Password" />
+        </div>
+      </div>
     </div>
   );
 }
