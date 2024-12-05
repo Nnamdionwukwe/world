@@ -5,7 +5,18 @@ import { NavLink } from "react-router-dom";
 export default function Login() {
   const [isOpen, setIsOpen] = useState(false);
   const [phone, setPhone] = useState("");
-  const [password, setPassword] = useState(false);
+  const [password, setPassword] = useState("");
+
+  // useEffect(function () {
+
+  //   }
+  // }, []);
+
+  // if (!phone || !password) {
+  //   setPhone("");
+  //   setPassword("");
+  //   return;
+  // }
 
   return (
     <div className={styles.mainHeader}>
@@ -66,10 +77,10 @@ export default function Login() {
         </div>
       </div>
 
-      <div className={styles.signIn}>
+      <NavLink to="/" className={styles.signIn}>
         <i className="fa fa-sign-in" aria-hidden="true"></i>
         <span>Sign in</span>
-      </div>
+      </NavLink>
 
       <div className={styles.deliver}>
         <NavLink className={styles.deliver1}>
