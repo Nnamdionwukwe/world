@@ -12,7 +12,9 @@ export default function SignUp() {
     <div>
       <header className={styles.header}>
         <div>
-          <img src="quickmenu.png" />
+          <NavLink to="/">
+            <img src="quickmenu.png" />
+          </NavLink>
         </div>
 
         <div onClick={() => setIsOpen((is) => !is)}>

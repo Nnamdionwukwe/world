@@ -21,9 +21,9 @@ export default function Login() {
   return (
     <div className={styles.mainHeader}>
       <header className={styles.header}>
-        <div>
+        <NavLink to="/">
           <img src="quickmenu.png" />
-        </div>
+        </NavLink>
 
         <div onClick={() => setIsOpen((is) => !is)}>
           <i className="fa fa-bars" aria-hidden="true"></i>
