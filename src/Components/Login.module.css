@@ -67,15 +67,14 @@
 }
 
 .section {
-  justify-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 70px;
   padding-top: 30px;
 }
 
-section img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+section div img {
   width: 80px;
   border-radius: 100%;
   padding: 6px;
