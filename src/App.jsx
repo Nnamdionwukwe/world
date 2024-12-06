@@ -317,12 +317,24 @@ export default function App() {
           />
 
           <Route
+            path="sidesextra"
+            element={
+              <SidesExtra
+                sidesExtra={sidesExtra}
+                handleSelectId={handleSelectId}
+                cart={cart}
+              />
+            }
+          />
+
+          <Route
             path="cartLoop"
             element={
               <CartLoop
                 handleAddQty={handleAddQty}
                 cart={cart}
                 handleDeleteItem={handleDeleteItem}
+                isLoading={isLoading}
               />
             }
           />
@@ -331,8 +343,6 @@ export default function App() {
             path="fulldishimg"
             element={<FullDishImg selectedId={selectedId} />}
           />
-
-          <Route path="sidesextra" element={<SidesExtra />} />
 
           <Route path="grillhouse" element={<GrillHouse />} />
 
