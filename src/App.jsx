@@ -192,10 +192,80 @@ const sidesExtras = [
   },
 ];
 
+const grillHouses = [
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/14c2a753d2da31ce26b42d293b93e2c9.jpg",
+    dishName: "French Fries",
+    price: "3,000",
+    note: "",
+    id: 27364540,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/4c270845d444fde366c2c0c98bb9310e.png",
+    dishName: "Yam Fries",
+    price: "3,000",
+    id: 2736454349,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/96656c9b26ebc7760673bd28cbdf1802.jfif",
+    dishName: "Sweet Potato Fries ",
+    price: "2,000",
+    id: 273645487457,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/307a7f8a7573361aea2e630c5e8db119.jfif",
+    dishName: "Extra Swallow",
+    price: "15,000",
+    note: "Poundo, Semo, Eba",
+    id: 273645407,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/d757ec0e1c73483714f567314858e637.jfif",
+    dishName: "Plantain",
+    price: "2,000",
+    id: 2736543,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/cfbc731552819afab4a74e6b253894bf.jfif",
+    dishName: "Coleslaw ",
+    price: "2,000",
+    id: 276457457,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/86c69bd119294b460befd6dd65904b2d.jpg",
+    dishName: "Peppered Turkey",
+    price: "7,000",
+    note: "",
+    id: 2364540,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/ebb18f169fa9e83509931b77729bd902.jfif",
+    dishName: "Peppered hicken",
+    price: "6,000",
+    id: 276454349,
+  },
+];
+
 export default function App() {
   const [salad, setSalad] = useState(salads);
   const [localDish, setLocalDish] = useState(localDishes);
   const [sidesExtra, setSidesExtra] = useState(sidesExtras);
+  const [grillHouse, setGrillHouse] = useState(grillHouses);
   const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState("");
   const [selectedId, setSelectedId] = useState(null);
@@ -372,6 +442,17 @@ export default function App() {
           />
 
           <Route
+            path="grillhouse"
+            element={
+              <GrillHouse
+                sidesExtra={sidesExtra}
+                handleSelectId={handleSelectId}
+                cart={cart}
+              />
+            }
+          />
+
+          <Route
             path="cartLoop"
             element={
               <CartLoop
@@ -387,8 +468,6 @@ export default function App() {
             path="fulldishimg"
             element={<FullDishImg selectedId={selectedId} />}
           />
-
-          <Route path="grillhouse" element={<GrillHouse />} />
 
           <Route path="quickchinese" element={<QuickChinese />} />
 
