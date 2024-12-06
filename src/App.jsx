@@ -76,11 +76,84 @@ const localDishes = [
     price: "25,000",
     note: "Delicious Okro soup loaded with an assortment of fish,",
   },
+
+  {
+    id: 47758690951,
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/a655ad4fccefb0aa66f55e9486681c7b.jfif",
+    dishName: "Jollof Rice",
+    price: "11,000",
+    note: "Delicious and flavourful Nigerian Jollof rice, served,",
+  },
+
+  {
+    id: 477586909512,
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/a9b5c72198ce789bd9bd054b97a34d24.jfif",
+    dishName: "Nigerian Fried Rice ",
+    price: "12,000",
+    note: "Delicious and flavourful Nigerian style friedrce,",
+  },
+
+  {
+    id: 4775869095123,
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/045e1a2489c95a527e057521f020a2be.jfif",
+    dishName: "Grilled Chicken Rice ",
+    price: "10,000",
+    note: "",
+  },
+
+  {
+    id: 47758690951234,
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/10d7ef6ed130ad87a172e93f186e0ea7.jfif",
+    dishName: "Grilled Turkey Rice ",
+    price: "12,000",
+    note: "",
+  },
+
+  {
+    id: 477586909512345,
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/27f28d9646ccf56c8485322758b8b5c4.jfif",
+    dishName: "Special Native Rice Palmol Rice ",
+    price: "9,500",
+    note: "",
+  },
+];
+
+const sidesExtras = [
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/3efc548a7601ac563d18cd3af549f31e.jpeg",
+    dishName: "Chefs Grilled Chicken Salad",
+    price: "10,000",
+    note: "Tossed",
+    id: 2736454,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/e3737de2f87a40b97f3eca0ff12e10c7.jpeg",
+    dishName: "Turkey and Egg Salad",
+    price: "12,000",
+    id: 273645434,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/36e3e2939aba6b83f53281cff327728e.jpeg",
+    dishName: "Vegan Delight",
+    price: "9,000",
+    id: 27364548745,
+  },
 ];
 
 export default function App() {
   const [salad, setSalad] = useState(salads);
   const [localDish, setLocalDish] = useState(localDishes);
+  const [sidesExtra, setSidesExtra] = useState(sidesExtras);
   const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState("");
   const [selectedId, setSelectedId] = useState(null);
