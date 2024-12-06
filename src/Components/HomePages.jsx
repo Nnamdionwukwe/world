@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import FullPage from "./FullPage";
-import styles from "./HomePages.module.css";
 import LocalDishLoop from "./LocalDishLoop";
+import DishesHeader from "./DishesHeader";
 import SaladComponent from "./SaladComponentt";
 import SaladLoop from "./SaladLoop";
 import FooterHeader from "./FotterHeader";
@@ -23,23 +23,11 @@ export default function HomePages({
 
       <SaladLoop handleSelectId={handleSelectId} salad={salad} />
 
-      <div className={styles.textDiv}>
-        <SaladComponent>Main Dishes / Local Dishes</SaladComponent>
-
-        <div className={styles.more}>
-          See More <p>&gt; &gt;</p>
-        </div>
-      </div>
+      <DishesHeader>Main Dishes / Local Dishes</DishesHeader>
 
       <LocalDishLoop handleSelectId={handleSelectId} localDish={localDish} />
 
-      <div className={styles.textDiv}>
-        <SaladComponent>Main Dishes / Local Dishes</SaladComponent>
-
-        <div className={styles.more}>
-          See More <p>&gt; &gt;</p>
-        </div>
-      </div>
+      <DishesHeader>Sides / Extras </DishesHeader>
 
       <SidesExtraDishLoop
         cart={cart}
