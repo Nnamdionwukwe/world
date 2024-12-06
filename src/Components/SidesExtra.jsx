@@ -6,7 +6,7 @@ import SaladComponent from "./SaladComponentt";
 import FooterHeader from "./FotterHeader";
 import HomeFooter from "./HomeFooter";
 
-export default function SidesExtra({ SidesExtra, handleSelectId, cart }) {
+export default function SidesExtra({ sidesExtra, handleSelectId, cart }) {
   return (
     <div>
       <FullPage />
@@ -22,7 +22,7 @@ export default function SidesExtra({ SidesExtra, handleSelectId, cart }) {
       <SidesExtraDishLoop
         cart={cart}
         handleSelectId={handleSelectId}
-        SidesExtra={SidesExtra}
+        sidesExtra={sidesExtra}
       />
 
       <FooterHeader cart={cart} />

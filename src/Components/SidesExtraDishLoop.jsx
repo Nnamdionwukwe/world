@@ -2,11 +2,11 @@
 import SidesExtrasItem from "./SidesExtrasItem";
 import styles from "./SaladLoop.module.css";
 
-export default function SidesExtraDishLoop({ SidesExtra, handleSelectId }) {
+export default function SidesExtraDishLoop({ sidesExtra, handleSelectId }) {
   return (
     <div>
       <ul className={styles.saladMainDiv}>
-        {SidesExtra.map((sides) => (
+        {sidesExtra.map((sides) => (
           <SidesExtrasItem
             handleSelectId={handleSelectId}
             sides={sides}

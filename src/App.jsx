@@ -6,7 +6,7 @@ import Salads from "./Components/Salads";
 import PageNotFound from "./Components/PageNotFound";
 import HomePages from "./Components/HomePages";
 import MainDishes from "./Components/MainDishes";
-import SidesExtra from "./Components/SideExtra";
+import SidesExtra from "./Components/SidesExtra";
 import GrillHouse from "./Components/GrillHouse";
 import QuickChinese from "./Components/QuickChinese";
 import SelectedDishMenu from "./Components/SelectedDishMenu";
@@ -161,6 +161,7 @@ export default function App() {
 
   const [qty, setQty] = useState(1);
 
+  //console.log(sidesExtra);
   /*
   const BASE_URL = "http://localhost:5000";
 
@@ -268,6 +269,7 @@ export default function App() {
                     handleSelectId={handleSelectId}
                     salad={salad}
                     localDish={localDish}
+                    sidesExtra={sidesExtra}
                     cart={cart}
                     isLoading={isLoading}
                   />
