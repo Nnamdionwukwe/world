@@ -9,6 +9,10 @@ import MainDishes from "./Components/MainDishes";
 import SidesExtra from "./Components/SidesExtra";
 import GrillHouse from "./Components/GrillHouse";
 import QuickChinese from "./Components/QuickChinese";
+import Paster from "./Components/Paster";
+import Starter from "./Components/Starter";
+import Tacos from "./Components/Tacos";
+
 import SelectedDishMenu from "./Components/SelectedDishMenu";
 import CartLoop from "./Components/CartLoop";
 import TrackOrder from "./Components/TrackOrder";
@@ -291,12 +295,69 @@ const quickChineses = [
   },
 ];
 
+const pasters = [
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/8bae4791eaa70bdb3d162c74716f771e.png",
+    dishName: "Spaghetti Bolognese",
+    price: "12,000",
+    note: "",
+    id: 2736400022,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/635515fdd01b52f2f8a31c1d799db142.jfif",
+    dishName: "Spicy Grilled Chicken Penne",
+    price: "11,000",
+    note: "Penne pasta stirred in a grilled chicken spicy tomatos,",
+    id: 273643491133,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/4cd8b9209452205dda6a529f2073083c.jfif",
+    dishName: "Coconut Pasta  ",
+    price: "10,500",
+    note: "Linguin pasta, slowly cooked in coconut mllk,,",
+    id: 273645445744,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/973c0a5165e09323cbcc43af948ec107.jfif",
+    dishName: "Chef's Special Native Pasta ",
+    price: "10,000",
+    note: "",
+    id: 273540755,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/c2c30fc0fa88919de435030d1ae632ca.jpg",
+    dishName: "Seafood Pasta ",
+    price: "20,000",
+    note: "Assorted seafood (shrimps, calamar, fsh and prawn),",
+    id: 273540755,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/a302171538f27c764ffc01cc5450dec6.jpeg",
+    dishName: "Rasta Pasta (PENNE/TAGLITELLE",
+    price: "10,000",
+    note: "",
+    id: 273540755,
+  },
+];
+
 export default function App() {
   const [salad, setSalad] = useState(salads);
   const [localDish, setLocalDish] = useState(localDishes);
   const [sidesExtra, setSidesExtra] = useState(sidesExtras);
   const [grillHouse, setGrillHouse] = useState(grillHouses);
   const [quickChinese, setQuickChinese] = useState(quickChineses);
+  const [paster, setPater] = useState(pasters);
   const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState("");
   const [selectedId, setSelectedId] = useState(null);
@@ -416,6 +477,7 @@ export default function App() {
                     grillHouse={grillHouse}
                     quickChinese={quickChinese}
                     cart={cart}
+                    paster={paster}
                     isLoading={isLoading}
                   />
                 )}
@@ -489,6 +551,39 @@ export default function App() {
             path="quickchinese"
             element={
               <QuickChinese
+                quickChinese={quickChinese}
+                handleSelectId={handleSelectId}
+                cart={cart}
+              />
+            }
+          />
+
+          <Route
+            path="paster"
+            element={
+              <Paster
+                paster={paster}
+                handleSelectId={handleSelectId}
+                cart={cart}
+              />
+            }
+          />
+
+          <Route
+            path="starter"
+            element={
+              <Starter
+                quickChinese={quickChinese}
+                handleSelectId={handleSelectId}
+                cart={cart}
+              />
+            }
+          />
+
+          <Route
+            path="tacos"
+            element={
+              <Tacos
                 quickChinese={quickChinese}
                 handleSelectId={handleSelectId}
                 cart={cart}

@@ -9,6 +9,7 @@ import FooterHeader from "./FotterHeader";
 import HomeFooter from "./HomeFooter";
 import SidesExtraDishLoop from "./SidesExtraDishLoop";
 import QuickChineseLoop from "./QuickChineseLoop";
+import PasterLoop from "./PasterLoop";
 
 export default function HomePages({
   salad,
@@ -18,6 +19,7 @@ export default function HomePages({
   sidesExtra,
   grillHouse,
   quickChinese,
+  paster,
 }) {
   return (
     <div>
@@ -48,6 +50,10 @@ export default function HomePages({
         quickChinese={quickChinese}
         handleSelectId={handleSelectId}
       />
+
+      <DishesHeader> Pasta Special</DishesHeader>
+
+      <PasterLoop paster={paster} handleSelectId={handleSelectId} />
 
       <FooterHeader cart={cart} />
 

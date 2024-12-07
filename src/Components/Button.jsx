@@ -42,15 +42,21 @@ export default function Button() {
         </li>
 
         <li>
-          <button>All</button>
+          <NavLink to="/Paster">
+            <button className={styles.list6}>Pasta Special</button>
+          </NavLink>
         </li>
 
         <li>
-          <button>All</button>
+          <NavLink to="/Starter">
+            <button className={styles.list1}>Starter </button>
+          </NavLink>
         </li>
 
         <li>
-          <button>All</button>
+          <NavLink to="/Tacos">
+            <button className={styles.list1}>Tacos </button>
+          </NavLink>
         </li>
       </ul>
     </nav>
