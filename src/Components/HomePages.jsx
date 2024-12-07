@@ -4,9 +4,11 @@ import LocalDishLoop from "./LocalDishLoop";
 import DishesHeader from "./DishesHeader";
 import SaladComponent from "./SaladComponentt";
 import SaladLoop from "./SaladLoop";
+import GrillHouseLoop from "./GrillHouseLoop";
 import FooterHeader from "./FotterHeader";
 import HomeFooter from "./HomeFooter";
 import SidesExtraDishLoop from "./SidesExtraDishLoop";
+import QuickChineseLoop from "./QuickChineseLoop";
 
 export default function HomePages({
   salad,
@@ -14,6 +16,8 @@ export default function HomePages({
   handleSelectId,
   cart,
   sidesExtra,
+  grillHouse,
+  quickChinese,
 }) {
   return (
     <div>
@@ -30,9 +34,19 @@ export default function HomePages({
       <DishesHeader>Sides / Extras </DishesHeader>
 
       <SidesExtraDishLoop
-        cart={cart}
         handleSelectId={handleSelectId}
         sidesExtra={sidesExtra}
+      />
+
+      <DishesHeader> Grill House Specials</DishesHeader>
+
+      <GrillHouseLoop grillHouse={grillHouse} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Quick Chinese</DishesHeader>
+
+      <QuickChineseLoop
+        quickChinese={quickChinese}
+        handleSelectId={handleSelectId}
       />
 
       <FooterHeader cart={cart} />

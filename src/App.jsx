@@ -195,69 +195,99 @@ const sidesExtras = [
 const grillHouses = [
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/14c2a753d2da31ce26b42d293b93e2c9.jpg",
-    dishName: "French Fries",
-    price: "3,000",
+      "https://menu.stanfordelaze.ng/uploads/thumb/b6c4a5e3b5e8f6dcfc9e10ff58f1f216.png",
+    dishName: "Beff Burger",
+    price: "12,000",
     note: "",
-    id: 27364540,
+    id: 273640,
   },
 
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/4c270845d444fde366c2c0c98bb9310e.png",
-    dishName: "Yam Fries",
+      "https://menu.stanfordelaze.ng/uploads/thumb/996a7b296c7bd4540dde3ec9841f7148.jfif",
+    dishName: "Chicken Burger",
+    price: "13,000",
+    id: 27364349,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/74bd19f4a3ca1cdfe54ee01c5526eb5e.jfif",
+    dishName: "Chicken Sharwama  ",
     price: "3,000",
-    id: 2736454349,
+    id: 2736454457,
   },
 
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/96656c9b26ebc7760673bd28cbdf1802.jfif",
-    dishName: "Sweet Potato Fries ",
-    price: "2,000",
-    id: 273645487457,
+      "	https://menu.stanfordelaze.ng/uploads/thumb/ac226985bbf3d04f9681cfd16ee63396.jfif",
+    dishName: "Mixed Sharwama",
+    price: "4,000",
+    note: "",
+    id: 2735407,
   },
 
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/307a7f8a7573361aea2e630c5e8db119.jfif",
-    dishName: "Extra Swallow",
+      "https://menu.stanfordelaze.ng/uploads/thumb/544bd779a236119b5d2f82166e24a7f1.jfif",
+    dishName: "Grilled jumbo",
+    price: "20,000",
+    id: 27365,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/bddcfa77756d6346b46472e75d38fcaa.jfif",
+    dishName: "Prawns ",
     price: "15,000",
-    note: "Poundo, Semo, Eba",
-    id: 273645407,
+    id: 2764457,
   },
 
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/d757ec0e1c73483714f567314858e637.jfif",
-    dishName: "Plantain",
-    price: "2,000",
-    id: 2736543,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/cfbc731552819afab4a74e6b253894bf.jfif",
-    dishName: "Coleslaw ",
-    price: "2,000",
-    id: 276457457,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/86c69bd119294b460befd6dd65904b2d.jpg",
-    dishName: "Peppered Turkey",
-    price: "7,000",
+      "https://menu.stanfordelaze.ng/uploads/thumb/a3f97ec16d651ace417a69f0860ce03c.jfif",
+    dishName: "Chicken Suya",
+    price: "8,000",
     note: "",
-    id: 2364540,
+    id: 23540,
+  },
+];
+
+const quickChineses = [
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/37c37816b5ff4e506ca47b6089ccfa97.jpg",
+    dishName: "Beff Burger",
+    price: "13,000",
+    note: "Basmati rice stir fried with Aromatics, beef strips,",
+    id: 27364000,
   },
 
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/ebb18f169fa9e83509931b77729bd902.jfif",
-    dishName: "Peppered hicken",
-    price: "6,000",
-    id: 276454349,
+      "https://menu.stanfordelaze.ng/uploads/thumb/b9466f1ee0ae880f793318994c6f4ed5.jfif",
+    dishName: "Chicken Burger",
+    price: "12,000",
+    note: "Egg  noodles stir fried with Aromatics, beef strips,",
+    id: 2736434911,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/15a82db53702ef6d027dcb48094d0bfd.jfif",
+    dishName: "Chicken Sharwama  ",
+    price: "12,500",
+    note: "Rice  noodles stir fried with Aromatics, beef strips,",
+    id: 2736454457,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/bd6b830586a93d86e2b31905825a7dbe.jpg",
+    dishName: "Mixed Sharwama",
+    price: "15,000",
+    note: "",
+    id: 2735407,
   },
 ];
 
@@ -266,6 +296,7 @@ export default function App() {
   const [localDish, setLocalDish] = useState(localDishes);
   const [sidesExtra, setSidesExtra] = useState(sidesExtras);
   const [grillHouse, setGrillHouse] = useState(grillHouses);
+  const [quickChinese, setQuickChinese] = useState(quickChineses);
   const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState("");
   const [selectedId, setSelectedId] = useState(null);
@@ -382,6 +413,8 @@ export default function App() {
                     salad={salad}
                     localDish={localDish}
                     sidesExtra={sidesExtra}
+                    grillHouse={grillHouse}
+                    quickChinese={quickChinese}
                     cart={cart}
                     isLoading={isLoading}
                   />
@@ -445,7 +478,18 @@ export default function App() {
             path="grillhouse"
             element={
               <GrillHouse
-                sidesExtra={sidesExtra}
+                grillHouse={grillHouse}
+                handleSelectId={handleSelectId}
+                cart={cart}
+              />
+            }
+          />
+
+          <Route
+            path="quickchinese"
+            element={
+              <QuickChinese
+                quickChinese={quickChinese}
                 handleSelectId={handleSelectId}
                 cart={cart}
               />
@@ -468,8 +512,6 @@ export default function App() {
             path="fulldishimg"
             element={<FullDishImg selectedId={selectedId} />}
           />
-
-          <Route path="quickchinese" element={<QuickChinese />} />
 
           <Route path="trackorder" element={<TrackOrder />} />
 

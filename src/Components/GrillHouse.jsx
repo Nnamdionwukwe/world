@@ -1,22 +1,22 @@
 /* eslint-disable react/prop-types */
 import FullPage from "./FullPage";
-import SidesExtraDishLoop from "./SidesExtraDishLoop";
+import GrillHouseLoop from "./GrillHouseLoop";
 import FooterHeader from "./FotterHeader";
 import HomeFooter from "./HomeFooter";
 
 import DishesHeader from "./DishesHeader";
 
-export default function SidesExtra({ sidesExtra, handleSelectId, cart }) {
+export default function GrillHouse({ grillHouse, handleSelectId, cart }) {
   return (
     <div>
       <FullPage />
 
-      <DishesHeader>Sides / Extras </DishesHeader>
+      <DishesHeader>Grill House Specials </DishesHeader>
 
-      <SidesExtraDishLoop
+      <GrillHouseLoop
         cart={cart}
         handleSelectId={handleSelectId}
-        sidesExtra={sidesExtra}
+        grillHouse={grillHouse}
       />
 
       <FooterHeader cart={cart} />
