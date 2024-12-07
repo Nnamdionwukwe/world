@@ -10,6 +10,8 @@ import HomeFooter from "./HomeFooter";
 import SidesExtraDishLoop from "./SidesExtraDishLoop";
 import QuickChineseLoop from "./QuickChineseLoop";
 import PasterLoop from "./PasterLoop";
+import Starter from "./Starter";
+import Tacos from "./Tacos";
 
 export default function HomePages({
   salad,
@@ -54,6 +56,14 @@ export default function HomePages({
       <DishesHeader> Pasta Special</DishesHeader>
 
       <PasterLoop paster={paster} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Starter </DishesHeader>
+
+      {/* <Starter quickChinese={quickChinese} handleSelectId={handleSelectId} /> */}
+
+      <DishesHeader> Tacos</DishesHeader>
+
+      {/* <Tacos quickChinese={quickChinese} handleSelectId={handleSelectId} /> */}
 
       <FooterHeader cart={cart} />
 

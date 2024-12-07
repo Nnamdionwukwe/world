@@ -11,7 +11,7 @@ export default function Tacos({ quickChinese, handleSelectId, cart }) {
     <div>
       <FullPage />
 
-      <DishesHeader>Quick Chinese </DishesHeader>
+      <DishesHeader>Tacos </DishesHeader>
 
       <QuickChineseLoop
         cart={cart}

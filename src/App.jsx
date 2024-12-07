@@ -288,7 +288,7 @@ const quickChineses = [
   {
     image:
       "	https://menu.stanfordelaze.ng/uploads/thumb/bd6b830586a93d86e2b31905825a7dbe.jpg",
-    dishName: "Mixed Sharwama",
+    dishName: "Special Hot Plate ",
     price: "15,000",
     note: "",
     id: 2735407,
@@ -329,7 +329,7 @@ const pasters = [
     dishName: "Chef's Special Native Pasta ",
     price: "10,000",
     note: "",
-    id: 273540755,
+    id: 27354075511,
   },
 
   {
@@ -347,7 +347,7 @@ const pasters = [
     dishName: "Rasta Pasta (PENNE/TAGLITELLE",
     price: "10,000",
     note: "",
-    id: 273540755,
+    id: 2735405,
   },
 ];
 

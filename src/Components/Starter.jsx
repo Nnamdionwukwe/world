@@ -11,7 +11,7 @@ export default function Starter({ quickChinese, handleSelectId, cart }) {
     <div>
       <FullPage />
 
-      <DishesHeader>Quick Chinese </DishesHeader>
+      <DishesHeader>Stater </DishesHeader>
 
       <QuickChineseLoop
         cart={cart}
