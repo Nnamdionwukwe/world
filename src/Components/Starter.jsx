@@ -1,22 +1,22 @@
 /* eslint-disable react/prop-types */
 import FullPage from "./FullPage";
-import QuickChineseLoop from "./QuickChineseLoop";
+import StarterLoop from "./StarterLoop";
 import FooterHeader from "./FotterHeader";
 import HomeFooter from "./HomeFooter";
 
 import DishesHeader from "./DishesHeader";
 
-export default function Starter({ quickChinese, handleSelectId, cart }) {
+export default function Starter({ starter, handleSelectId, cart }) {
   return (
     <div>
       <FullPage />
 
       <DishesHeader>Stater </DishesHeader>
 
-      <QuickChineseLoop
+      <StarterLoop
         cart={cart}
         handleSelectId={handleSelectId}
-        quickChinese={quickChinese}
+        starter={starter}
       />
 
       <FooterHeader cart={cart} />

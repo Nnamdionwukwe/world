@@ -10,8 +10,8 @@ import HomeFooter from "./HomeFooter";
 import SidesExtraDishLoop from "./SidesExtraDishLoop";
 import QuickChineseLoop from "./QuickChineseLoop";
 import PasterLoop from "./PasterLoop";
-import Starter from "./Starter";
-import Tacos from "./Tacos";
+import StarterLoop from "./StarterLoop";
+import TacosLoop from "./TacosLoop";
 
 export default function HomePages({
   salad,
@@ -22,6 +22,8 @@ export default function HomePages({
   grillHouse,
   quickChinese,
   paster,
+  starter,
+  taco,
 }) {
   return (
     <div>
@@ -59,11 +61,11 @@ export default function HomePages({
 
       <DishesHeader> Starter </DishesHeader>
 
-      {/* <Starter quickChinese={quickChinese} handleSelectId={handleSelectId} /> */}
+      <StarterLoop starter={starter} handleSelectId={handleSelectId} />
 
       <DishesHeader> Tacos</DishesHeader>
 
-      {/* <Tacos quickChinese={quickChinese} handleSelectId={handleSelectId} /> */}
+      <TacosLoop taco={taco} handleSelectId={handleSelectId} />
 
       <FooterHeader cart={cart} />
 

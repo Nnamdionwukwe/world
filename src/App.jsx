@@ -351,6 +351,100 @@ const pasters = [
   },
 ];
 
+const starters = [
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/b5b7a59144fd527f09774bb2427de571.jpg",
+    dishName: "Catfish Peppersoup",
+    price: "20,000",
+    note: "",
+    id: 273600022,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/031c389cf87ba094c660dfac466a2f91.jpg",
+    dishName: "Goat Meat Peppersoup ",
+    price: "10,000",
+    note: ",",
+    id: 2736441133,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/e55e4a38f9209f5d0daeac237947c26b.jfif",
+    dishName: "Turkey Peppersoup  ",
+    price: "10,000",
+    note: "",
+    id: 2736454744,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/337bfca69e8d431578de4b065535d5d9.jfif",
+    dishName: "Beef Peppersoup",
+    price: "8,000",
+    note: "",
+    id: 27357551081,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/388ef1453eebf9c8adb2281b3a0a7121.jpg",
+    dishName: "Chicken Peppersoup ",
+    price: "10,000",
+    note: ",",
+    id: 27354075531,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/3da618d7a37cd8e6c71e216cd7a70c91.jpg",
+    dishName: "Special HotWing",
+    price: "8,000",
+    note: "",
+    id: 273540507,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/39012df9ec583186c809e672c2bf99c2.jpg",
+    dishName: "Chicken On Skewers",
+    price: "8,000",
+    note: "",
+    id: 27354057,
+  },
+];
+
+const tacos = [
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/a9dfa99e70e54ed086f1a6c37f37e866.jfif",
+    dishName: "Braised Beef Tacos",
+    price: "8,500",
+    note: "",
+    id: 27300,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/d94f682cba26542bdcc05fba7509c92e.jfif",
+    dishName: "Smoked Chicken Tacos",
+    price: "8,000",
+    note: "",
+    id: 2736434911432,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/ad72b165d778eb74d8a415dd984c9ea5.jfif",
+    dishName: "Shrimp Tacos  ",
+    price: "10,000",
+    note: ",",
+    id: 2736454452317,
+  },
+];
+
 export default function App() {
   const [salad, setSalad] = useState(salads);
   const [localDish, setLocalDish] = useState(localDishes);
@@ -358,6 +452,8 @@ export default function App() {
   const [grillHouse, setGrillHouse] = useState(grillHouses);
   const [quickChinese, setQuickChinese] = useState(quickChineses);
   const [paster, setPater] = useState(pasters);
+  const [starter, setStarter] = useState(starters);
+  const [taco, setTaco] = useState(tacos);
   const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState("");
   const [selectedId, setSelectedId] = useState(null);
@@ -478,6 +574,8 @@ export default function App() {
                     quickChinese={quickChinese}
                     cart={cart}
                     paster={paster}
+                    starter={starter}
+                    taco={taco}
                     isLoading={isLoading}
                   />
                 )}
@@ -573,7 +671,7 @@ export default function App() {
             path="starter"
             element={
               <Starter
-                quickChinese={quickChinese}
+                starter={starter}
                 handleSelectId={handleSelectId}
                 cart={cart}
               />
@@ -583,11 +681,7 @@ export default function App() {
           <Route
             path="tacos"
             element={
-              <Tacos
-                quickChinese={quickChinese}
-                handleSelectId={handleSelectId}
-                cart={cart}
-              />
+              <Tacos taco={taco} handleSelectId={handleSelectId} cart={cart} />
             }
           />
 
