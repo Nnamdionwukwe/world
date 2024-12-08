@@ -6,7 +6,7 @@ import HomeFooter from "./HomeFooter";
 
 import DishesHeader from "./DishesHeader";
 
-export default function EnergyDrinks({ taco, handleSelectId, cart }) {
+export default function MilkShakes({ taco, handleSelectId, cart }) {
   return (
     <div>
       <FullPage />
