@@ -139,7 +139,7 @@ const localDishes = [
   },
 
   {
-    id: 477586909512345,
+    id: 477586909512045,
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/27f28d9646ccf56c8485322758b8b5c4.jfif",
     dishName: "Special Native Rice Palmol Rice ",
