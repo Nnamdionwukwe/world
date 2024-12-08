@@ -24,7 +24,7 @@ import RedWine from "./Components/RedWine";
 import WhiteWine from "./Components/WhiteWine";
 import Classic from "./Components/Classic";
 import Smoothies from "./Components/Smoothies";
-import MockTails from "./Components/MockTails";
+import Mocktails from "./Components/Mocktails";
 import Special from "./Components/Special";
 import Fresh from "./Components/Fresh";
 import Parfait from "./Components/Parfait";
@@ -2142,7 +2142,7 @@ export default function App() {
           <Route
             path="MockTails"
             element={
-              <MockTails
+              <Mocktails
                 taco={mocktail}
                 handleSelectId={handleSelectId}
                 cart={cart}
