@@ -6,7 +6,7 @@ import HomeFooter from "./HomeFooter";
 
 import DishesHeader from "./DishesHeader";
 
-export default function Tequila({ taco, handleSelectId, cart }) {
+export default function Fresh({ taco, handleSelectId, cart }) {
   return (
     <div>
       <FullPage />

@@ -1694,6 +1694,53 @@ const softDrnks = [
   },
 ];
 
+const tequilas = [
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/ad877751f41d977aa4780f32aea77da7.jfif",
+    dishName: "Water  ",
+    price: "500",
+    note: " ",
+    id: 27300997636,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/c3794c99a725621b6e1a9c4741fdf39b.jfif",
+    dishName: "Coke  ",
+    price: "1,000",
+    note: "",
+    id: 2736431482432,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/facb8909480e9895823f167592f5dd4f.jpg",
+    dishName: "Sprte",
+    price: "1,000",
+    note: "",
+    id: 2736422654317,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/27aac97f23078922d37d697a8e8b2f70.jfif",
+    dishName: "Soda Water ",
+    price: "1,000",
+    note: " ",
+    id: 2730052439986,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/d85e1f6f9525b614ec54b4167189011b.jfif",
+    dishName: "Tonci Water  ",
+    price: "1,000",
+    note: "",
+    id: 273643312312,
+  },
+];
+
 export default function App() {
   const [salad, setSalad] = useState(salads);
   const [localDish, setLocalDish] = useState(localDishes);
@@ -1718,7 +1765,8 @@ export default function App() {
   const [mocktail, setMocktail] = useState(mocktails);
   const [special, setSpecial] = useState(specials);
   const [milkshake, setMilkshakes] = useState(milkshakes);
-  const [freshJuice, setFreshJuice] = useState(freshJuices);
+  const [fresh, setFresh] = useState(freshJuices);
+  const [tequila, setTequila] = useState(tequilas);
   const [parfait, setParfaits] = useState(parfaits);
   const [beer, setBeer] = useState(beers);
   const [energyDrnk, setEnergyDrnks] = useState(energyDrnks);
@@ -2012,7 +2060,7 @@ export default function App() {
             path="tequila"
             element={
               <Tequila
-                taco={Tequila}
+                taco={tequila}
                 handleSelectId={handleSelectId}
                 cart={cart}
               />
@@ -2064,7 +2112,7 @@ export default function App() {
           />
 
           <Route
-            path="Classics"
+            path="Classiccocktail"
             element={
               <Classic
                 taco={classic}
@@ -2126,7 +2174,7 @@ export default function App() {
           />
 
           <Route
-            path="EnergyDrinks"
+            path="energydrink"
             element={
               <EnergyDrinks
                 taco={energyDrnk}
@@ -2148,7 +2196,7 @@ export default function App() {
           />
 
           <Route
-            path="SoftDrinks"
+            path="softdrink"
             element={
               <SoftDrinks
                 taco={softDrink}
@@ -2159,7 +2207,7 @@ export default function App() {
           />
 
           <Route
-            path="special"
+            path="specialjuice"
             element={
               <Special
                 taco={special}
@@ -2170,9 +2218,9 @@ export default function App() {
           />
 
           <Route
-            path="fresh"
+            path="freshjuices"
             element={
-              <Fresh taco={gin} handleSelectId={handleSelectId} cart={cart} />
+              <Fresh taco={fresh} handleSelectId={handleSelectId} cart={cart} />
             }
           />
 
