@@ -627,472 +627,193 @@ const brandys = [
   {
     image:
       "	https://menu.stanfordelaze.ng/uploads/thumb/e6ff356e09e3f90afdab95c54e6350f7.png",
-    dishName: "Glenfiddlch 23yrs   ",
-    price: "700,000",
-    note: "Served Chilled",
-    id: 2736417,
+    dishName: "Remy Martins 1738   ",
+    price: "180,000",
+    note: " ",
+    id: 37865463,
   },
 
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/c58893c105f8c1771017e17f97e92966.png",
-    dishName: "Blue Label   ",
-    price: "500,000",
-    note: "Served Chilled",
-    id: 2736433092,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/1322ee3d2faeca00a58233759783be44.png",
-    dishName: "Glenfiddlch 21yrs   ",
-    price: "550,000",
-    note: "Served Chilled",
-    id: 2736423,
+      "	https://menu.stanfordelaze.ng/uploads/thumb/b40719a72278e17a9214dc43b586f0b5.png",
+    dishName: "Hennessy VS   ",
+    price: "140,000",
+    note: " ",
+    id: 4767453,
   },
 ];
 
 const vodkas = [
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/269ebceb078aa63eb0a8dcce787c5c76.jpeg",
-    dishName: "The Observatory ",
-    price: "60,000",
-    note: "Served Chilled",
-    id: 27300936,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/91b55b9ce57c3c93eda92ee6b9812729.jpeg",
-    dishName: "Jagermeister  ",
-    price: "50,000",
-    note: "",
-    id: 2736431432,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/286fd8f4796e7d6a0ef504a4201e498c.png",
-    dishName: "Grants   ",
-    price: "40,000",
-    note: "",
-    id: 273642317,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/9eb52ce97717614b6278a0d182ef2258.png",
-    dishName: "The Balvine ",
-    price: "100,000",
+      "https://menu.stanfordelaze.ng/uploads/thumb/064a3687d40553a965be4684ffc386bc.jfif",
+    dishName: "Ciroc  ",
+    price: "80,000",
     note: " ",
-    id: 273009986,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/eb03ed1114085f86540ee3a7d3f45592.webp",
-    dishName: "Macallan Rare Cask  ",
-    price: "700,000",
-    note: "",
-    id: 27364332,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/e6ff356e09e3f90afdab95c54e6350f7.png",
-    dishName: "Glenfiddlch 23yrs   ",
-    price: "700,000",
-    note: "Served Chilled",
-    id: 2736417,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/c58893c105f8c1771017e17f97e92966.png",
-    dishName: "Blue Label   ",
-    price: "500,000",
-    note: "Served Chilled",
-    id: 2736433092,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/1322ee3d2faeca00a58233759783be44.png",
-    dishName: "Glenfiddlch 21yrs   ",
-    price: "550,000",
-    note: "Served Chilled",
-    id: 2736423,
+    id: 5761289423,
   },
 ];
 
 const gins = [
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/269ebceb078aa63eb0a8dcce787c5c76.jpeg",
-    dishName: "The Observatory ",
-    price: "60,000",
-    note: "Served Chilled",
-    id: 27300936,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/91b55b9ce57c3c93eda92ee6b9812729.jpeg",
-    dishName: "Jagermeister  ",
+      "https://menu.stanfordelaze.ng/uploads/thumb/dabe806b0a107656ea2c5ec00a960960.jpeg",
+    dishName: "Hendrcks Gin ",
     price: "50,000",
-    note: "",
-    id: 2736431432,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/286fd8f4796e7d6a0ef504a4201e498c.png",
-    dishName: "Grants   ",
-    price: "40,000",
-    note: "",
-    id: 273642317,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/9eb52ce97717614b6278a0d182ef2258.png",
-    dishName: "The Balvine ",
-    price: "100,000",
     note: " ",
-    id: 273009986,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/eb03ed1114085f86540ee3a7d3f45592.webp",
-    dishName: "Macallan Rare Cask  ",
-    price: "700,000",
-    note: "",
-    id: 27364332,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/e6ff356e09e3f90afdab95c54e6350f7.png",
-    dishName: "Glenfiddlch 23yrs   ",
-    price: "700,000",
-    note: "Served Chilled",
-    id: 2736417,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/c58893c105f8c1771017e17f97e92966.png",
-    dishName: "Blue Label   ",
-    price: "500,000",
-    note: "Served Chilled",
-    id: 2736433092,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/1322ee3d2faeca00a58233759783be44.png",
-    dishName: "Glenfiddlch 21yrs   ",
-    price: "550,000",
-    note: "Served Chilled",
-    id: 2736423,
+    id: 83492565,
   },
 ];
 
 const champagnes = [
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/269ebceb078aa63eb0a8dcce787c5c76.jpeg",
-    dishName: "The Observatory ",
-    price: "60,000",
-    note: "Served Chilled",
-    id: 27300936,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/91b55b9ce57c3c93eda92ee6b9812729.jpeg",
-    dishName: "Jagermeister  ",
-    price: "50,000",
-    note: "",
-    id: 2736431432,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/286fd8f4796e7d6a0ef504a4201e498c.png",
-    dishName: "Grants   ",
-    price: "40,000",
-    note: "",
-    id: 273642317,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/9eb52ce97717614b6278a0d182ef2258.png",
-    dishName: "The Balvine ",
-    price: "100,000",
-    note: " ",
-    id: 273009986,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/eb03ed1114085f86540ee3a7d3f45592.webp",
-    dishName: "Macallan Rare Cask  ",
-    price: "700,000",
-    note: "",
-    id: 27364332,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/e6ff356e09e3f90afdab95c54e6350f7.png",
-    dishName: "Glenfiddlch 23yrs   ",
-    price: "700,000",
-    note: "Served Chilled",
-    id: 2736417,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/c58893c105f8c1771017e17f97e92966.png",
-    dishName: "Blue Label   ",
-    price: "500,000",
-    note: "Served Chilled",
-    id: 2736433092,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/1322ee3d2faeca00a58233759783be44.png",
-    dishName: "Glenfiddlch 21yrs   ",
+      "	https://menu.stanfordelaze.ng/uploads/thumb/abb2fc2f6f3c300c472bccb7d40f54bf.jfif",
+    dishName: "Crystal  ",
     price: "550,000",
-    note: "Served Chilled",
-    id: 2736423,
+    note: " ",
+    id: 5672345723,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/ab3a9bcada57b625cf26ce539c718d92.jfif",
+    dishName: "Ace of Spades  ",
+    price: "600,000",
+    note: "",
+    id: 237857825,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/ccc87cec3fff597564cc639986ff83a4.jfif",
+    dishName: "Dom Perignon   ",
+    price: "600,000",
+    note: "",
+    id: 73584523745,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/c791e846f26506ef6b9ed041f5267d0d.png",
+    dishName: "Moet Rose ",
+    price: "200,000",
+    note: " ",
+    id: 3725473254,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/3c2e643365806ba2b323180391a36cca.jfif",
+    dishName: "Veuve Clicqout Rose  ",
+    price: "250,000",
+    note: "",
+    id: 47532745,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/e7aac795f1656023f330d8e34d2e9684.jfif",
+    dishName: "Veuve Clicqout Brut   ",
+    price: "200,000",
+    note: " ",
+    id: 27385423754,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/413b916cd568215ea6cc48428e13e464.webp",
+    dishName: "Bellaire Rose   ",
+    price: "150,000",
+    note: " ",
+    id: 34263547345,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/8efc178e94344c99ddf0c11b916a8815.jpeg",
+    dishName: "Laurent Perriier   ",
+    price: "150,000",
+    note: " ",
+    id: 194854985,
   },
 ];
 
 const sparklingWines = [
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/269ebceb078aa63eb0a8dcce787c5c76.jpeg",
-    dishName: "The Observatory ",
-    price: "60,000",
-    note: "Served Chilled",
-    id: 27300936,
+      "	https://menu.stanfordelaze.ng/uploads/thumb/82e5d727fd8f24dc9a6c1894a2bd1ae8.jfif",
+    dishName: "Martnelli  ",
+    price: "30,000",
+    note: " ",
+    id: 72385235,
   },
 
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/91b55b9ce57c3c93eda92ee6b9812729.jpeg",
-    dishName: "Jagermeister  ",
-    price: "50,000",
-    note: "",
-    id: 2736431432,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/286fd8f4796e7d6a0ef504a4201e498c.png",
-    dishName: "Grants   ",
+      "	https://menu.stanfordelaze.ng/uploads/thumb/b78b78350d38c42491c695f58460a6e6.png",
+    dishName: "Castle Ice  ",
     price: "40,000",
     note: "",
-    id: 273642317,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/9eb52ce97717614b6278a0d182ef2258.png",
-    dishName: "The Balvine ",
-    price: "100,000",
-    note: " ",
-    id: 273009986,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/eb03ed1114085f86540ee3a7d3f45592.webp",
-    dishName: "Macallan Rare Cask  ",
-    price: "700,000",
-    note: "",
-    id: 27364332,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/e6ff356e09e3f90afdab95c54e6350f7.png",
-    dishName: "Glenfiddlch 23yrs   ",
-    price: "700,000",
-    note: "Served Chilled",
-    id: 2736417,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/c58893c105f8c1771017e17f97e92966.png",
-    dishName: "Blue Label   ",
-    price: "500,000",
-    note: "Served Chilled",
-    id: 2736433092,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/1322ee3d2faeca00a58233759783be44.png",
-    dishName: "Glenfiddlch 21yrs   ",
-    price: "550,000",
-    note: "Served Chilled",
-    id: 2736423,
+    id: 7234783547,
   },
 ];
 
 const redWines = [
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/269ebceb078aa63eb0a8dcce787c5c76.jpeg",
-    dishName: "The Observatory ",
-    price: "60,000",
-    note: "Served Chilled",
-    id: 27300936,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/91b55b9ce57c3c93eda92ee6b9812729.jpeg",
-    dishName: "Jagermeister  ",
-    price: "50,000",
-    note: "",
-    id: 2736431432,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/286fd8f4796e7d6a0ef504a4201e498c.png",
-    dishName: "Grants   ",
+      "https://menu.stanfordelaze.ng/uploads/thumb/856e37817c2b9a4084bc8b4923832f77.jfif",
+    dishName: "Vartely  ",
     price: "40,000",
-    note: "",
-    id: 273642317,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/9eb52ce97717614b6278a0d182ef2258.png",
-    dishName: "The Balvine ",
-    price: "100,000",
     note: " ",
-    id: 273009986,
+    id: 234868346,
   },
 
   {
     image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/eb03ed1114085f86540ee3a7d3f45592.webp",
-    dishName: "Macallan Rare Cask  ",
-    price: "700,000",
+      "	https://menu.stanfordelaze.ng/uploads/thumb/679d9d828531b5e0c200e892a4278510.jfif",
+    dishName: "Whistling  ",
+    price: "25,000",
     note: "",
-    id: 27364332,
+    id: 348653485,
   },
 
   {
     image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/e6ff356e09e3f90afdab95c54e6350f7.png",
-    dishName: "Glenfiddlch 23yrs   ",
-    price: "700,000",
-    note: "Served Chilled",
-    id: 2736417,
+      "	https://menu.stanfordelaze.ng/uploads/thumb/15412d6e9917de3ab1c38ff5a9454ef3.jfif",
+    dishName: "Sweet Lips   ",
+    price: "30,000",
+    note: "",
+    id: 73567323534,
   },
 
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/c58893c105f8c1771017e17f97e92966.png",
-    dishName: "Blue Label   ",
-    price: "500,000",
-    note: "Served Chilled",
-    id: 2736433092,
+      "	https://menu.stanfordelaze.ng/uploads/thumb/d5d5afc98d9900c9ac2176001574975c.jfif",
+    dishName: "Rbbertson  ",
+    price: "30,000",
+    note: " ",
+    id: 238965,
   },
 
   {
     image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/1322ee3d2faeca00a58233759783be44.png",
-    dishName: "Glenfiddlch 21yrs   ",
-    price: "550,000",
-    note: "Served Chilled",
-    id: 2736423,
+      "	https://menu.stanfordelaze.ng/uploads/thumb/2433f5972ed0923399b5b9c31698f7f4.jfif",
+    dishName: "Escudo Rojo  ",
+    price: "40,000",
+    note: " ",
+    id: 238965,
   },
 ];
 
 const whiteWines = [
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/269ebceb078aa63eb0a8dcce787c5c76.jpeg",
-    dishName: "The Observatory ",
-    price: "60,000",
-    note: "Served Chilled",
-    id: 27300936,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/91b55b9ce57c3c93eda92ee6b9812729.jpeg",
-    dishName: "Jagermeister  ",
-    price: "50,000",
-    note: "",
-    id: 2736431432,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/286fd8f4796e7d6a0ef504a4201e498c.png",
-    dishName: "Grants   ",
-    price: "40,000",
-    note: "",
-    id: 273642317,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/9eb52ce97717614b6278a0d182ef2258.png",
-    dishName: "The Balvine ",
-    price: "100,000",
+      "https://menu.stanfordelaze.ng/uploads/thumb/e796617761eedb64af61cb7d2f6ec137.jfif",
+    dishName: "Sweet Lips ",
+    price: "30,000",
     note: " ",
-    id: 273009986,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/eb03ed1114085f86540ee3a7d3f45592.webp",
-    dishName: "Macallan Rare Cask  ",
-    price: "700,000",
-    note: "",
-    id: 27364332,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/e6ff356e09e3f90afdab95c54e6350f7.png",
-    dishName: "Glenfiddlch 23yrs   ",
-    price: "700,000",
-    note: "Served Chilled",
-    id: 2736417,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/c58893c105f8c1771017e17f97e92966.png",
-    dishName: "Blue Label   ",
-    price: "500,000",
-    note: "Served Chilled",
-    id: 2736433092,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/1322ee3d2faeca00a58233759783be44.png",
-    dishName: "Glenfiddlch 21yrs   ",
-    price: "550,000",
-    note: "Served Chilled",
-    id: 2736423,
+    id: 923568356,
   },
 ];
 
@@ -1173,74 +894,29 @@ const classics = [
 const smoothies = [
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/269ebceb078aa63eb0a8dcce787c5c76.jpeg",
-    dishName: "The Observatory ",
-    price: "60,000",
-    note: "Served Chilled",
-    id: 27300936,
+      "	https://menu.stanfordelaze.ng/uploads/thumb/bb26ad5522399d5d457f4858c8d5f37c.jfif",
+    dishName: "Frut Esctacy ",
+    price: "5,500",
+    note: "Banana, Pineapple, Watermelon, Seedless Grapes ",
+    id: 782562379,
   },
 
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/91b55b9ce57c3c93eda92ee6b9812729.jpeg",
-    dishName: "Jagermeister  ",
-    price: "50,000",
+      "	https://menu.stanfordelaze.ng/uploads/thumb/cfb40f31a4b0f556007d941476494dfc.jfif",
+    dishName: "Standard Cleanser  ",
+    price: "4,500",
+    note: "Apple, Pineapple, Celery",
+    id: 3646563568,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/e7dae75a02b6a8c3021c7d4feb5ce28f.jfif",
+    dishName: "Coco Banana   ",
+    price: "5,000",
     note: "",
-    id: 2736431432,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/286fd8f4796e7d6a0ef504a4201e498c.png",
-    dishName: "Grants   ",
-    price: "40,000",
-    note: "",
-    id: 273642317,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/9eb52ce97717614b6278a0d182ef2258.png",
-    dishName: "The Balvine ",
-    price: "100,000",
-    note: " ",
-    id: 273009986,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/eb03ed1114085f86540ee3a7d3f45592.webp",
-    dishName: "Macallan Rare Cask  ",
-    price: "700,000",
-    note: "",
-    id: 27364332,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/e6ff356e09e3f90afdab95c54e6350f7.png",
-    dishName: "Glenfiddlch 23yrs   ",
-    price: "700,000",
-    note: "Served Chilled",
-    id: 2736417,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/c58893c105f8c1771017e17f97e92966.png",
-    dishName: "Blue Label   ",
-    price: "500,000",
-    note: "Served Chilled",
-    id: 2736433092,
-  },
-
-  {
-    image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/1322ee3d2faeca00a58233759783be44.png",
-    dishName: "Glenfiddlch 21yrs   ",
-    price: "550,000",
-    note: "Served Chilled",
-    id: 2736423,
+    id: 3487642753,
   },
 ];
 
@@ -1688,47 +1364,56 @@ const softDrnks = [
 const tequilas = [
   {
     image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/ad877751f41d977aa4780f32aea77da7.jfif",
-    dishName: "Water  ",
-    price: "500",
+      "	https://menu.stanfordelaze.ng/uploads/thumb/fbb4d654ac8140fb9f8197a4a5b87573.jpg",
+    dishName: "Azul Reposado  ",
+    price: "650,000",
     note: " ",
-    id: 27300997636,
+    id: 2365256892345,
   },
 
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/c3794c99a725621b6e1a9c4741fdf39b.jfif",
-    dishName: "Coke  ",
-    price: "1,000",
+      "https://menu.stanfordelaze.ng/uploads/thumb/b0f8c6d48e744a4d6916a5b02f2427d8.jfif",
+    dishName: "Azul Plata  ",
+    price: "500,000",
     note: "",
-    id: 2736431482432,
+    id: 7352545628956,
   },
 
   {
     image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/facb8909480e9895823f167592f5dd4f.jpg",
-    dishName: "Sprte",
-    price: "1,000",
+      "	https://menu.stanfordelaze.ng/uploads/thumb/b59f2f970af966ca4b54f190a7180ac3.jfif",
+    dishName: "Don Julio",
+    price: "550,000",
     note: "",
-    id: 2736422654317,
+    id: 8596348956,
   },
 
   {
     image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/27aac97f23078922d37d697a8e8b2f70.jfif",
-    dishName: "Soda Water ",
-    price: "1,000",
+      "	https://menu.stanfordelaze.ng/uploads/thumb/9b02a96d050c4f3ba236d4b4910b0302.jpeg",
+    dishName: "Casa Maestri ",
+    price: "350,000",
     note: " ",
-    id: 2730052439986,
+    id: 2384532745,
   },
 
   {
     image:
-      "	https://menu.stanfordelaze.ng/uploads/thumb/d85e1f6f9525b614ec54b4167189011b.jfif",
-    dishName: "Tonci Water  ",
-    price: "1,000",
+      "	https://menu.stanfordelaze.ng/uploads/thumb/0b8eb7b929ef2a4147ff50ceb0283360.jpeg",
+    dishName: "Sierra   ",
+    price: "40,000",
     note: "",
-    id: 273643312312,
+    id: 75672384,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/fa7ea2380f2f8b86f32fa50232e484f3.jpeg",
+    dishName: "Csamigos Reposada   ",
+    price: "400,000",
+    note: "",
+    id: 745327475,
   },
 ];
 
@@ -2085,7 +1770,7 @@ export default function App() {
           />
 
           <Route
-            path="sparklingwine"
+            path="sparkilingwine"
             element={
               <SparklingWine
                 taco={sparkling}
