@@ -1074,6 +1074,125 @@ export default function App() {
           />
 
           <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
             path="cartLoop"
             element={
               <CartLoop

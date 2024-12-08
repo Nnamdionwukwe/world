@@ -97,6 +97,74 @@ export default function HomePages({
 
       <GinLoop taco={gin} handleSelectId={handleSelectId} />
 
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+
       <FooterHeader cart={cart} />
 
       <HomeFooter cart={cart} />
