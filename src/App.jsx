@@ -1616,7 +1616,7 @@ const beers = [
   },
 ];
 
-const energyDrnks = [
+const energyDrinks = [
   {
     image:
       "	https://menu.stanfordelaze.ng/uploads/thumb/4224ee6bda2f50c81dab2f3b12e40de0.jpg",
@@ -1747,7 +1747,7 @@ export default function App() {
   const [sidesExtra, setSidesExtra] = useState(sidesExtras);
   const [grillHouse, setGrillHouse] = useState(grillHouses);
   const [quickChinese, setQuickChinese] = useState(quickChineses);
-  const [paster, setPater] = useState(pasters);
+  const [paster, setPaster] = useState(pasters);
   const [starter, setStarter] = useState(starters);
   const [taco, setTaco] = useState(tacos);
   const [quickEat, setQuckEats] = useState(quickEats);
@@ -1769,7 +1769,7 @@ export default function App() {
   const [tequila, setTequila] = useState(tequilas);
   const [parfait, setParfaits] = useState(parfaits);
   const [beer, setBeer] = useState(beers);
-  const [energyDrnk, setEnergyDrnks] = useState(energyDrnks);
+  const [energyDrink, setEnergyDrinks] = useState(energyDrinks);
   const [shisha, setShisha] = useState(shishas);
   const [softDrink, setSoftDrink] = useState(softDrnks);
 
@@ -1900,6 +1900,21 @@ export default function App() {
                     brandy={brandy}
                     vodka={vodka}
                     gin={gin}
+                    tequila={tequila}
+                    softDrink={softDrink}
+                    shisha={shisha}
+                    champagne={champagne}
+                    sparkling={sparkling}
+                    redWine={redWine}
+                    whiteWine={whiteWine}
+                    classic={classic}
+                    smoothies={smoothies}
+                    mocktail={mocktail}
+                    special={special}
+                    milkshake={milkshake}
+                    parfait={parfait}
+                    beer={beer}
+                    energyDrink={energyDrink}
                     isLoading={isLoading}
                   />
                 )}
@@ -2177,7 +2192,7 @@ export default function App() {
             path="energydrink"
             element={
               <EnergyDrinks
-                taco={energyDrnk}
+                taco={energyDrink}
                 handleSelectId={handleSelectId}
                 cart={cart}
               />

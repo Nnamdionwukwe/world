@@ -34,6 +34,22 @@ export default function HomePages({
   brandy,
   vodka,
   gin,
+  tequila,
+  softDrink,
+  shisha,
+
+  champagne,
+  sparkling,
+  redWine,
+  whiteWine,
+  classic,
+  smoothies,
+  mocktail,
+  special,
+  milkshake,
+  parfait,
+  beer,
+  energyDrink,
 }) {
   return (
     <div>
@@ -99,63 +115,63 @@ export default function HomePages({
 
       <DishesHeader> Tequila</DishesHeader>
 
-      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+      <GinLoop taco={tequila} handleSelectId={handleSelectId} />
 
       <DishesHeader> Champagne</DishesHeader>
 
-      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+      <GinLoop taco={champagne} handleSelectId={handleSelectId} />
 
       <DishesHeader> Sparkling Wine</DishesHeader>
 
-      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+      <GinLoop taco={sparkling} handleSelectId={handleSelectId} />
 
       <DishesHeader> Red Wine</DishesHeader>
 
-      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+      <GinLoop taco={redWine} handleSelectId={handleSelectId} />
 
       <DishesHeader> White Wine</DishesHeader>
 
-      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+      <GinLoop taco={whiteWine} handleSelectId={handleSelectId} />
 
       <DishesHeader> Classic Cocktail</DishesHeader>
 
-      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+      <GinLoop taco={classic} handleSelectId={handleSelectId} />
 
       <DishesHeader> SMoothies</DishesHeader>
 
-      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+      <GinLoop taco={smoothies} handleSelectId={handleSelectId} />
 
       <DishesHeader> Mocktails</DishesHeader>
 
-      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+      <GinLoop taco={mocktail} handleSelectId={handleSelectId} />
 
       <DishesHeader> Special Juice</DishesHeader>
 
-      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+      <GinLoop taco={special} handleSelectId={handleSelectId} />
 
       <DishesHeader> Milkshakes </DishesHeader>
 
-      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+      <GinLoop taco={milkshake} handleSelectId={handleSelectId} />
 
       <DishesHeader> Parfait</DishesHeader>
 
-      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+      <GinLoop taco={parfait} handleSelectId={handleSelectId} />
 
       <DishesHeader> Beer</DishesHeader>
 
-      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+      <GinLoop taco={beer} handleSelectId={handleSelectId} />
 
       <DishesHeader> Energy Drinks</DishesHeader>
 
-      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+      <GinLoop taco={energyDrink} handleSelectId={handleSelectId} />
 
       <DishesHeader> Shisha</DishesHeader>
 
-      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+      <GinLoop taco={shisha} handleSelectId={handleSelectId} />
 
       <DishesHeader> Soft Drinks</DishesHeader>
 
-      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+      <GinLoop taco={softDrink} handleSelectId={handleSelectId} />
 
       <FooterHeader cart={cart} />
 
