@@ -58,6 +58,18 @@ export default function Button() {
             <button className={styles.list1}>Tacos </button>
           </NavLink>
         </li>
+
+        <li>
+          <NavLink to="/QuickEats">
+            <button className={styles.list1}>Quick Eats </button>
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/Whiskey">
+            <button className={styles.list1}>Whiskey </button>
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

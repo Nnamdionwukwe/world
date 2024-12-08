@@ -12,6 +12,8 @@ import QuickChineseLoop from "./QuickChineseLoop";
 import PasterLoop from "./PasterLoop";
 import StarterLoop from "./StarterLoop";
 import TacosLoop from "./TacosLoop";
+import QuickEatsLoop from "./QuickEatsLoop";
+import WhiskeyLoop from "./WhiskeyLoop";
 
 export default function HomePages({
   salad,
@@ -24,6 +26,8 @@ export default function HomePages({
   paster,
   starter,
   taco,
+  quickEat,
+  whiskey,
 }) {
   return (
     <div>
@@ -66,6 +70,14 @@ export default function HomePages({
       <DishesHeader> Tacos</DishesHeader>
 
       <TacosLoop taco={taco} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Quick Eats</DishesHeader>
+
+      <QuickEatsLoop taco={quickEat} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Whiskey</DishesHeader>
+
+      <WhiskeyLoop taco={whiskey} handleSelectId={handleSelectId} />
 
       <FooterHeader cart={cart} />
 

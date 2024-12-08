@@ -12,6 +12,8 @@ import QuickChinese from "./Components/QuickChinese";
 import Paster from "./Components/Paster";
 import Starter from "./Components/Starter";
 import Tacos from "./Components/Tacos";
+import QuickEats from "./Components/QuickEats";
+import Whiskey from "./Components/Whiskey";
 
 import SelectedDishMenu from "./Components/SelectedDishMenu";
 import CartLoop from "./Components/CartLoop";
@@ -445,6 +447,109 @@ const tacos = [
   },
 ];
 
+const quickEats = [
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/d443aecb2234d0dd5e79e4bd992304a0.jfif",
+    dishName: "Chicken And Chips",
+    price: "10,000",
+    note: "",
+    id: 273002435,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/a4f39b4d4f6c47800898edb113eb9d58.jfif",
+    dishName: "Turkey ANd Chips",
+    price: "11,000",
+    note: "",
+    id: 273641432,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/9d52f46e898efe36355d9a0aa3154b36.jfif",
+    dishName: "Shrimp Tacos  ",
+    price: "11,000",
+    note: "",
+    id: 273052317,
+  },
+];
+
+const whiskeys = [
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/269ebceb078aa63eb0a8dcce787c5c76.jpeg",
+    dishName: "The Observatory ",
+    price: "60,000",
+    note: "Served Chilled",
+    id: 27300936,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/91b55b9ce57c3c93eda92ee6b9812729.jpeg",
+    dishName: "Jagermeister  ",
+    price: "50,000",
+    note: "",
+    id: 2736431432,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/286fd8f4796e7d6a0ef504a4201e498c.png",
+    dishName: "Grants   ",
+    price: "40,000",
+    note: "",
+    id: 273642317,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/9eb52ce97717614b6278a0d182ef2258.png",
+    dishName: "The Balvine ",
+    price: "100,000",
+    note: " ",
+    id: 273009986,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/eb03ed1114085f86540ee3a7d3f45592.webp",
+    dishName: "Macallan Rare Cask  ",
+    price: "700,000",
+    note: "",
+    id: 27364332,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/e6ff356e09e3f90afdab95c54e6350f7.png",
+    dishName: "Glenfiddlch 23yrs   ",
+    price: "700,000",
+    note: "Served Chilled",
+    id: 2736417,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/c58893c105f8c1771017e17f97e92966.png",
+    dishName: "Blue Label   ",
+    price: "500,000",
+    note: "Served Chilled",
+    id: 2736433092,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/1322ee3d2faeca00a58233759783be44.png",
+    dishName: "Glenfiddlch 21yrs   ",
+    price: "550,000",
+    note: "Served Chilled",
+    id: 2736423,
+  },
+];
+
 export default function App() {
   const [salad, setSalad] = useState(salads);
   const [localDish, setLocalDish] = useState(localDishes);
@@ -454,6 +559,9 @@ export default function App() {
   const [paster, setPater] = useState(pasters);
   const [starter, setStarter] = useState(starters);
   const [taco, setTaco] = useState(tacos);
+  const [quickEat, setQuckEats] = useState(quickEats);
+  const [whiskey, setWhiskey] = useState(whiskeys);
+
   const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState("");
   const [selectedId, setSelectedId] = useState(null);
@@ -576,6 +684,8 @@ export default function App() {
                     paster={paster}
                     starter={starter}
                     taco={taco}
+                    quickEat={quickEat}
+                    whiskey={whiskey}
                     isLoading={isLoading}
                   />
                 )}
@@ -682,6 +792,28 @@ export default function App() {
             path="tacos"
             element={
               <Tacos taco={taco} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="quickeats"
+            element={
+              <QuickEats
+                taco={quickEat}
+                handleSelectId={handleSelectId}
+                cart={cart}
+              />
+            }
+          />
+
+          <Route
+            path="whiskey"
+            element={
+              <Whiskey
+                taco={whiskey}
+                handleSelectId={handleSelectId}
+                cart={cart}
+              />
             }
           />
 
