@@ -11,7 +11,7 @@ export default function Smoothies({ taco, handleSelectId, cart }) {
     <div>
       <FullPage />
 
-      <DishesHeader>Gin </DishesHeader>
+      <DishesHeader>Smoothies </DishesHeader>
 
       <TequileLoop cart={cart} handleSelectId={handleSelectId} taco={taco} />
 

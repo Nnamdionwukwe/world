@@ -11,7 +11,7 @@ export default function SoftDrinks({ taco, handleSelectId, cart }) {
     <div>
       <FullPage />
 
-      <DishesHeader>Gin </DishesHeader>
+      <DishesHeader>Soft Drinks </DishesHeader>
 
       <TequileLoop cart={cart} handleSelectId={handleSelectId} taco={taco} />
 

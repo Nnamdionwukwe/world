@@ -11,7 +11,7 @@ export default function Special({ taco, handleSelectId, cart }) {
     <div>
       <FullPage />
 
-      <DishesHeader>Gin </DishesHeader>
+      <DishesHeader>Special Juice </DishesHeader>
 
       <TequileLoop cart={cart} handleSelectId={handleSelectId} taco={taco} />
 

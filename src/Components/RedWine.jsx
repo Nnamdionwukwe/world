@@ -11,7 +11,7 @@ export default function RedWine({ taco, handleSelectId, cart }) {
     <div>
       <FullPage />
 
-      <DishesHeader>Gin </DishesHeader>
+      <DishesHeader>Red Wine </DishesHeader>
 
       <TequileLoop cart={cart} handleSelectId={handleSelectId} taco={taco} />
 

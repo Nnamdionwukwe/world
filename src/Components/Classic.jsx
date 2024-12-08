@@ -11,7 +11,7 @@ export default function Classic({ taco, handleSelectId, cart }) {
     <div>
       <FullPage />
 
-      <DishesHeader>Gin </DishesHeader>
+      <DishesHeader>Classic Cocktail </DishesHeader>
 
       <TequileLoop cart={cart} handleSelectId={handleSelectId} taco={taco} />
 

@@ -11,7 +11,7 @@ export default function Whiskey({ taco, handleSelectId, cart }) {
     <div>
       <FullPage />
 
-      <DishesHeader>Gin </DishesHeader>
+      <DishesHeader>Whiskey </DishesHeader>
 
       <QuickEatsLoop cart={cart} handleSelectId={handleSelectId} taco={taco} />
 
