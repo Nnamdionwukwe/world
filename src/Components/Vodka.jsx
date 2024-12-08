@@ -1,19 +1,19 @@
 /* eslint-disable react/prop-types */
 import FullPage from "./FullPage";
-import QuickEatsLoop from "./QuickEatsLoop";
 import FooterHeader from "./FotterHeader";
 import HomeFooter from "./HomeFooter";
 
 import DishesHeader from "./DishesHeader";
+import VodkaLoop from "./VodkaLoop";
 
-export default function Whiskey({ taco, handleSelectId, cart }) {
+export default function Vodka({ taco, handleSelectId, cart }) {
   return (
     <div>
       <FullPage />
 
-      <DishesHeader>Gin </DishesHeader>
+      <DishesHeader>Vodka </DishesHeader>
 
-      <QuickEatsLoop cart={cart} handleSelectId={handleSelectId} taco={taco} />
+      <VodkaLoop cart={cart} handleSelectId={handleSelectId} taco={taco} />
 
       <FooterHeader cart={cart} />
 

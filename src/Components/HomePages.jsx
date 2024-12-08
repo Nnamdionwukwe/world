@@ -14,6 +14,9 @@ import StarterLoop from "./StarterLoop";
 import TacosLoop from "./TacosLoop";
 import QuickEatsLoop from "./QuickEatsLoop";
 import WhiskeyLoop from "./WhiskeyLoop";
+import GinLoop from "./GinLoop";
+import VodkaLoop from "./VodkaLoop";
+import BrandyLoop from "./BrandyLoop";
 
 export default function HomePages({
   salad,
@@ -28,6 +31,9 @@ export default function HomePages({
   taco,
   quickEat,
   whiskey,
+  brandy,
+  vodka,
+  gin,
 }) {
   return (
     <div>
@@ -78,6 +84,18 @@ export default function HomePages({
       <DishesHeader> Whiskey</DishesHeader>
 
       <WhiskeyLoop taco={whiskey} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Brandy</DishesHeader>
+
+      <BrandyLoop taco={brandy} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Vodka</DishesHeader>
+
+      <VodkaLoop taco={vodka} handleSelectId={handleSelectId} />
+
+      <DishesHeader> Gin</DishesHeader>
+
+      <GinLoop taco={gin} handleSelectId={handleSelectId} />
 
       <FooterHeader cart={cart} />
 

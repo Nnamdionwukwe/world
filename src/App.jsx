@@ -14,6 +14,9 @@ import Starter from "./Components/Starter";
 import Tacos from "./Components/Tacos";
 import QuickEats from "./Components/QuickEats";
 import Whiskey from "./Components/Whiskey";
+import Brandy from "./Components/Brandy";
+import Vodka from "./Components/Vodka";
+import Gin from "./Components/Whiskey";
 
 import SelectedDishMenu from "./Components/SelectedDishMenu";
 import CartLoop from "./Components/CartLoop";
@@ -550,6 +553,228 @@ const whiskeys = [
   },
 ];
 
+const brandys = [
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/269ebceb078aa63eb0a8dcce787c5c76.jpeg",
+    dishName: "The Observatory ",
+    price: "60,000",
+    note: "Served Chilled",
+    id: 27300936,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/91b55b9ce57c3c93eda92ee6b9812729.jpeg",
+    dishName: "Jagermeister  ",
+    price: "50,000",
+    note: "",
+    id: 2736431432,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/286fd8f4796e7d6a0ef504a4201e498c.png",
+    dishName: "Grants   ",
+    price: "40,000",
+    note: "",
+    id: 273642317,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/9eb52ce97717614b6278a0d182ef2258.png",
+    dishName: "The Balvine ",
+    price: "100,000",
+    note: " ",
+    id: 273009986,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/eb03ed1114085f86540ee3a7d3f45592.webp",
+    dishName: "Macallan Rare Cask  ",
+    price: "700,000",
+    note: "",
+    id: 27364332,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/e6ff356e09e3f90afdab95c54e6350f7.png",
+    dishName: "Glenfiddlch 23yrs   ",
+    price: "700,000",
+    note: "Served Chilled",
+    id: 2736417,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/c58893c105f8c1771017e17f97e92966.png",
+    dishName: "Blue Label   ",
+    price: "500,000",
+    note: "Served Chilled",
+    id: 2736433092,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/1322ee3d2faeca00a58233759783be44.png",
+    dishName: "Glenfiddlch 21yrs   ",
+    price: "550,000",
+    note: "Served Chilled",
+    id: 2736423,
+  },
+];
+
+const vodkas = [
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/269ebceb078aa63eb0a8dcce787c5c76.jpeg",
+    dishName: "The Observatory ",
+    price: "60,000",
+    note: "Served Chilled",
+    id: 27300936,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/91b55b9ce57c3c93eda92ee6b9812729.jpeg",
+    dishName: "Jagermeister  ",
+    price: "50,000",
+    note: "",
+    id: 2736431432,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/286fd8f4796e7d6a0ef504a4201e498c.png",
+    dishName: "Grants   ",
+    price: "40,000",
+    note: "",
+    id: 273642317,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/9eb52ce97717614b6278a0d182ef2258.png",
+    dishName: "The Balvine ",
+    price: "100,000",
+    note: " ",
+    id: 273009986,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/eb03ed1114085f86540ee3a7d3f45592.webp",
+    dishName: "Macallan Rare Cask  ",
+    price: "700,000",
+    note: "",
+    id: 27364332,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/e6ff356e09e3f90afdab95c54e6350f7.png",
+    dishName: "Glenfiddlch 23yrs   ",
+    price: "700,000",
+    note: "Served Chilled",
+    id: 2736417,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/c58893c105f8c1771017e17f97e92966.png",
+    dishName: "Blue Label   ",
+    price: "500,000",
+    note: "Served Chilled",
+    id: 2736433092,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/1322ee3d2faeca00a58233759783be44.png",
+    dishName: "Glenfiddlch 21yrs   ",
+    price: "550,000",
+    note: "Served Chilled",
+    id: 2736423,
+  },
+];
+
+const gins = [
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/269ebceb078aa63eb0a8dcce787c5c76.jpeg",
+    dishName: "The Observatory ",
+    price: "60,000",
+    note: "Served Chilled",
+    id: 27300936,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/91b55b9ce57c3c93eda92ee6b9812729.jpeg",
+    dishName: "Jagermeister  ",
+    price: "50,000",
+    note: "",
+    id: 2736431432,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/286fd8f4796e7d6a0ef504a4201e498c.png",
+    dishName: "Grants   ",
+    price: "40,000",
+    note: "",
+    id: 273642317,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/9eb52ce97717614b6278a0d182ef2258.png",
+    dishName: "The Balvine ",
+    price: "100,000",
+    note: " ",
+    id: 273009986,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/eb03ed1114085f86540ee3a7d3f45592.webp",
+    dishName: "Macallan Rare Cask  ",
+    price: "700,000",
+    note: "",
+    id: 27364332,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/e6ff356e09e3f90afdab95c54e6350f7.png",
+    dishName: "Glenfiddlch 23yrs   ",
+    price: "700,000",
+    note: "Served Chilled",
+    id: 2736417,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/c58893c105f8c1771017e17f97e92966.png",
+    dishName: "Blue Label   ",
+    price: "500,000",
+    note: "Served Chilled",
+    id: 2736433092,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/1322ee3d2faeca00a58233759783be44.png",
+    dishName: "Glenfiddlch 21yrs   ",
+    price: "550,000",
+    note: "Served Chilled",
+    id: 2736423,
+  },
+];
+
 export default function App() {
   const [salad, setSalad] = useState(salads);
   const [localDish, setLocalDish] = useState(localDishes);
@@ -561,6 +786,9 @@ export default function App() {
   const [taco, setTaco] = useState(tacos);
   const [quickEat, setQuckEats] = useState(quickEats);
   const [whiskey, setWhiskey] = useState(whiskeys);
+  const [brandy, setBrandy] = useState(brandys);
+  const [vodka, stVodka] = useState(vodkas);
+  const [gin, setGin] = useState(gins);
 
   const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState("");
@@ -686,6 +914,9 @@ export default function App() {
                     taco={taco}
                     quickEat={quickEat}
                     whiskey={whiskey}
+                    brandy={brandy}
+                    vodka={vodka}
+                    gin={gin}
                     isLoading={isLoading}
                   />
                 )}
@@ -814,6 +1045,31 @@ export default function App() {
                 handleSelectId={handleSelectId}
                 cart={cart}
               />
+            }
+          />
+
+          <Route
+            path="brandy"
+            element={
+              <Brandy
+                taco={brandy}
+                handleSelectId={handleSelectId}
+                cart={cart}
+              />
+            }
+          />
+
+          <Route
+            path="vodka"
+            element={
+              <Vodka taco={vodka} handleSelectId={handleSelectId} cart={cart} />
+            }
+          />
+
+          <Route
+            path="gin"
+            element={
+              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
             }
           />
 
