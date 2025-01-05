@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import styles from "./App.module.css";
 import Salads from "./Components/Salads";
@@ -1418,8 +1418,8 @@ const tequilas = [
 ];
 
 export default function App() {
-  const [salad, setSalad] = useState(salads);
-  const [localDish, setLocalDish] = useState(localDishes);
+  const [salad, setSalad] = useState([]);
+  const [localDish, setLocalDish] = useState([]);
   const [sidesExtra, setSidesExtra] = useState(sidesExtras);
   const [grillHouse, setGrillHouse] = useState(grillHouses);
   const [quickChinese, setQuickChinese] = useState(quickChineses);
@@ -1457,7 +1457,7 @@ export default function App() {
   const [qty, setQty] = useState(1);
 
   //console.log(sidesExtra);
-  /*
+
   const BASE_URL = "http://localhost:5000";
 
   useEffect(function () {
@@ -1478,8 +1478,6 @@ export default function App() {
         setIsLoading(false);
       }
     }
-
-
 
     fetchSalads();
   }, []);
@@ -1505,11 +1503,12 @@ export default function App() {
 
     fetchSalads();
   }, []);
-*/
 
-  function handleAddToCart(dish) {
+  function handleAddToCart(dish, id) {
     setCart((cart) => [...cart, dish]);
-
+    setCart((cart) =>
+      cart.map(cart.id === id ? { ...cart, qyt: qty + 1 } : cart)
+    );
     setSelectedId(null);
   }
 

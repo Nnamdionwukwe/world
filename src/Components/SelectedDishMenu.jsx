@@ -5,15 +5,14 @@ export default function SelectedDishMenu({
   selectedId,
   handleDishClose,
   handleAddToCart,
-  qty,
 }) {
   const { dishName, price, image, note, id } = selectedId;
   console.log(selectedId);
 
   function handleAddDish(e) {
     e.preventDefault();
-    const newDish = { dishName, price, image, id, qty };
-    handleAddToCart(newDish);
+    const newDish = { dishName, price, image, id, qty: 0 };
+    handleAddToCart(newDish, id);
     console.log(newDish);
   }
 
