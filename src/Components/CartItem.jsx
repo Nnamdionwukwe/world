@@ -11,7 +11,7 @@ export default function CartItem({
   // const { id } = selectedId;
   console.log(cart);
 
-  const total = Number(price) * qty;
+  const total = price + qty;
 
   return (
     <div>

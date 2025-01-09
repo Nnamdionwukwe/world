@@ -1537,9 +1537,6 @@ export default function App() {
 
     setCart((cart) => [...cart, dish]);
 
-    console.log(dish.id);
-    console.log(id);
-    console.log(cart);
     setSelectedId(null);
   }
 
