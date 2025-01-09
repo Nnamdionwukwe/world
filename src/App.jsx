@@ -1477,10 +1477,13 @@ export default function App() {
   // const [error, setError] = useState("");
   const [selectedId, setSelectedId] = useState(null);
 
-  const [cart, setCart] = useState(function () {
-    const storedValue = localStorage.getItem("cart");
-    return JSON.parse(storedValue);
-  });
+  const [cart, setCart] = useState(
+    //   function () {
+    //   const storedValue = localStorage?.getItem("cart");
+    //   return JSON.parse(storedValue);
+    // }
+    []
+  );
 
   //console.log(sidesExtra);
 
@@ -1580,12 +1583,12 @@ export default function App() {
     setSelectedId(null);
   }
 
-  useEffect(
-    function () {
-      localStorage.setItem("cart", JSON.stringify(cart));
-    },
-    [cart]
-  );
+  // useEffect(
+  //   function () {
+  //     localStorage.setItem("cart", JSON?.stringify(cart));
+  //   },
+  //   [cart]
+  // );
 
   return (
     <div className={styles.mainDiv}>
