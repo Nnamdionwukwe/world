@@ -9,7 +9,7 @@ export default function CartItem({
 }) {
   const { dishName, price, image, id, qty } = cart;
   // const { id } = selectedId;
-  console.log(cart);
+  // console.log(cart);
 
   const total = price + qty;
 
