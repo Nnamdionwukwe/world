@@ -8,6 +8,12 @@
   padding-top: -10px;
 }
 
+.plusMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .plusDiv {
   justify-items: center;
   align-items: center;

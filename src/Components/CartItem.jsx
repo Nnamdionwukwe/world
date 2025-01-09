@@ -18,12 +18,14 @@ export default function CartItem({
       <div className={styles.main}>
         <div className={styles.mainImgDiv}>
           <div className={styles.coverDiv}>
-            <div className={styles.plusDiv}>
-              <h5 onClick={() => handleIncreaseQuantity(cart.id)}>+</h5>
+            <div className={styles.plusMain}>
+              <div className={styles.plusDiv}>
+                <h5 onClick={() => handleIncreaseQuantity(cart.id)}>+</h5>
 
-              <p>{qty}</p>
+                <p>{qty}</p>
 
-              <h4 onClick={() => handleDecreaseQuantity(cart.id)}>&minus;</h4>
+                <h4 onClick={() => handleDecreaseQuantity(cart.id)}>&minus;</h4>
+              </div>
             </div>
 
             <div className={styles.imgDiv}>
