@@ -14,7 +14,7 @@ export default function CartLoop({
 }) {
   return (
     <>
-      {cart.length === 0 ? (
+      {cart?.length === 0 ? (
         <>
           <CartHeader />
 
@@ -25,7 +25,7 @@ export default function CartLoop({
           <CartHeader />
 
           <div className={styles.item}>
-            {cart.map((cart) => (
+            {cart?.map((cart) => (
               <>
                 <div>
                   <CartItem

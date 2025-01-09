@@ -136,7 +136,7 @@ export default function HomeFooter({ cart }) {
 
       <div className={styles.floatCart}>
         <NavLink to="/CartLoop">
-          <div className={styles.zero}>{<p>{cart.length}</p>}</div>
+          <div className={styles.zero}>{<p>{cart?.length}</p>}</div>
 
           <i className="fa fa-cart-plus" aria-hidden="true"></i>
         </NavLink>

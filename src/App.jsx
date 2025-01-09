@@ -1476,7 +1476,11 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState("");
   const [selectedId, setSelectedId] = useState(null);
-  const [cart, setCart] = useState([]);
+
+  const [cart, setCart] = useState(function () {
+    const storedValue = localStorage.getItem("cart");
+    return JSON.parse(storedValue);
+  });
 
   //console.log(sidesExtra);
 
@@ -1528,14 +1532,16 @@ export default function App() {
 
   /*Adds To Cart*/
   function handleAddToCart(dish) {
-    if (cart?.id === dish.id)
-      setCart((cart) =>
-        cart.map((cart) =>
-          cart?.id === dish.id ? { ...cart, qyt: (cart.qty += 1) } : cart
-        )
-      );
+    // if (cart?.id === dish.id)
+    //   setCart((cart) =>
+    //     cart?.map((cart) =>
+    //       cart?.id === dish.id ? { ...cart, qyt: (cart.qty += 1) } : cart
+    //     )
+    //   );
 
     setCart((cart) => [...cart, dish]);
+
+    // localStorage.setItem("cart", JSON.stringify([...cart, dish]));
 
     setSelectedId(null);
   }
@@ -1543,7 +1549,7 @@ export default function App() {
   //Update To Increase Cart Quantity
   function handleIncreaseQuantity(id) {
     setCart((cart) =>
-      cart.map((cart) =>
+      cart?.map((cart) =>
         cart?.id === id ? { ...cart, qyt: (cart.qty += 1) } : cart
       )
     );
@@ -1552,7 +1558,7 @@ export default function App() {
   //Update To Decrease Cart Quantity
   function handleDecreaseQuantity(id) {
     setCart((cart) =>
-      cart.map((cart) =>
+      cart?.map((cart) =>
         cart?.id === id ? { ...cart, qyt: (cart.qty -= 1) } : cart
       )
     );
@@ -1566,13 +1572,20 @@ export default function App() {
 
   //Delete Function
   function handleDeleteItem(id) {
-    setCart((cart) => cart.filter((cart) => cart.id !== id));
+    setCart((cart) => cart?.filter((cart) => cart.id !== id));
   }
 
   //Close Details
   function handleDishClose() {
     setSelectedId(null);
   }
+
+  useEffect(
+    function () {
+      localStorage.setItem("cart", JSON.stringify(cart));
+    },
+    [cart]
+  );
 
   return (
     <div className={styles.mainDiv}>

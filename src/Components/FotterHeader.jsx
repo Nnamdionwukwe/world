@@ -156,8 +156,8 @@ export default function FooterHeader({ cart }) {
 
         <div className={styles.notifyDivSub}>
           <NavLink to="/cartloop">
-            {cart.length > 0 && (
-              <div className={styles.zero}>{cart.length}</div>
+            {cart?.length > 0 && (
+              <div className={styles.zero}>{cart?.length}</div>
             )}
             <i className="fa fa-cart-plus" aria-hidden="true"></i>
           </NavLink>
