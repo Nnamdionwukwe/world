@@ -1528,13 +1528,14 @@ export default function App() {
 
   /*Adds To Cart*/
   function handleAddToCart(dish, id) {
-    cart?.id !== dish.id
-      ? setCart((cart) =>
-          cart.map((cart) =>
-            cart?.id === dish.id ? { ...cart, qyt: (cart.qty += 1) } : cart
-          )
+    if (cart?.id === dish.id)
+      setCart((cart) =>
+        cart.map((cart) =>
+          cart?.id === dish.id ? { ...cart, qyt: (cart.qty += 1) } : cart
         )
-      : setCart((cart) => [...cart, dish]);
+      );
+
+    setCart((cart) => [...cart, dish]);
 
     console.log(dish.id);
     console.log(id);
