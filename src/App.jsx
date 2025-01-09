@@ -1476,7 +1476,7 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState("");
   const [selectedId, setSelectedId] = useState(null);
-  const [cart, setCart] = useState(carts);
+  const [cart, setCart] = useState([]);
 
   //console.log(sidesExtra);
 
@@ -1527,7 +1527,7 @@ export default function App() {
   // }, []);
 
   /*Adds To Cart*/
-  function handleAddToCart(dish, id) {
+  function handleAddToCart(dish) {
     if (cart?.id === dish.id)
       setCart((cart) =>
         cart.map((cart) =>
