@@ -56,7 +56,6 @@ const salads = [
     price: "10,000",
     note: "Tossed",
     id: crypto.randomUUID(),
-    qty: 1,
   },
 
   {
@@ -65,7 +64,6 @@ const salads = [
     dishName: "Turkey and Egg Salad",
     price: "12,000",
     id: crypto.randomUUID(),
-    qty: 1,
   },
 
   {
@@ -74,7 +72,6 @@ const salads = [
     dishName: "Vegan Delight",
     price: "9,000",
     id: crypto.randomUUID(),
-    qty: 1,
   },
 ];
 
@@ -1423,21 +1420,22 @@ const tequilas = [
 const carts = [
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/3efc548a7601ac563d18cd3af549f31e.jpeg",
-    dishName: "Chefs Grilled Chicken Salad",
-    price: "10,000",
-    note: "Tossed",
-    id: crypto.randomUUID(),
+      "	https://menu.stanfordelaze.ng/uploads/thumb/d5d5afc98d9900c9ac2176001574975c.jfif",
+    dishName: "Rbbertson  ",
+    price: "30,000",
+    note: " ",
     qty: 2,
+    id: crypto.randomUUID(),
   },
 
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/e3737de2f87a40b97f3eca0ff12e10c7.jpeg",
-    dishName: "Turkey and Egg Salad",
-    price: "12,000",
-    id: crypto.randomUUID(),
+      "	https://menu.stanfordelaze.ng/uploads/thumb/2433f5972ed0923399b5b9c31698f7f4.jfif",
+    dishName: "Escudo Rojo  ",
+    price: "40,000",
+    note: " ",
     qty: 1,
+    id: crypto.randomUUID(),
   },
 ];
 
@@ -1526,52 +1524,37 @@ export default function App() {
   //   fetchSalads();
   // }, []);
 
-  /*Adds To Cart*/
   function handleAddToCart(dish, id) {
-    cart?.id !== dish.id
-      ? setCart((cart) =>
-          cart.map((cart) =>
-            cart?.id === dish.id ? { ...cart, qyt: (cart.qty += 1) } : cart
-          )
+    setCart((cart) => [...cart, dish]);
+    if (cart.id === id)
+      setCart((cart) =>
+        cart.map((cart) =>
+          cart.id === id ? { ...cart, qyt: cart.qty + 1 } : cart
         )
-      : setCart((cart) => [...cart, dish]);
+      );
 
-    console.log(dish.id);
-    console.log(id);
-    console.log(cart);
     setSelectedId(null);
   }
 
-  //Update To Increase Cart Quantity
-  function handleIncreaseQuantity(id) {
+  // console.log(cart);
+
+  function handleSelectedId(id) {
     setCart((cart) =>
       cart.map((cart) =>
-        cart?.id === id ? { ...cart, qyt: (cart.qty += 1) } : cart
+        cart.id === id ? { ...cart, qyt: cart.qty + 1 } : cart
       )
     );
   }
 
-  //Update To Decrease Cart Quantity
-  function handleDecreaseQuantity(id) {
-    setCart((cart) =>
-      cart.map((cart) =>
-        cart?.id === id ? { ...cart, qyt: (cart.qty -= 1) } : cart
-      )
-    );
-  }
-
-  //Food Details Function
   function handleSelectId(dish) {
     // setSelectedId(id);
     setSelectedId((selected) => (selected?.id === dish?.id ? null : dish));
   }
 
-  //Delete Function
   function handleDeleteItem(id) {
     setCart((cart) => cart.filter((cart) => cart.id !== id));
   }
 
-  //Close Details
   function handleDishClose() {
     setSelectedId(null);
   }
@@ -1587,8 +1570,7 @@ export default function App() {
               handleDishClose={handleDishClose}
               selectedId={selectedId}
               handleAddToCart={handleAddToCart}
-              cart={cart}
-              setCart={setCart}
+              handleSelectedId={handleSelectedId}
             />
           )}
         </div>
@@ -1966,9 +1948,9 @@ export default function App() {
               <CartLoop
                 cart={cart}
                 handleDeleteItem={handleDeleteItem}
+                handleSelectedId={handleSelectedId}
+                selectedId={selectedId}
                 isLoading={isLoading}
-                handleIncreaseQuantity={handleIncreaseQuantity}
-                handleDecreaseQuantity={handleDecreaseQuantity}
               />
             }
           />
@@ -2000,7 +1982,7 @@ export default function App() {
 
           <Route path="*" element={<PageNotFound />} />
         </Routes>
-        ; ;
+        ;
       </BrowserRouter>
     </div>
   );

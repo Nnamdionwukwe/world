@@ -1,8 +1,15 @@
 /* eslint-disable react/prop-types */
 import styles from "./CartItem.module.css";
 
-export default function CartItem({ cart, handleDeleteItem, handleAddQty }) {
+export default function CartItem({
+  cart,
+  handleDeleteItem,
+  handleDecreaseQuantity,
+  handleIncreaseQuantity,
+}) {
   const { dishName, price, image, id, qty } = cart;
+  // const { id } = selectedId;
+  console.log(cart);
 
   const total = Number(price) * qty;
 
@@ -12,11 +19,11 @@ export default function CartItem({ cart, handleDeleteItem, handleAddQty }) {
         <div className={styles.mainImgDiv}>
           <div className={styles.coverDiv}>
             <div className={styles.plusDiv}>
-              <h5 onClick={() => handleAddQty(id)}>+</h5>
+              <h5 onClick={() => handleIncreaseQuantity(cart.id)}>+</h5>
 
               <p>{qty}</p>
 
-              <h4>&minus;</h4>
+              <h4 onClick={() => handleDecreaseQuantity(cart.id)}>&minus;</h4>
             </div>
 
             <div className={styles.imgDiv}>

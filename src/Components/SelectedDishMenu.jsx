@@ -5,20 +5,26 @@ export default function SelectedDishMenu({
   selectedId,
   handleDishClose,
   handleAddToCart,
+  cart,
+  setCart,
 }) {
   const { dishName, price, image, note, id } = selectedId;
-  console.log(selectedId);
 
   function handleAddDish(e) {
     e.preventDefault();
-    const newDish = { dishName, price, image, id, qty: 0 };
+
+    const newDish = { dishName, price, image, id, qty: 1 };
     handleAddToCart(newDish, id);
-    console.log(newDish);
+
+    // console.log(id);
   }
 
   return (
     <div className={styles.selectMain1}>
-      <form onSubmit={handleAddDish} className={styles.menu}>
+      <form
+        onSubmit={() => handleAddDish(selectedId.id)}
+        className={styles.menu}
+      >
         <ul className={styles.menuHeader}>
           <div className={styles.menuLi}>
             <h3>{dishName}</h3>

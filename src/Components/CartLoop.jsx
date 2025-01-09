@@ -5,7 +5,13 @@ import CartItem from "./CartItem";
 import CartHeader from "./CartHeader";
 import EmptyCart from "./EmptyCart";
 
-export default function CartLoop({ cart, handleDeleteItem, handleAddQty }) {
+export default function CartLoop({
+  cart,
+  handleDeleteItem,
+  handleIncreaseQuantity,
+  handleDecreaseQuantity,
+  selectedId,
+}) {
   return (
     <>
       {cart.length === 0 ? (
@@ -26,7 +32,9 @@ export default function CartLoop({ cart, handleDeleteItem, handleAddQty }) {
                     cart={cart}
                     key={cart.id}
                     handleDeleteItem={handleDeleteItem}
-                    handleAddQty={handleAddQty}
+                    handleIncreaseQuantity={handleIncreaseQuantity}
+                    handleDecreaseQuantity={handleDecreaseQuantity}
+                    selectedId={selectedId}
                   />
                 </div>
 
