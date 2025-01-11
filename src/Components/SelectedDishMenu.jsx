@@ -5,8 +5,6 @@ export default function SelectedDishMenu({
   selectedId,
   handleDishClose,
   handleAddToCart,
-  cart,
-  setCart,
 }) {
   const { dishName, price, image, note, id } = selectedId;
 

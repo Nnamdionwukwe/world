@@ -53,7 +53,7 @@ const salads = [
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/3efc548a7601ac563d18cd3af549f31e.jpeg",
     dishName: "Chefs Grilled Chicken Salad",
-    price: "10,000",
+    price: 10,
     note: "Tossed",
     id: crypto.randomUUID(),
     qty: 1,
@@ -63,7 +63,7 @@ const salads = [
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/e3737de2f87a40b97f3eca0ff12e10c7.jpeg",
     dishName: "Turkey and Egg Salad",
-    price: "12,000",
+    price: 12,
     id: crypto.randomUUID(),
     qty: 1,
   },
@@ -72,7 +72,7 @@ const salads = [
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/36e3e2939aba6b83f53281cff327728e.jpeg",
     dishName: "Vegan Delight",
-    price: "9,000",
+    price: 9,
     id: crypto.randomUUID(),
     qty: 1,
   },
@@ -84,7 +84,7 @@ const localDishes = [
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/3d380af34d37be5a7bbe18102f02140b.jpg",
     dishName: " Egusi Soup",
-    price: "8,000",
+    price: 8,
     note: "Egusi soup loaded with crayfish, Beef, Dry fish,",
   },
   {
@@ -92,7 +92,7 @@ const localDishes = [
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/8d0fefdb487fa8c1daebae62c4d43c54.jfif",
     dishName: "Special Vegetable Soup",
-    price: "8,500",
+    price: "8,5",
     note: "Vegetable soup loaded with crayfish, Beef, Dry fish,",
   },
 
@@ -1425,7 +1425,7 @@ const carts = [
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/3efc548a7601ac563d18cd3af549f31e.jpeg",
     dishName: "Chefs Grilled Chicken Salad",
-    price: "10,000",
+    price: 10,
     note: "Tossed",
     id: crypto.randomUUID(),
     qty: 2,
@@ -1435,7 +1435,8 @@ const carts = [
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/e3737de2f87a40b97f3eca0ff12e10c7.jpeg",
     dishName: "Turkey and Egg Salad",
-    price: "12,000",
+    price: 12,
+    pri: 5,
     id: crypto.randomUUID(),
     qty: 1,
   },
@@ -1482,8 +1483,11 @@ export default function App() {
     //   const storedValue = localStorage?.getItem("cart");
     //   return JSON.parse(storedValue);
     // }
-    []
+    carts
   );
+
+  const [appQty, setAppQty] = useState(1);
+  console.log(appQty);
 
   //console.log(sidesExtra);
 
@@ -1543,6 +1547,7 @@ export default function App() {
     //   );
 
     setCart((cart) => [...cart, dish]);
+    setAppQty();
 
     // localStorage.setItem("cart", JSON.stringify([...cart, dish]));
 
@@ -1550,22 +1555,6 @@ export default function App() {
   }
 
   //Update To Increase Cart Quantity
-  function handleIncreaseQuantity(id) {
-    setCart((cart) =>
-      cart?.map((cart) =>
-        cart?.id === id ? { ...cart, qyt: (cart.qty += 1) } : cart
-      )
-    );
-  }
-
-  //Update To Decrease Cart Quantity
-  function handleDecreaseQuantity(id) {
-    setCart((cart) =>
-      cart?.map((cart) =>
-        cart?.id === id ? { ...cart, qyt: (cart.qty -= 1) } : cart
-      )
-    );
-  }
 
   //Food Details Function
   function handleSelectId(dish) {
@@ -1981,8 +1970,7 @@ export default function App() {
                 cart={cart}
                 handleDeleteItem={handleDeleteItem}
                 isLoading={isLoading}
-                handleIncreaseQuantity={handleIncreaseQuantity}
-                handleDecreaseQuantity={handleDecreaseQuantity}
+                setAppQty={setAppQty}
               />
             }
           />
