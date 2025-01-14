@@ -21,7 +21,7 @@ export default function Contacts({ cart }) {
           </div>
         </div>
 
-        <div>
+        <div className={styles.phoneDivMain}>
           <div className={styles.phoneDiv}>
             <div>
               <i className="fa-solid fa-phone"></i>

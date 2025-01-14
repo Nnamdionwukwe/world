@@ -131,13 +131,21 @@ export default function HomeFooter({ cart }) {
 
       <footer className={styles.footerDiv2}>
         <p>Created by</p>
-        <p>DC Tech</p>
+        <p className={styles.footerDiv2P}> Daft Punk</p>
       </footer>
 
-      <div className={styles.floatCart}>
+      <div className={cart?.length > 0 ? styles.floatCart : styles.floatCart2}>
         <NavLink to="/CartLoop">
-          <div className={styles.zero}>{<p>{cart?.length}</p>}</div>
-
+          {cart?.length > 0 && (
+            <div
+              className={
+                (cart?.length > 0 ? styles.zero : styles.floatCartNumber,
+                cart?.length >= 10 && styles.floatCartNumber2)
+              }
+            >
+              {<p>{cart?.length}</p>}
+            </div>
+          )}
           <i className="fa fa-cart-plus" aria-hidden="true"></i>
         </NavLink>
       </div>

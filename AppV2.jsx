@@ -52,7 +52,7 @@ const salads = [
   {
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/3efc548a7601ac563d18cd3af549f31e.jpeg",
-    dishName: "Chef's Grilled Chicken Salad",
+    dishName: "Chefs Grilled Chicken Salad",
     price: 10,
     note: "Tossed",
     id: crypto.randomUUID(),
@@ -145,7 +145,7 @@ const localDishes = [
     id: crypto.randomUUID(),
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/27f28d9646ccf56c8485322758b8b5c4.jfif",
-    dishName: "Special Native Rice Palmoil Rice ",
+    dishName: "Special Native Rice Palmol Rice ",
     price: "9,500",
     note: "",
   },
@@ -214,7 +214,7 @@ const sidesExtras = [
   {
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/ebb18f169fa9e83509931b77729bd902.jfif",
-    dishName: "Peppered Chicken",
+    dishName: "Peppered hicken",
     price: "6,000",
     id: crypto.randomUUID(),
   },
@@ -224,7 +224,7 @@ const grillHouses = [
   {
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/b6c4a5e3b5e8f6dcfc9e10ff58f1f216.png",
-    dishName: "Beef Burger",
+    dishName: "Beff Burger",
     price: "12,000",
     note: "",
     id: crypto.randomUUID(),
@@ -258,7 +258,7 @@ const grillHouses = [
   {
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/544bd779a236119b5d2f82166e24a7f1.jfif",
-    dishName: "Grilled Jumbo",
+    dishName: "Grilled jumbo",
     price: "20,000",
     id: crypto.randomUUID(),
   },
@@ -368,7 +368,7 @@ const pasters = [
   {
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/a302171538f27c764ffc01cc5450dec6.jpeg",
-    dishName: "Rasta Pasta (PENNE/TAGLITELLE)",
+    dishName: "Rasta Pasta (PENNE/TAGLITELLE",
     price: "10,000",
     note: "",
     id: crypto.randomUUID(),
@@ -482,7 +482,7 @@ const quickEats = [
   {
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/a4f39b4d4f6c47800898edb113eb9d58.jfif",
-    dishName: "Turkey And Chips",
+    dishName: "Turkey ANd Chips",
     price: "11,000",
     note: "",
     id: crypto.randomUUID(),
@@ -661,7 +661,7 @@ const gins = [
   {
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/dabe806b0a107656ea2c5ec00a960960.jpeg",
-    dishName: "Hendricks Gin ",
+    dishName: "Hendrcks Gin ",
     price: "50,000",
     note: " ",
     id: crypto.randomUUID(),
@@ -793,7 +793,7 @@ const redWines = [
   {
     image:
       "	https://menu.stanfordelaze.ng/uploads/thumb/d5d5afc98d9900c9ac2176001574975c.jfif",
-    dishName: "Robertson  ",
+    dishName: "Rbbertson  ",
     price: "30,000",
     note: " ",
     id: crypto.randomUUID(),
@@ -829,13 +829,76 @@ const classics = [
     note: "Served Chilled",
     id: 27300936,
   },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/91b55b9ce57c3c93eda92ee6b9812729.jpeg",
+    dishName: "Jagermeister  ",
+    price: "50,000",
+    note: "",
+    id: 2736431432,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/286fd8f4796e7d6a0ef504a4201e498c.png",
+    dishName: "Grants   ",
+    price: "40,000",
+    note: "",
+    id: 273642317,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/9eb52ce97717614b6278a0d182ef2258.png",
+    dishName: "The Balvine ",
+    price: "100,000",
+    note: " ",
+    id: 273009986,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/eb03ed1114085f86540ee3a7d3f45592.webp",
+    dishName: "Macallan Rare Cask  ",
+    price: "700,000",
+    note: "",
+    id: 27364332,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/e6ff356e09e3f90afdab95c54e6350f7.png",
+    dishName: "Glenfiddlch 23yrs   ",
+    price: "700,000",
+    note: "Served Chilled",
+    id: 2736417,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/c58893c105f8c1771017e17f97e92966.png",
+    dishName: "Blue Label   ",
+    price: "500,000",
+    note: "Served Chilled",
+    id: 2736433092,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/1322ee3d2faeca00a58233759783be44.png",
+    dishName: "Glenfiddlch 21yrs   ",
+    price: "550,000",
+    note: "Served Chilled",
+    id: 2736423,
+  },
 ];
 
 const smoothies = [
   {
     image:
       "	https://menu.stanfordelaze.ng/uploads/thumb/bb26ad5522399d5d457f4858c8d5f37c.jfif",
-    dishName: "Fruit Esctacy ",
+    dishName: "Frut Esctacy ",
     price: "5,500",
     note: "Banana, Pineapple, Watermelon, Seedless Grapes ",
     id: 782562379,
@@ -869,6 +932,69 @@ const mocktails = [
     note: "Served Chilled",
     id: 27300936,
   },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/91b55b9ce57c3c93eda92ee6b9812729.jpeg",
+    dishName: "Jagermeister  ",
+    price: "50,000",
+    note: "",
+    id: 2736431432,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/286fd8f4796e7d6a0ef504a4201e498c.png",
+    dishName: "Grants   ",
+    price: "40,000",
+    note: "",
+    id: 273642317,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/9eb52ce97717614b6278a0d182ef2258.png",
+    dishName: "The Balvine ",
+    price: "100,000",
+    note: " ",
+    id: 273009986,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/eb03ed1114085f86540ee3a7d3f45592.webp",
+    dishName: "Macallan Rare Cask  ",
+    price: "700,000",
+    note: "",
+    id: 27364332,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/e6ff356e09e3f90afdab95c54e6350f7.png",
+    dishName: "Glenfiddlch 23yrs   ",
+    price: "700,000",
+    note: "Served Chilled",
+    id: 2736417,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/c58893c105f8c1771017e17f97e92966.png",
+    dishName: "Blue Label   ",
+    price: "500,000",
+    note: "Served Chilled",
+    id: 2736433092,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/1322ee3d2faeca00a58233759783be44.png",
+    dishName: "Glenfiddlch 21yrs   ",
+    price: "550,000",
+    note: "Served Chilled",
+    id: 2736423,
+  },
 ];
 
 const specials = [
@@ -879,6 +1005,69 @@ const specials = [
     price: "60,000",
     note: "Served Chilled",
     id: 27300936,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/91b55b9ce57c3c93eda92ee6b9812729.jpeg",
+    dishName: "Jagermeister  ",
+    price: "50,000",
+    note: "",
+    id: 2736431432,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/286fd8f4796e7d6a0ef504a4201e498c.png",
+    dishName: "Grants   ",
+    price: "40,000",
+    note: "",
+    id: 273642317,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/9eb52ce97717614b6278a0d182ef2258.png",
+    dishName: "The Balvine ",
+    price: "100,000",
+    note: " ",
+    id: 273009986,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/eb03ed1114085f86540ee3a7d3f45592.webp",
+    dishName: "Macallan Rare Cask  ",
+    price: "700,000",
+    note: "",
+    id: 27364332,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/e6ff356e09e3f90afdab95c54e6350f7.png",
+    dishName: "Glenfiddlch 23yrs   ",
+    price: "700,000",
+    note: "Served Chilled",
+    id: 2736417,
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/c58893c105f8c1771017e17f97e92966.png",
+    dishName: "Blue Label   ",
+    price: "500,000",
+    note: "Served Chilled",
+    id: 2736433092,
+  },
+
+  {
+    image:
+      "	https://menu.stanfordelaze.ng/uploads/thumb/1322ee3d2faeca00a58233759783be44.png",
+    dishName: "Glenfiddlch 21yrs   ",
+    price: "550,000",
+    note: "Served Chilled",
+    id: 2736423,
   },
 ];
 
@@ -1027,7 +1216,7 @@ const beers = [
   {
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/7052caed217dcb7b4dfd0c5aa2b2da78.png",
-    dishName: "Heineken  ",
+    dishName: "Heineen  ",
     price: "25,000",
     note: "Served Chilled",
     id: 27300936,
@@ -1150,7 +1339,7 @@ const softDrnks = [
   {
     image:
       "	https://menu.stanfordelaze.ng/uploads/thumb/facb8909480e9895823f167592f5dd4f.jpg",
-    dishName: "Sprite",
+    dishName: "Sprte",
     price: "1,000",
     note: "",
     id: 2736422654317,
@@ -1298,8 +1487,7 @@ export default function App() {
   );
 
   const [appQty, setAppQty] = useState(Number(1));
-  // console.log(appQty);
-  const inCreaseItem = selectedId?.id === cart.id;
+  console.log(appQty);
 
   //console.log(sidesExtra);
 
@@ -1349,12 +1537,6 @@ export default function App() {
   //   fetchSalads();
   // }, []);
 
-  function upDate() {
-    setAppQty();
-  }
-
-  // setIsOpen1(false);
-
   /*Adds To Cart*/
   function handleAddToCart(dish) {
     // if (cart?.id === dish.id)
@@ -1363,24 +1545,21 @@ export default function App() {
     //       cart?.id === dish.id ? { ...cart, qyt: (cart.qty += 1) } : cart
     //     )
     //   );
+
     setCart((cart) => [...cart, dish]);
+    setAppQty();
 
     // localStorage.setItem("cart", JSON.stringify([...cart, dish]));
 
     setSelectedId(null);
   }
 
-  // function handleAddDishImg(id) {
-  //   setSelectedId(id);
-  //   console.log(id);
-  // }
-
   //Update To Increase Cart Quantity
 
   //Food Details Function
   function handleSelectId(dish) {
     // setSelectedId(id);
-    setSelectedId(dish);
+    setSelectedId((selected) => (selected?.id === dish?.id ? null : dish));
   }
 
   //Delete Function
@@ -1403,7 +1582,7 @@ export default function App() {
   return (
     <div className={styles.mainDiv}>
       <>
-        {isLoading && <Spinner />}
+        {!selectedId && <Spinner />}
 
         <div className={styles.enu}>
           {selectedId && (
@@ -1412,7 +1591,6 @@ export default function App() {
               selectedId={selectedId}
               handleAddToCart={handleAddToCart}
               cart={cart}
-              handleSelectId={handleSelectId}
             />
           )}
         </div>
@@ -1823,6 +2001,7 @@ export default function App() {
 
           <Route path="*" element={<PageNotFound />} />
         </Routes>
+        ; ;
       </BrowserRouter>
     </div>
   );

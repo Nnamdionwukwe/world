@@ -32,7 +32,7 @@ export default function CartLoop({
                 <div>
                   <CartItem
                     cart={cart}
-                    key={cart.id}
+                    key={cart.image}
                     handleDeleteItem={handleDeleteItem}
                     selectedId={selectedId}
                     setCartTotal={setCartTotal}

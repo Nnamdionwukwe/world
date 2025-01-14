@@ -1,10 +1,12 @@
 /* eslint-disable react/prop-types */
+import { Link, NavLink } from "react-router-dom";
 import styles from "./SelectedDishMenu.module.css";
 
 export default function SelectedDishMenu({
   selectedId,
   handleDishClose,
   handleAddToCart,
+  handleSelectId,
 }) {
   const { dishName, price, image, note, id } = selectedId;
 
@@ -19,10 +21,7 @@ export default function SelectedDishMenu({
 
   return (
     <div className={styles.selectMain1}>
-      <form
-        onSubmit={() => handleAddDish(selectedId.id)}
-        className={styles.menu}
-      >
+      <form onSubmit={handleAddDish} className={styles.menu}>
         <ul className={styles.menuHeader}>
           <div className={styles.menuLi}>
             <h3>{dishName}</h3>
@@ -31,7 +30,12 @@ export default function SelectedDishMenu({
           </div>
 
           <a href="/FullDishImg">
-            <img src={image} alt={`${dishName} image`} />
+            <img
+              onClick={() => handleSelectId(selectedId)}
+              className={styles.menuLiImg}
+              src={image}
+              alt={`${dishName} image`}
+            />
           </a>
 
           <div className={styles.dishSub}>

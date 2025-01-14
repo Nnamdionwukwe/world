@@ -1,8 +1,17 @@
-.selectMai1 {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+/* .menuLi button1 {
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  object-fit: cover;
+} */
+
+.menuLiImg {
+  object-fit: cover;
+}
+
+.selectMain1 {
+  transition: 1.3s;
 }
 
 .nairaDi {
@@ -16,17 +25,22 @@
   margin-top: -19px;
 }
 
+.menuLi button {
+  cursor: pointer;
+}
+
+.menuLiImg {
+  object-fit: cover;
+}
+
 .cartLogo i {
   color: rgb(13, 98, 13);
   margin-right: 5px;
 }
 
 @media screen and (min-width: 320px) {
-  .selectMai1 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+  .selectMain1 {
+    transition: all 1.3s;
   }
 
   .menuHeader {

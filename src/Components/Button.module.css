@@ -1,71 +1,124 @@
-.nav :global(.active) {
+.listMain:global(.active) {
+}
+@media screen and (min-width: 320px) {
+  .list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0.8rem 0;
+    overflow: scroll;
+  }
+
+  .list1 {
+    margin-right: 10px;
+    border-bottom: 1px solid var(--color-background-100);
+    padding: 14px 25px 14px 25px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .list2 {
+    padding-right: 10px;
+    border-bottom: 1px solid var(--color-background-100);
+    padding: 14px 25px 14px 25px;
+    margin-right: 10px;
+  }
+
+  .list3 {
+    padding-right: 10px;
+    border-bottom: 1px solid var(--color-background-100);
+    padding: 14px 5px 14px 5px;
+    margin-right: 10px;
+    width: 240px;
+  }
+
+  .list4 {
+    padding-right: 10px;
+    border-bottom: 1px solid var(--color-background-100);
+    padding: 14px 5px 14px 5px;
+    margin-right: 10px;
+    width: 140px;
+  }
+
+  .list5 {
+    padding-right: 10px;
+    border-bottom: 1px solid var(--color-background-100);
+    padding: 14px 5px 14px 5px;
+    margin-right: 10px;
+    width: 170px;
+  }
+
+  .list6 {
+    padding-right: 10px;
+    border-bottom: 1px solid var(--color-background-100);
+    padding: 14px 5px 14px 5px;
+    margin-right: 10px;
+    width: 140px;
+  }
+
+  .list7 {
+    padding-right: 10px;
+    border-bottom: 1px solid var(--color-background-100);
+    padding: 14px 5px 14px 5px;
+    margin-right: 10px;
+    width: 110px;
+  }
+
+  .list8 {
+    width: 90px;
+    margin-right: 10px;
+    border-bottom: 1px solid var(--color-background-100);
+    padding: 14px 25px 14px 20px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+  .list9 {
+    width: 90px;
+    margin-right: 10px;
+    border-bottom: 1px solid var(--color-background-100);
+    padding: 14px 15px 14px 15px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+
+  .list10 {
+    margin-right: 10px;
+    border-bottom: 1px solid var(--color-background-100);
+    padding: 14px 25px 14px 25px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+
+  .list li button {
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 1px 2px 2px #e1dfdf;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .list li button:hover {
+    background-color: rgb(229, 145, 43);
+    color: #ffff;
+  }
+
+  .list li button:active {
+    background-color: rgb(222, 175, 118);
+    color: #ffff;
+  }
 }
 
-.list {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding: 0.8rem 0;
-  overflow: scroll;
-}
-
-.list1 {
-  margin-right: 10px;
-  border-bottom: 1px solid var(--color-background-100);
-  padding: 14px 25px 14px 25px;
-  margin-left: 20px;
-  margin-right: 10px;
-}
-
-.list2 {
-  padding-right: 10px;
-  border-bottom: 1px solid var(--color-background-100);
-  padding: 14px 25px 14px 25px;
-  margin-right: 10px;
-}
-
-.list3 {
-  padding-right: 10px;
-  border-bottom: 1px solid var(--color-background-100);
-  padding: 14px 5px 14px 5px;
-  margin-right: 10px;
-  width: 240px;
-}
-
-.list4 {
-  padding-right: 10px;
-  border-bottom: 1px solid var(--color-background-100);
-  padding: 14px 5px 14px 5px;
-  margin-right: 10px;
-  width: 140px;
-}
-
-.list5 {
-  padding-right: 10px;
-  border-bottom: 1px solid var(--color-background-100);
-  padding: 14px 5px 14px 5px;
-  margin-right: 10px;
-  width: 170px;
-}
-
-.list6 {
-  padding-right: 10px;
-  border-bottom: 1px solid var(--color-background-100);
-  padding: 14px 5px 14px 5px;
-  margin-right: 10px;
-  width: 140px;
-}
-
-.list li button {
-  cursor: pointer;
-  transition: all 0.3s;
-  border: none;
-  background-color: white;
-  box-shadow: 0px 1px 2px 2px #e1dfdf;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.list li:hover {
-  background-color: var(--color-background-100);
+@media screen and (min-width: 990px) {
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    column-gap: 20px;
+    row-gap: 10px;
+    flex-direction: ;
+    padding: 0.8rem 0;
+    overflow: hidden;
+  }
 }

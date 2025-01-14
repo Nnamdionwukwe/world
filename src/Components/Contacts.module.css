@@ -1,3 +1,7 @@
+.phoneDivMain {
+  margin-left: 10px;
+}
+
 .menuLetter {
   display: flex;
   align-items: center;
@@ -48,14 +52,7 @@
   color: brown;
   padding: 15px;
   border-radius: 100%;
-}
-
-.phoneDi i {
-  margin-right: 20px;
-  background-color: rgb(232, 211, 211);
-  color: red;
-  padding: 25px;
-  border-radius: 100%;
+  margin-top: 40px;
 }
 
 .phoneDivSub h2 {

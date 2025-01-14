@@ -13,8 +13,17 @@
     width: 100%;
     object-fit: cover;
     color: #ffff;
-    margin-left: -8px;
-    margin-top: -10px;
+    /* margin: -10px -20px -10px -21px; */
+    /* margin: auto;
+    /* margin-right: -20px; */
+    margin-top: -20px;
+    /* margin-left: -20px; */
+  }
+
+  .lazeMain {
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
   }
 
   .lazeDiv {
@@ -85,6 +94,10 @@
     margin-left: 10px;
   }
 
+  .numberDiv1 {
+    margin-left: -60px;
+  }
+
   .numberDiv2 {
     display: flex;
     align-items: center;
@@ -102,6 +115,14 @@
   .lazeDiv {
     display: flex;
     align-items: center;
+  }
+
+  .numberDiv1 {
+    margin-left: 10px;
+  }
+
+  .numberDiv2 {
+    margin-left: -120px;
   }
 
   .lazeMain {
@@ -164,9 +185,8 @@
     width: 100%;
     object-fit: cover;
     font-size: 16px;
-    margin: -10px;
+    margin: -10px -10px -10px -21px;
     color: #ffff;
-    margin-left: -21px;
   }
 
   .logo1 img {
@@ -292,6 +312,10 @@
     opacity: 1;
     z-index: 2;
     padding-left: 70px;
+  }
+
+  .moreDivLink {
+    text-decoration: none;
   }
 
   .moreDiv p {

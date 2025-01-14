@@ -54,7 +54,7 @@ export default function CartItem({
                 <i className="fa-solid fa-naira-sign"></i>
 
                 <p>
-                  {price},000.00 &times; {quantity} = {qtyTotal},000.00
+                  {Number(price)},000.00 &times; {quantity} = {qtyTotal},000.00
                 </p>
               </div>
             </div>

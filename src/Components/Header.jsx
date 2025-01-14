@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./Header.module.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -116,42 +116,58 @@ export default function Header() {
           {isOpen1 && (
             <div className={styles.moreDiv}>
               <div>
-                <p>Menu</p>
+                <Link className={styles.moreDivLink} to="/">
+                  <p>Menu</p>
+                </Link>
               </div>
 
               <div>
-                <p>Packages</p>
+                <Link className={styles.moreDivLink} to="/packages">
+                  <p>Packages</p>
+                </Link>
               </div>
 
               <div>
-                <p>Specialities</p>
+                <Link className={styles.moreDivLink} to="/Specialities">
+                  <p>Specialities</p>
+                </Link>
               </div>
 
               <div className={styles.arrowDiv} onClick={handleIsOpen2}>
                 More
-                <button>&darr;</button>
+                {isOpen2 ? <button>&uarr;</button> : <button>&darr;</button>}
               </div>
 
               {isOpen2 && (
                 <div className={styles.trackDiv}>
                   <div>
-                    <p>Track Order</p>
+                    <Link className={styles.moreDivLink} to="/TrackOrder">
+                      <p>Track Order</p>
+                    </Link>
                   </div>
 
                   <div>
-                    <p>Reservation</p>
+                    <Link className={styles.moreDivLink} to="/Reservation">
+                      <p>Reservation</p>
+                    </Link>
                   </div>
 
                   <div>
-                    <p>Contacts</p>
+                    <Link className={styles.moreDivLink} to="/contacts">
+                      <p>Contacts</p>
+                    </Link>
                   </div>
 
                   <div>
-                    <p>About Us</p>
+                    <Link className={styles.moreDivLink} to="/aboutus">
+                      <p>About Us</p>
+                    </Link>
                   </div>
 
                   <div>
-                    <p> Login</p>
+                    <Link className={styles.moreDivLink} to="/login">
+                      <p> Login</p>
+                    </Link>
                   </div>
                 </div>
               )}

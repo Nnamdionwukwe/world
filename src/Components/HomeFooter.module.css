@@ -8,6 +8,8 @@
     margin-left: -1.3rem;
     margin-right: -1rem;
     padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
     padding-bottom: 45px;
   }
 
@@ -57,10 +59,6 @@
     color: rgb(179, 156, 25);
     margin-right: 10px;
     font-size: 11px;
-  }
-
-  .floatCart {
-    display: none;
   }
 
   .business {
@@ -114,6 +112,10 @@
     color: rgb(80, 80, 80);
   }
 
+  .footerDiv2P {
+    font-style: italic;
+  }
+
   .stanforde {
     display: flex;
     justify-content: center;
@@ -165,7 +167,7 @@
   }
 }
 
-@media screen and (min-width: 577px) {
+@media screen and (min-width: 990px) {
   .homeFooterMain {
     display: flex;
     justify-content: left;
@@ -183,7 +185,8 @@
   }
 
   .business {
-    margin-left: 3rem;
+    display: flex;
+    justify-content: center;
   }
 
   .headerSub {
@@ -212,6 +215,22 @@
     cursor: pointer;
   }
 
+  .floatCart2 {
+    position: fixed;
+    opacity: 1;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 11rem;
+    margin-right: 4rem;
+    background-color: white;
+    padding: 10px 8px 4px 8px;
+    border-radius: 100%;
+    box-shadow: rgb(150, 149, 149) 1px 2px 6px 2px;
+    cursor: pointer;
+  }
+
   .floatCart p {
     margin-bottom: -0.5rem;
     margin-left: 0.8rem;
@@ -228,6 +247,14 @@
 
   .floatCart i {
     color: green;
+  }
+
+  .floatCartNumber {
+    display: none;
+  }
+
+  .floatCartNumber2 {
+    padding-right: ;
   }
 }
 
