@@ -143,7 +143,7 @@ export default function HomeFooter({ cart }) {
                 cart?.length >= 10 && styles.floatCartNumber2)
               }
             >
-              {<p>{cart?.length}</p>}
+              {<p className={styles.P}>{cart?.length}</p>}
             </div>
           )}
           <i className="fa fa-cart-plus" aria-hidden="true"></i>
