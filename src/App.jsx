@@ -1421,7 +1421,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route
-            index
+            path="homepages"
             element={
               <>
                 {isLoading && <Spinner />}
@@ -1817,7 +1817,7 @@ export default function App() {
 
           <Route path="login" element={<Login />} />
 
-          <Route path="signup" element={<SignUp />} />
+          <Route index path="/" element={<SignUp />} />
 
           <Route path="checkout" element={<CheckOut />} />
 

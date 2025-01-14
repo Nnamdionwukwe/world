@@ -1,18 +1,22 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import styles from "./Login.module.css";
 
 export default function SignUp() {
   const [isOpen, setIsOpen] = useState(false);
-  const [phone, setPhone] = useState("");
-  const [password, setPassword] = useState("");
+  const [userName, setUserName] = useState("Daft Punk");
+  const [password, setPassword] = useState("12345678");
+
+  function userNameFunc(e) {
+    setUserName(e.target.value);
+  }
 
   return (
     <div>
       <header className={styles.header}>
         <div>
-          <NavLink to="/">
+          <NavLink to="homepages">
             <img src="quickmenu.png" />
           </NavLink>
         </div>
@@ -22,11 +26,11 @@ export default function SignUp() {
         </div>
 
         {isOpen && (
-          <NavLink to="/signup" className={styles.login}>
+          <NavLink to="/login" className={styles.login}>
             <div>
               <i className="fa fa-sign-in" aria-hidden="true"></i>
             </div>
-            <button>login</button>
+            <button>Sign Up</button>
           </NavLink>
         )}
       </header>
@@ -47,8 +51,8 @@ export default function SignUp() {
 
         <div>
           <input
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
+            value={userName}
+            onChange={userNameFunc}
             type="text"
             placeholder=" Username/ Email"
           />
@@ -69,13 +73,18 @@ export default function SignUp() {
         </div>
       </div>
 
-      <NavLink to="/" className={styles.signIn}>
-        <i className="fa fa-sign-in" aria-hidden="true"></i>
-        <span>Sign in</span>
-      </NavLink>
+      {userName.length < 4 ? null : (
+        <NavLink to="homepages" className={styles.signIn}>
+          <i className="fa fa-sign-in" aria-hidden="true"></i>
+          <span>Sign in</span>
+        </NavLink>
+      )}
 
       <div className={styles.account}>
-        Don't have account? <span>Signup</span>
+        Don't have account?
+        <Link to="/login">
+          <span className={styles.accountI}>Signup</span>
+        </Link>
       </div>
 
       <div className={styles.deliver}>
@@ -86,12 +95,12 @@ export default function SignUp() {
 
         <NavLink className={styles.deliver1}>
           <i className="fa fa-users" aria-hidden="true"></i>
-          Customer Login
+          Staff Login
         </NavLink>
 
         <NavLink className={styles.deliver1}>
           <i className="fa fa-truck" aria-hidden="true"></i>
-          Delvery Guy Login
+          Delivery Guy Login
         </NavLink>
       </div>
     </div>

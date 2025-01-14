@@ -4,7 +4,7 @@ import styles from "./Login.module.css";
 
 export default function Login() {
   const [isOpen, setIsOpen] = useState(false);
-  const [phone, setPhone] = useState("");
+  const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
 
   // useEffect(function () {
@@ -12,8 +12,8 @@ export default function Login() {
   //   }
   // }, []);
 
-  // if (!phone || !password) {
-  //   setPhone("");
+  // if (!userName || !password) {
+  //   setUserName("");
   //   setPassword("");
   //   return;
   // }
@@ -22,7 +22,7 @@ export default function Login() {
     <div className={styles.mainHeader}>
       <header className={styles.header}>
         <div>
-          <NavLink to="/">
+          <NavLink to="/homepages">
             <img src="quickmenu.png" />
           </NavLink>
         </div>
@@ -32,7 +32,7 @@ export default function Login() {
         </div>
 
         {isOpen && (
-          <NavLink to="/signup" className={styles.login}>
+          <NavLink to="/" className={styles.login}>
             <div>
               <i className="fa fa-sign-in" aria-hidden="true"></i>
             </div>
@@ -60,8 +60,8 @@ export default function Login() {
 
         <div>
           <input
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
             type="text"
             placeholder="Phone"
           />
@@ -82,10 +82,12 @@ export default function Login() {
         </div>
       </div>
 
-      <NavLink to="/" className={styles.signIn}>
-        <i className="fa fa-sign-in" aria-hidden="true"></i>
-        <span>Sign in</span>
-      </NavLink>
+      {userName.length < 11 ? null : (
+        <NavLink to="/homepages" className={styles.signIn}>
+          <i className="fa fa-sign-in" aria-hidden="true"></i>
+          <span>Sign Up</span>
+        </NavLink>
+      )}
 
       <div className={styles.deliver}>
         <NavLink className={styles.deliver1}>
@@ -95,12 +97,12 @@ export default function Login() {
 
         <NavLink className={styles.deliver1}>
           <i className="fa fa-users" aria-hidden="true"></i>
-          Customer Login
+          Staff Login
         </NavLink>
 
         <NavLink className={styles.deliver1}>
           <i className="fa fa-truck" aria-hidden="true"></i>
-          Delvery Guy Login
+          Delivery Guy Login
         </NavLink>
       </div>
     </div>

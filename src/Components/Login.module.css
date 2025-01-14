@@ -159,8 +159,10 @@
   color: rgb(80, 79, 79);
 }
 
-.account span {
+.accountI {
   color: rgb(0, 140, 255);
+  cursor: pointer;
+  margin-left: 5px;
 }
 
 .in {
