@@ -53,7 +53,7 @@ const salads = [
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/3efc548a7601ac563d18cd3af549f31e.jpeg",
     dishName: "Chef's Grilled Chicken Salad",
-    price: "10",
+    price: "10,000",
     note: "Tossed",
     id: crypto.randomUUID(),
     qty: 1,
@@ -1285,48 +1285,60 @@ export default function App() {
   const [shisha, setShisha] = useState(shishas);
   const [softDrink, setSoftDrink] = useState(softDrnks);
 
-  const [isLoading, setIsLoading] = useState(false);
+  const [friend, setFriend] = useState([]);
+  const [hideForm, setHideForm] = useState(false);
+  const [hideSplitForm, setHideSplitForm] = useState(null);
 
-  const [selectedId, setSelectedId] = useState(null);
+  function handleAddFriend(newFriend) {
+    if (friend.id !== hideSplitForm.id)
+      setFriend((friend) => [...friend, newFriend]);
 
-  const [cart, setCart] = useState(function () {
-    const storedValue = localStorage.getItem("cart");
-    return JSON.parse(storedValue);
-  });
-
-  useEffect(
-    function () {
-      localStorage.setItem("cart", JSON.stringify(cart));
-    },
-    [cart]
-  );
-  console.log(cart);
-
-  function handleAddToCart(dish) {
-    setCart((cart) => [...cart, dish]);
-
-    setSelectedId(null);
+    setHideForm(false);
   }
 
-  function handleSelectId(dish) {
-    setSelectedId(dish);
-  }
-
-  function handleDeleteItem(id) {
-    setCart((cart) => cart?.filter((cart) => cart.id !== id));
-  }
-
-  function handleDishClose() {
-    setSelectedId(null);
+  function handleShowBill(friend) {
+    setHideSplitForm(friend.id === hideSplitForm?.id ? null : friend);
+    setHideForm(false);
   }
 
   function handleBillSubmit(value) {
-    setCart((cart) =>
-      cart.map((cart) =>
-        cart.id === selectedId?.id ? { ...cart, qty: cart.qty + value } : cart
+    setFriend((friend) =>
+      friend.map((friend) =>
+        friend.id === hideSplitForm?.id
+          ? { ...friend, qty: friend.qty + value }
+          : friend
       )
     );
   }
+
+  function handleDelete(id) {
+    setFriend((friend) => friend.filter((friend) => friend.id !== id));
+  }
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  // const [selectedId, setSelectedId] = useState(null);
+
+  // const [cart, setCart] = useState([]);
+
+  // function handleAddToCart(dish) {
+  //   setCart((cart) => [...cart, dish]);
+
+  //   setSelectedId(null);
+  // }
+
+  // function handleSelectId(dish) {
+  //   setSelectedId(dish);
+  // }
+
+  // function handleDeleteItem(id) {
+  //   setCart((cart) => cart?.filter((cart) => cart.id !== id));
+  // }
+
+  // function handleDishClose() {
+  //   setSelectedId(null);
+  // }
+
   //console.log(sidesExtra);
 
   // const BASE_URL = "http://localhost:5000";
@@ -1381,12 +1393,12 @@ export default function App() {
         {isLoading && <Spinner />}
 
         <div className={styles.enu}>
-          {selectedId && (
+          {hideSplitForm && (
             <SelectedDishMenu
-              handleDishClose={handleDishClose}
-              selectedId={selectedId}
-              handleAddToCart={handleAddToCart}
-              cart={cart}
+              setHideForm={setHideForm}
+              selectedId={hideSplitForm}
+              handleAddToCart={handleAddFriend}
+              cart={friend}
               handleBillSubmit={handleBillSubmit}
             />
           )}
@@ -1405,13 +1417,13 @@ export default function App() {
 
                 {!isLoading && (
                   <HomePages
-                    handleSelectId={handleSelectId}
+                    handleSelectId={handleShowBill}
                     salad={salad}
                     localDish={localDish}
                     sidesExtra={sidesExtra}
                     grillHouse={grillHouse}
                     quickChinese={quickChinese}
-                    cart={cart}
+                    cart={friend}
                     paster={paster}
                     starter={starter}
                     taco={taco}
@@ -1435,7 +1447,6 @@ export default function App() {
                     parfait={parfait}
                     beer={beer}
                     energyDrink={energyDrink}
-                    isLoading={isLoading}
                   />
                 )}
               </>
@@ -1443,19 +1454,31 @@ export default function App() {
           />
 
           <Route
+            path="cartLoop"
+            element={
+              <CartLoop
+                handleBillSubmit={handleBillSubmit}
+                cart={friend}
+                handleDeleteItem={handleDelete}
+              />
+            }
+          />
+
+          {/*
+          <Route
+ 
             path="salads"
             element={
               <>
                 {isLoading && <Spinner />}
 
-                {/* {error && <ErrorMessage />} */}
+                {/* {error && <ErrorMessage />} 
 
                 {!isLoading && (
                   <Salads
-                    handleSelectId={handleSelectId}
+                    handleSelectId={handleShowBill}
                     salad={salad}
                     cart={cart}
-                    isLoading={isLoading}
                   />
                 )}
               </>
@@ -1468,11 +1491,11 @@ export default function App() {
               <>
                 {isLoading && <Spinner />}
 
-                {/* {error && <ErrorMessage />} */}
+                {/* {error && <ErrorMessage />} 
 
                 {!isLoading && (
                   <MainDishes
-                    handleSelectId={handleSelectId}
+                    handleSelectId={handleShowBill}
                     localDish={localDish}
                     cart={cart}
                     isLoading={isLoading}
@@ -1487,7 +1510,7 @@ export default function App() {
             element={
               <SidesExtra
                 sidesExtra={sidesExtra}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1498,7 +1521,7 @@ export default function App() {
             element={
               <GrillHouse
                 grillHouse={grillHouse}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1509,7 +1532,7 @@ export default function App() {
             element={
               <QuickChinese
                 quickChinese={quickChinese}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1520,7 +1543,7 @@ export default function App() {
             element={
               <Paster
                 paster={paster}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1531,7 +1554,7 @@ export default function App() {
             element={
               <Starter
                 starter={starter}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1540,7 +1563,7 @@ export default function App() {
           <Route
             path="tacos"
             element={
-              <Tacos taco={taco} handleSelectId={handleSelectId} cart={cart} />
+              <Tacos taco={taco} handleSelectId={handleShowBill} cart={cart} />
             }
           />
 
@@ -1549,7 +1572,7 @@ export default function App() {
             element={
               <QuickEats
                 taco={quickEat}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1560,7 +1583,7 @@ export default function App() {
             element={
               <Whiskey
                 taco={whiskey}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1571,7 +1594,7 @@ export default function App() {
             element={
               <Brandy
                 taco={brandy}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1580,14 +1603,14 @@ export default function App() {
           <Route
             path="vodka"
             element={
-              <Vodka taco={vodka} handleSelectId={handleSelectId} cart={cart} />
+              <Vodka taco={vodka} handleSelectId={handleShowBill} cart={cart} />
             }
           />
 
           <Route
             path="gin"
             element={
-              <Gin taco={gin} handleSelectId={handleSelectId} cart={cart} />
+              <Gin taco={gin} handleSelectId={handleShowBill} cart={cart} />
             }
           />
 
@@ -1596,7 +1619,7 @@ export default function App() {
             element={
               <Tequila
                 taco={tequila}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1607,7 +1630,7 @@ export default function App() {
             element={
               <Champagne
                 taco={champagne}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1618,7 +1641,7 @@ export default function App() {
             element={
               <SparklingWine
                 taco={sparkling}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1629,7 +1652,7 @@ export default function App() {
             element={
               <RedWine
                 taco={redWine}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1640,7 +1663,7 @@ export default function App() {
             element={
               <WhiteWine
                 taco={whiteWine}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1651,7 +1674,7 @@ export default function App() {
             element={
               <Classic
                 taco={classic}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1662,7 +1685,7 @@ export default function App() {
             element={
               <Smoothies
                 taco={smoothie}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1673,7 +1696,7 @@ export default function App() {
             element={
               <Mocktails
                 taco={mocktail}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1684,7 +1707,7 @@ export default function App() {
             element={
               <MilkShakes
                 taco={milkshake}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1695,7 +1718,7 @@ export default function App() {
             element={
               <Parfait
                 taco={parfait}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1704,7 +1727,7 @@ export default function App() {
           <Route
             path="beer"
             element={
-              <Beer taco={beer} handleSelectId={handleSelectId} cart={cart} />
+              <Beer taco={beer} handleSelectId={handleShowBill} cart={cart} />
             }
           />
 
@@ -1713,7 +1736,7 @@ export default function App() {
             element={
               <EnergyDrinks
                 taco={energyDrink}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1724,7 +1747,7 @@ export default function App() {
             element={
               <Shisha
                 taco={shisha}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1735,7 +1758,7 @@ export default function App() {
             element={
               <SoftDrinks
                 taco={softDrink}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1746,7 +1769,7 @@ export default function App() {
             element={
               <Special
                 taco={special}
-                handleSelectId={handleSelectId}
+                handleSelectId={handleShowBill}
                 cart={cart}
               />
             }
@@ -1755,7 +1778,7 @@ export default function App() {
           <Route
             path="freshjuices"
             element={
-              <Fresh taco={fresh} handleSelectId={handleSelectId} cart={cart} />
+              <Fresh taco={fresh} handleSelectId={handleShowBill} cart={cart} />
             }
           />
 
@@ -1764,7 +1787,7 @@ export default function App() {
             element={
               <CartLoop
                 cart={cart}
-                handleDeleteItem={handleDeleteItem}
+                handleDeleteItem={handleShowBill}
                 isLoading={isLoading}
               />
             }
@@ -1796,6 +1819,7 @@ export default function App() {
           <Route path="checkout" element={<CheckOut />} />
 
           <Route path="*" element={<PageNotFound />} />
+          */}
         </Routes>
       </BrowserRouter>
     </div>

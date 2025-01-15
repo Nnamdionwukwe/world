@@ -53,7 +53,7 @@ const salads = [
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/3efc548a7601ac563d18cd3af549f31e.jpeg",
     dishName: "Chef's Grilled Chicken Salad",
-    price: "10",
+    price: "10,000",
     note: "Tossed",
     id: crypto.randomUUID(),
     qty: 1,
@@ -1289,18 +1289,7 @@ export default function App() {
 
   const [selectedId, setSelectedId] = useState(null);
 
-  const [cart, setCart] = useState(function () {
-    const storedValue = localStorage.getItem("cart");
-    return JSON.parse(storedValue);
-  });
-
-  useEffect(
-    function () {
-      localStorage.setItem("cart", JSON.stringify(cart));
-    },
-    [cart]
-  );
-  console.log(cart);
+  const [cart, setCart] = useState([]);
 
   function handleAddToCart(dish) {
     setCart((cart) => [...cart, dish]);
@@ -1320,13 +1309,6 @@ export default function App() {
     setSelectedId(null);
   }
 
-  function handleBillSubmit(value) {
-    setCart((cart) =>
-      cart.map((cart) =>
-        cart.id === selectedId?.id ? { ...cart, qty: cart.qty + value } : cart
-      )
-    );
-  }
   //console.log(sidesExtra);
 
   // const BASE_URL = "http://localhost:5000";
@@ -1387,7 +1369,6 @@ export default function App() {
               selectedId={selectedId}
               handleAddToCart={handleAddToCart}
               cart={cart}
-              handleBillSubmit={handleBillSubmit}
             />
           )}
         </div>

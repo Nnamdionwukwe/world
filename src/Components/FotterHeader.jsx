@@ -38,7 +38,7 @@ export default function FooterHeader({ cart }) {
             </div>
 
             <div className={styles.menuListSub}>
-              <NavLink className={styles.navLink} to="/">
+              <NavLink className={styles.navLink} to="/homepages">
                 <div>
                   <img className={styles.icons} src="hamburger.svg" />
                   <p>Menu</p>
@@ -109,7 +109,7 @@ export default function FooterHeader({ cart }) {
                 </div>
               </NavLink>
 
-              <NavLink className={styles.navLink} to="/Login">
+              <NavLink className={styles.navLink} to="/">
                 <div className={styles.navLinkDiv}>
                   <i className="fa-solid fa-right-to-bracket"></i>
                   <p> Login</p>

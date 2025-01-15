@@ -109,7 +109,7 @@ export default function HomeFooter({ cart }) {
 
       <div className={styles.barcodeDiv}>
         <div>
-          <h3 className={styles.stanforde}>Stanforde Laze</h3>
+          <h3 className={styles.stanforde}>Stanford Laze</h3>
 
           <div className={styles.independDiv}>
             <div>
@@ -117,13 +117,13 @@ export default function HomeFooter({ cart }) {
               <p>27 Independence Avanue,</p>
             </div>
 
-            <p>Independence Layout Enugu</p>
+            <p>Independence Layout </p>
           </div>
 
           <div className={styles.mailDiv}>
             <i className="fa fa-envelope" aria-hidden="true"></i>
             <a className={styles.email} href="www.gmail.com">
-              <p>standfordelaze&#64;gmail.com</p>
+              <p>standfordlaze&#64;gmail.com</p>
             </a>
           </div>
         </div>

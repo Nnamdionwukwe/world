@@ -2,17 +2,12 @@
 import styles from "./CartItem.module.css";
 import { useState } from "react";
 
-export default function CartItem({
-  cart,
-  handleDeleteItem,
-  setCartTotal,
-  setAppQty,
-}) {
-  const { dishName, price, image, id, qty, pri } = cart;
+export default function CartItem({ cart, handleDeleteItem }) {
+  const { dishName, price, image, id, qty } = cart;
   const [quantity, setQuantity] = useState(qty);
 
   function handleIncreaseQuantity(count) {
-    if (quantity > 0) setQuantity(count), setAppQty(count);
+    if (quantity > 0) setQuantity(count);
     if (quantity === 10) setQuantity(10);
   }
 
@@ -54,7 +49,7 @@ export default function CartItem({
                 <i className="fa-solid fa-naira-sign"></i>
 
                 <p>
-                  {Number(price)},000.00 &times; {quantity} = {qtyTotal},000.00
+                  {Number(price)}.00 &times; {quantity} = {Number(qtyTotal)}.00
                 </p>
               </div>
             </div>

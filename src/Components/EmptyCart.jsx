@@ -7,7 +7,7 @@ export default function EmptyCart() {
       <h2>Start a new cart?</h2>
       <p>Your cart is empty add new items to the list to place your order!.</p>
 
-      <Link to="/">
+      <Link to="/homepages">
         <div className={styles.mainDiv}>
           <button className={styles.mainDiv}>New Cart</button>
         </div>

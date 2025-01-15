@@ -9,7 +9,7 @@ export default function CartHeader() {
       </div>
 
       <div className={styles.nav}>
-        <NavLink to="/">
+        <NavLink to="/homepages">
           <button>&times;</button>
         </NavLink>
       </div>

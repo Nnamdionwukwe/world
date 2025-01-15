@@ -6,13 +6,7 @@ import CartHeader from "./CartHeader";
 import EmptyCart from "./EmptyCart";
 import { useState } from "react";
 
-export default function CartLoop({
-  cart,
-  handleDeleteItem,
-  selectedId,
-  setAppQty,
-}) {
-  const [cartTotal, setCartTotal] = useState(0);
+export default function CartLoop({ cart, handleDeleteItem, handleBillSubmit }) {
   // console.log(cartTotal);
   return (
     <>
@@ -34,9 +28,7 @@ export default function CartLoop({
                     cart={cart}
                     key={cart.image}
                     handleDeleteItem={handleDeleteItem}
-                    selectedId={selectedId}
-                    setCartTotal={setCartTotal}
-                    setAppQty={setAppQty}
+                    handleBillSubmit={handleBillSubmit}
                   />
                 </div>
               </>

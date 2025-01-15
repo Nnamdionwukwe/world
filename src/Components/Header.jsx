@@ -32,7 +32,7 @@ export default function Header() {
 
           <div className={styles.lazeMain}>
             <div>
-              <h1 className={styles.laze}>Standforde Laze</h1>
+              <h1 className={styles.laze}>Standford Laze</h1>
 
               <div className={styles.home}>
                 <div className={styles.homeDiv}>
@@ -40,7 +40,7 @@ export default function Header() {
                   <h3>27 Independence Avenue,</h3>
                 </div>
 
-                <h3 className={styles.indepen}> Independence Layout Enugu</h3>
+                <h3 className={styles.indepen}> Independence Layout </h3>
               </div>
 
               <div className={styles.number}>
@@ -53,7 +53,7 @@ export default function Header() {
                 <div className={styles.numberDiv2}>
                   <i className="fa fa-envelope" aria-hidden="true"></i>
 
-                  <h3>standfordelaze@gmail.com</h3>
+                  <h3>standfordlaze@gmail.com</h3>
                 </div>
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function Header() {
 
       <div className={styles.mainHeader}>
         <div>
-          <NavLink to="/">
+          <NavLink to="/homepages">
             <img
               className={styles.headerLogo1}
               src="https://menu.stanfordelaze.ng/uploads/thumb/6ca252f775ee8306d1981e6ee2d0d3c7.png"
@@ -116,7 +116,7 @@ export default function Header() {
           {isOpen1 && (
             <div className={styles.moreDiv}>
               <div>
-                <Link className={styles.moreDivLink} to="/">
+                <Link className={styles.moreDivLink} to="/homepages">
                   <p>Menu</p>
                 </Link>
               </div>
@@ -165,7 +165,7 @@ export default function Header() {
                   </div>
 
                   <div>
-                    <Link className={styles.moreDivLink} to="/login">
+                    <Link className={styles.moreDivLink} to="/">
                       <p> Login</p>
                     </Link>
                   </div>
@@ -180,7 +180,7 @@ export default function Header() {
         <div className={styles.thirdHeaderSubDiv}>
           <div>
             <div>
-              <NavLink to="/">
+              <NavLink to="/homepages">
                 <img
                   className={styles.dis}
                   src="https://menu.stanfordelaze.ng/uploads/thumb/6ca252f775ee8306d1981e6ee2d0d3c7.png"
@@ -190,7 +190,7 @@ export default function Header() {
           </div>
 
           <div>
-            <NavLink to="/">
+            <NavLink to="/homepages">
               <button className={styles.menuButtons}>Menu</button>
             </NavLink>
 
@@ -215,7 +215,7 @@ export default function Header() {
           </div>
 
           <div>
-            <NavLink className={styles.logoDiv} to="/Login">
+            <NavLink className={styles.logoDiv} to="/">
               <i className="fa fa-sign-in" aria-hidden="true"></i>
             </NavLink>
           </div>
