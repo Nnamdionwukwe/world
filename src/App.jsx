@@ -823,11 +823,74 @@ const whiteWines = [
 const classics = [
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/269ebceb078aa63eb0a8dcce787c5c76.jpeg",
-    dishName: "The Observatory ",
-    price: "60,000",
-    note: "Served Chilled",
-    id: 27300936,
+      "https://menu.stanfordelaze.ng/uploads/thumb/4b273258bbb2aae379e7f59991b8d5e0.jfif",
+    dishName: "Pine Colada",
+    price: "8,000",
+    note: "Rum, Simple Syrup, Coconut Cream, Pineapple",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/010de48ff03572ec76ea4d25829db630.png",
+    dishName: "Mojito",
+    price: "8,000",
+    note: "Rum, Simple Syrup, Lime, Mint Leaves",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/254b6b7c6d37a9c767c10f732d493424.jfif",
+    dishName: "Margarita",
+    price: "8,000",
+    note: "Tequila, Triple Sec, Lime Juice, Simple Syrup",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/bfda11f37308f13b2f08bb31da7c3a94.jfif",
+    dishName: "Moscow Mule ",
+    price: "8,000",
+    note: "Vodka, Simple Syrup, Lime Juice, Ginger",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/c795d891339e8d62cb0a19ac15fedc58.jfif",
+    dishName: "Cosmopolitan ",
+    price: "8,000",
+    note: "Rum, Lime Juice, Cranberry Juice",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/062b69c13a34afae12558910ac71e536.jfif",
+    dishName: "Strawberry Daiquiri ",
+    price: "8,000",
+    note: "Rum, Strawberry, Simple Syrup, Lime Juice",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/8a8e2e7cbf3eb918d3bce098a2bd5ebc.jfif",
+    dishName: "Tequila Sunrise",
+    price: "8,000",
+    note: "",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/97684b88b4f10200496f24ab017088e8.jfif",
+    dishName: "Long Island",
+    price: "8,500",
+    note: "Vodka, Gin, Rum, Tequila, Triple Sec, Lemon, Coke",
+    id: crypto.randomUUID(),
   },
 ];
 
@@ -863,22 +926,130 @@ const smoothies = [
 const mocktails = [
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/269ebceb078aa63eb0a8dcce787c5c76.jpeg",
-    dishName: "The Observatory ",
-    price: "60,000",
-    note: "Served Chilled",
-    id: 27300936,
+      "https://menu.stanfordelaze.ng/uploads/thumb/99332f6a4f3ba8683854d6980f86f362.png",
+    dishName: "Shirly Temple ",
+    price: "4,500",
+    note: "Sprite, Lemon Juice, Granadine",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/4a7b3d651504916ebbd0a9d59479ff18.jfif",
+    dishName: "Jamaica ",
+    price: "4,500",
+    note: "Orange Juice, Pineapple Juice, Granadine",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/32ff64e07605f793566e9b44d6cf7a59.jfif",
+    dishName: "Lemonade",
+    price: "4,500",
+    note: "Lemon Juice, Lime, Simple Syrup",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/d2e0e2913e2c9f8dbe9afef59febfe92.jfif",
+    dishName: "Strawerry Lemonade ",
+    price: "4,500",
+    note: "Lemon Juice, Lime, Strawberry, Simple Syrup",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/f4a5b53ca7bdec403d3d38d0cde5de62.jfif",
+    dishName: "Cream Delight ",
+    price: "4,500",
+    note: "Coconut Cream, Pineapple",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/c7055b2e86a1e3f30e26534ba8b62fbd.jfif",
+    dishName: "Frozen Mint Delight",
+    price: "4,500",
+    note: "",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/63292a181d4c8126cb2c6db4b3c4c9da.jfif",
+    dishName: "Chapman",
+    price: "4,500",
+    note: "",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/cc23482b88b310c2a67319650537d4fe.jfif",
+    dishName: "Ginger Ale",
+    price: "4,500",
+    note: "",
+    id: crypto.randomUUID(),
   },
 ];
 
 const specials = [
   {
     image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/269ebceb078aa63eb0a8dcce787c5c76.jpeg",
-    dishName: "The Observatory ",
-    price: "60,000",
-    note: "Served Chilled",
-    id: 27300936,
+      "https://menu.stanfordelaze.ng/uploads/thumb/e28f2dcd407a8acbd23aba1af3ef6d43.jfif",
+    dishName: "Lemon Refresh ",
+    price: "4,500",
+    note: "Lemon, Apple, Pineapple, Ginger",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/7e16a5fd144b28a0eee17f143512ff01.jfif",
+    dishName: "Citrus Blast ",
+    price: "4,500",
+    note: "Orange, Pineapple, Lemon Lime",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/cc73f5fc9f7b845ca489dd39c3449b76.jfif",
+    dishName: "Go Green ",
+    price: "4,500",
+    note: "Applle, Cucumber, Celery, Mint",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/c77d04a2f0e9d340d51b1de4ced77f2f.jfif",
+    dishName: "Made with Carrot ",
+    price: "4,500",
+    note: "Carrot, Apple",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/fd1d2617a27233c9ac2839df3f2dcabf.jfif",
+    dishName: "De-Bloat ",
+    price: "4,500",
+    note: "Beetroot, Apple, Pineapple, Ginger",
+    id: crypto.randomUUID(),
+  },
+
+  {
+    image:
+      "https://menu.stanfordelaze.ng/uploads/thumb/bbbbc9bd6910bbe0be6474fccc55fde6.jpg",
+    dishName: "Hangover Cure",
+    price: "4,500",
+    note: "",
+    id: crypto.randomUUID(),
   },
 ];
 
