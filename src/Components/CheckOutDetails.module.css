@@ -11,6 +11,7 @@
   margin-top: 20px;
   padding-top: -10px;
   border-radius: 5px;
+  height: 95px;
 }
 
 .plusMain {
@@ -80,8 +81,10 @@
 .qty {
   margin: -17px 0px -10px 0px;
 }
+
 .btn {
-  margin-top: -80px;
+  margin-top: -65px;
+  margin-right: 5px;
   border: none;
   font-size: 22px;
   background-color: #fbf8f8;
