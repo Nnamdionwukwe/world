@@ -1964,7 +1964,16 @@ export default function App() {
 
           <Route index path="/" element={<SignUp />} />
 
-          <Route path="checkout" element={<CheckOut />} />
+          <Route
+            path="checkout"
+            element={
+              <CheckOut
+                cart={cart}
+                handleDeleteItem={handleDeleteItem}
+                handleBillSubmit={handleBillSubmit}
+              />
+            }
+          />
 
           <Route path="*" element={<PageNotFound />} />
         </Routes>
