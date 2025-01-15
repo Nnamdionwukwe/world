@@ -1289,11 +1289,11 @@ export default function App() {
 
   const [selectedId, setSelectedId] = useState(null);
 
-  const [cart, setCart] = useState(function () {
-    const storedValue = localStorage.getItem("cart");
-    return JSON.parse(storedValue);
-  });
-
+  const [cart, setCart] = useState([]);
+  // function () {
+  //   const storedValue = localStorage.getItem("cart");
+  //   return JSON.parse(storedValue);
+  // }
   useEffect(
     function () {
       localStorage.setItem("cart", JSON.stringify(cart));
