@@ -60,19 +60,21 @@
 
 .imgDiv img {
   width: 80px;
-  height: 65px;
+  height: 55px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: 10px;
+
   object-fit: cover;
 }
 
 .nameDiv {
-  font-size: 18px;
+  font-size: 16px;
   color: rgb(92, 91, 91);
 }
 
 .qty {
-  margin: -12px 0px;
+  margin: -18px 0px -12px 0px;
 }
 .btn {
   margin-top: -80px;

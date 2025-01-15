@@ -41,7 +41,7 @@ export default function CartItem({ cart, handleDeleteItem }) {
             </div>
 
             <div className={styles.nameDiv}>
-              <p>{dishName}</p>
+              <h4>{dishName}</h4>
 
               <p className={styles.qty}>qty: {quantity}</p>
 
