@@ -37,7 +37,7 @@ export default function CartLoop({ cart, handleDeleteItem, handleBillSubmit }) {
 
           <div className={styles.mainDiv}>
             <div className={styles.totalSub}>
-              Total: qyt: {cart.length} = Price #{cart.price}.00
+              Total: qyt: {cart?.length} = Price #{cart.price}.00
             </div>
 
             <Link className={styles.mainLink} to="/checkout">
