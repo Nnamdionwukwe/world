@@ -145,7 +145,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .subMainSignUp,
@@ -183,7 +183,7 @@
 .subMainSignUp i,
 .subMainSignUp1 i,
 .subMainSignIn2 i {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .subMainSignUp1 {

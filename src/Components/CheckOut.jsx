@@ -74,7 +74,7 @@ export default function CheckOut({ cart, handleDeleteItem, handleBillSubmit }) {
               onClick={() => setIsOpen(true)}
             >
               <i className="fa fa-user" aria-hidden="true"></i>
-              Already have an account
+              <p>Already have an account</p>
             </div>
           </div>
 
