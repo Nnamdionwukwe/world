@@ -212,7 +212,6 @@
 
 .signIn {
   margin-top: 10px;
-  background-color: lightblue;
 }
 
 .active:global(.active) {
@@ -248,7 +247,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 5px;
   color: #ffff;
 }

@@ -90,10 +90,16 @@ export default function CheckOut({ cart, handleDeleteItem, handleBillSubmit }) {
             )}
           </div>
 
-          <Link className={styles.register} to="/accountsignin">
-            <div className={styles.register}>
-              Registration <i className="fa fa-user" aria-hidden="true"></i>
-            </div>
+          <Link className={styles.register}>
+            {!isOpen ? (
+              <div className={styles.register}>
+                Registration <i className="fa fa-user" aria-hidden="true"></i>
+              </div>
+            ) : (
+              <div className={styles.register}>
+                Login <i className="fa fa-user" aria-hidden="true"></i>
+              </div>
+            )}
           </Link>
         </div>
 
