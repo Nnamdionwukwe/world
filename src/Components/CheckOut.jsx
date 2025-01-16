@@ -90,8 +90,10 @@ export default function CheckOut({ cart, handleDeleteItem, handleBillSubmit }) {
             )}
           </div>
 
-          <Link to="/accountsignin">
-            <button>Sign In</button>
+          <Link className={styles.register} to="/accountsignin">
+            <div className={styles.register}>
+              Registration <i className="fa fa-user" aria-hidden="true"></i>
+            </div>
           </Link>
         </div>
 

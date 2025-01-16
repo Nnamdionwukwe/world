@@ -207,7 +207,6 @@
 }
 
 .signUp {
-  background-color: red;
   margin-top: 10px;
 }
 
@@ -218,4 +217,50 @@
 
 .active:global(.active) {
   color: green;
+}
+
+.inputName p {
+  margin-left: 6px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.divInput {
+  display: flex;
+  flex: 1;
+  margin: 0px 6px;
+  border: 1px solid rgb(209, 206, 206);
+  padding: 5px 0px;
+  background-color: #ffff;
+  border-radius: 3px;
+}
+
+.divInput input {
+  display: flex;
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 4px 0px;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  color: #ffff;
+}
+
+.register div {
+  background-color: blue;
+  padding: 7px;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.register div i {
+  font-size: 8px;
+  margin-left: 5px;
 }
