@@ -1,9 +1,15 @@
 /* eslint-disable react/prop-types */
 import styles from "./CheckOutDetails.module.css";
 import CheckOutDetails from "./CheckOutDetails";
+import { useState } from "react";
+import AccountSignUp from "./AccountSignUp";
+import AccountSignIn from "./AccountSignIn";
+import { Link, NavLink } from "react-router-dom";
+import FooterHeader from "./FotterHeader";
 
 export default function CheckOut({ cart, handleDeleteItem, handleBillSubmit }) {
-  // console.log(cartTotal);
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <div className={styles.quantityMain}>
@@ -52,6 +58,46 @@ export default function CheckOut({ cart, handleDeleteItem, handleBillSubmit }) {
             </>
           ))}
         </div>
+
+        <div className={styles.subMainOne}>
+          <div className={styles.subMain}>
+            <div
+              className={isOpen ? styles.subMainSignUp : styles.subMainSignUp1}
+              onClick={() => setIsOpen(false)}
+            >
+              <i className="fa fa-user" aria-hidden="true"></i>
+              <p>New Registration</p>
+            </div>
+
+            <div
+              className={!isOpen ? styles.subMainSignIn : styles.subMainSignIn2}
+              onClick={() => setIsOpen(true)}
+            >
+              <i className="fa fa-user" aria-hidden="true"></i>
+              Already have an account
+            </div>
+          </div>
+
+          <div>
+            {!isOpen ? (
+              <div className={styles.signUp}>
+                <AccountSignUp />
+              </div>
+            ) : (
+              <div className={styles.signIn}>
+                <AccountSignIn />
+              </div>
+            )}
+          </div>
+
+          <Link to="/accountsignin">
+            <button>Sign In</button>
+          </Link>
+        </div>
+
+        <>
+          <FooterHeader cart={cart} />
+        </>
       </div>
     </>
   );

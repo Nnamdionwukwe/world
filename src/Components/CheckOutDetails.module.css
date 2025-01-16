@@ -134,3 +134,88 @@
   align-items: center;
   margin-top: -20px;
 }
+
+.subMainOne {
+  background-color: #ffff;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.subMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.subMainSignUp,
+.subMainSignIn,
+.subMainSignIn2 {
+  cursor: pointer;
+}
+
+.subMainSignUp,
+.subMainSignUp1 {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 35px;
+  padding-left: 10px;
+}
+
+.subMainSignUp i,
+.subMainSignUp1 i,
+.subMainSignIn i,
+.subMainSignIn2 i {
+  padding-right: 5px;
+}
+
+.subMainSignIn,
+.subMainSignIn2 {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 35px;
+  padding-left: 10px;
+}
+
+.subMainSignIn i,
+.subMainSignUp i,
+.subMainSignUp1 i,
+.subMainSignIn2 i {
+  font-size: 12px;
+}
+
+.subMainSignUp1 {
+  border-top: 1px solid green;
+  border-right: 1px solid green;
+  border-left: 1px solid green;
+  cursor: pointer;
+}
+
+.subMainSignIn2 {
+  border-top: 1px solid green;
+  border-left: 1px solid green;
+  border-right: 1px solid green;
+}
+
+.subMainSignIn {
+  border-bottom: 1px solid gray;
+}
+.subMainSignUp {
+  border-bottom: 1px solid gray;
+}
+
+.signUp {
+  background-color: red;
+  margin-top: 10px;
+}
+
+.signIn {
+  margin-top: 10px;
+  background-color: lightblue;
+}
+
+.active:global(.active) {
+  color: green;
+}

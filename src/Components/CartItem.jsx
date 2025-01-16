@@ -49,7 +49,8 @@ export default function CartItem({ cart, handleDeleteItem }) {
                 <i className="fa-solid fa-naira-sign"></i>
 
                 <p>
-                  {Number(price)}.00 &times; {quantity} = {Number(qtyTotal)}.00
+                  {Math.floor(price)},000.00 &times; {quantity} ={" "}
+                  {Number(qtyTotal)},000.00
                 </p>
               </div>
             </div>

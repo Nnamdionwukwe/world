@@ -47,13 +47,15 @@ import Spinner from "./Components/Spinner";
 import FullDishImg from "./Components/FullDishImg";
 import CheckOut from "./Components/CheckOut";
 import SignUp from "./Components/SignUp";
+import AccountSignUp from "./Components/AccountSignUp";
+import AccountSignIn from "./Components/AccountSignIn";
 
 const salads = [
   {
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/3efc548a7601ac563d18cd3af549f31e.jpeg",
     dishName: "Chef's Grilled Chicken Salad",
-    price: "10",
+    price: 10,
     note: "Tossed",
     id: crypto.randomUUID(),
     qty: 1,
@@ -63,7 +65,7 @@ const salads = [
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/e3737de2f87a40b97f3eca0ff12e10c7.jpeg",
     dishName: "Turkey and Egg Salad",
-    price: "12,000",
+    price: 12,
     id: crypto.randomUUID(),
     qty: 1,
   },
@@ -72,7 +74,7 @@ const salads = [
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/36e3e2939aba6b83f53281cff327728e.jpeg",
     dishName: "Vegan Delight",
-    price: "9,000",
+    price: 9,
     id: crypto.randomUUID(),
     qty: 1,
   },
@@ -84,7 +86,7 @@ const localDishes = [
     image:
       "https://menu.stanfordelaze.ng/uploads/thumb/3d380af34d37be5a7bbe18102f02140b.jpg",
     dishName: " Egusi Soup",
-    price: "8,000",
+    price: 8,
     note: "Egusi soup loaded with crayfish, Beef, Dry fish,",
   },
   {
@@ -1940,6 +1942,10 @@ export default function App() {
               />
             }
           />
+
+          {/* <Route path="AccountSignUp" element={<AccountSignUp />} />
+
+          <Route path="AccountSignIn" element={<AccountSignIn />} /> */}
 
           <Route
             path="FullDishImg"
