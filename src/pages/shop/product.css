@@ -1,0 +1,13 @@
+.productHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product {
+  justify-items: center;
+}
+
+.product img {
+  width: 60px;
+}
