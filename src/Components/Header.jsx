@@ -122,7 +122,7 @@ export default function Header() {
               </div>
 
               <div>
-                <Link className={styles.moreDivLink} to="/packages">
+                <Link className={styles.moreDivLink} to="/Packages">
                   <p>Packages</p>
                 </Link>
               </div>
@@ -147,19 +147,19 @@ export default function Header() {
                   </div>
 
                   <div>
-                    <Link className={styles.moreDivLink} to="/Reservation">
+                    <Link className={styles.moreDivLink} to="/Reservations">
                       <p>Reservation</p>
                     </Link>
                   </div>
 
                   <div>
-                    <Link className={styles.moreDivLink} to="/contacts">
+                    <Link className={styles.moreDivLink} to="/Contacts">
                       <p>Contacts</p>
                     </Link>
                   </div>
 
                   <div>
-                    <Link className={styles.moreDivLink} to="/aboutus">
+                    <Link className={styles.moreDivLink} to="/AboutUs">
                       <p>About Us</p>
                     </Link>
                   </div>

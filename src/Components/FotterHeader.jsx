@@ -18,6 +18,7 @@ export default function FooterHeader() {
 
   function handleIsOpen1() {
     setIsOpen1((is) => !is);
+    setIsOpen(null);
   }
 
   return (
@@ -43,14 +44,14 @@ export default function FooterHeader() {
 
             <div className={styles.menuListSub}>
               <NavLink className={styles.navLink} to="/homepages">
-                <div>
+                <div onClick={handleIsOpen1}>
                   <img className={styles.icons} src="hamburger.svg" />
                   <p>Menu</p>
                 </div>
               </NavLink>
 
               <NavLink className={styles.navLink} to="/Packages">
-                <div>
+                <div onClick={handleIsOpen1}>
                   <img
                     className={styles.icons}
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn42XqHnIfKwrEklha_-1Dn8950ZKEA5NgsA&s"
@@ -60,7 +61,7 @@ export default function FooterHeader() {
               </NavLink>
 
               <NavLink className={styles.navLink} to="/Specialities">
-                <div>
+                <div onClick={handleIsOpen1}>
                   <img
                     className={styles.icons}
                     src="https://freesvg.org/img/ftdiff.png"
@@ -70,7 +71,7 @@ export default function FooterHeader() {
               </NavLink>
 
               <NavLink className={styles.navLink} to="/TrackOrder">
-                <div>
+                <div onClick={handleIsOpen1}>
                   <img
                     className={styles.icons}
                     src="https://www.svgrepo.com/show/326410/i-exam-multiple-choice.svg"
@@ -80,13 +81,13 @@ export default function FooterHeader() {
               </NavLink>
 
               <NavLink className={styles.navLink} to="/Reservations">
-                <div>
+                <div onClick={handleIsOpen1}>
                   <p>Reservation</p>
                 </div>
               </NavLink>
 
               <NavLink className={styles.navLink} to="/Contacts">
-                <div>
+                <div onClick={handleIsOpen1}>
                   <img
                     className={styles.icons}
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYRwXDbmmz01bNKgqX6AvK2INDFs48ugk586grkRcru0yNga1IJuddCxnSZZa1JOzC9PE&usqp=CAU"
@@ -104,7 +105,7 @@ export default function FooterHeader() {
               </div>
 
               <NavLink className={styles.navLink} to="/AboutUs">
-                <div>
+                <div onClick={handleIsOpen1}>
                   <img
                     className={styles.icons}
                     src="https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/info_information_about_help-2-128.png"
@@ -114,7 +115,7 @@ export default function FooterHeader() {
               </NavLink>
 
               <NavLink className={styles.navLink} to="/">
-                <div className={styles.navLinkDiv}>
+                <div onClick={handleIsOpen1} className={styles.navLinkDiv}>
                   <i className="fa-solid fa-right-to-bracket"></i>
                   <p> Login</p>
                 </div>
