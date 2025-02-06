@@ -40,19 +40,6 @@ export default function CartLoop({
                 );
               }
             })}
-
-            {/* {cart?.map((cart) => (
-              <>
-                <div>
-                  <CartItem
-                    cart={cart}
-                    key={cart.image}
-                    handleDeleteItem={handleDeleteItem}
-                    handleBillSubmit={handleBillSubmit}
-                  />
-                </div>
-              </>
-            ))} */}
           </div>
 
           <div className={styles.mainDiv}>
