@@ -1,12 +1,14 @@
 /* eslint-disable react/prop-types */
-import { createContext, useReducer, useState } from "react";
+import { createContext, useEffect, useReducer, useState } from "react";
 import Data from "../Data.json";
 import CartReduser from "./CartReduser";
 
 export const ShopContext = createContext();
 
+// const BASE_URL = localhost:5000
+
 export const ShopContextProvider = ({ children }) => {
-  const [salad, setSalad] = useState(Data.salads);
+  const [salad, setSalad] = useState([]);
   const [localDish, setLocalDish] = useState(Data.localDishes);
   const [sidesExtra, setSidesExtra] = useState(Data.sidesExtras);
   const [grillHouse, setGrillHouse] = useState(Data.grillHouses);
@@ -38,6 +40,32 @@ export const ShopContextProvider = ({ children }) => {
   const [softDrink, setSoftDrink] = useState(Data.softDrinks);
 
   const [cart, dispatch] = useReducer(CartReduser, []);
+
+  const BASE_URL = "http://localhost:5000";
+
+  useEffect(function () {
+    async function fetchSalads() {
+      try {
+        // setIsLoading(true);
+        const res = await fetch(`${BASE_URL}/salads`);
+
+        if (!res.ok)
+          throw new Error("Something went wrong with fetching dishes");
+
+        const data = await res.json();
+
+        console.log(data);
+
+        setSalad(data);
+      } catch (err) {
+        console.error(err.message);
+      } finally {
+        // setIsLoading(false);
+      }
+    }
+
+    fetchSalads();
+  }, []);
 
   const contextValue = {
     cart,

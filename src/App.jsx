@@ -302,7 +302,7 @@ export default function App() {
 
             <Route path="checkout" element={<CheckOut />} />
 
-            <Route path="/" element={<PageNotFound />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
 
           <FooterHeader />
