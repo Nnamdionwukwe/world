@@ -17,6 +17,20 @@ import VodkaLoop from "./VodkaLoop";
 import BrandyLoop from "./BrandyLoop";
 import TequilaLoop from "./TequileLoop";
 import HomeFooter from "./HomeFooter";
+import ChampagneLoop from "./ChampagneLoop";
+import SparklingWineLoop from "./SparklingWineLoop";
+import RedWineLoop from "./RedWineLoop";
+import WhiteWineLoop from "./WhiteWineLoop";
+import ClassicLoop from "./ClassicLoop";
+import SmoothiesLoop from "./SmoothiesLoop";
+import MockTailsLoop from "./MocktailsLoop";
+import SpecialLoop from "./SpecialLoop";
+import MilkShakesLoop from "./MlkShakesLoop";
+import ParfaitLoop from "./ParfaitLoop";
+import BeerLoop from "./BeerLoop";
+import EnergyDrinksLoop from "./EnergyDrinksLoop";
+import ShishaLoop from "./ShishaLoop";
+import SoftDrinksLoop from "./SoftDrinksLoop";
 
 export default function HomePages({ handleSelectId }) {
   return (
@@ -81,59 +95,59 @@ export default function HomePages({ handleSelectId }) {
 
       <DishesHeader> Champagne</DishesHeader>
 
-      <GinLoop handleSelectId={handleSelectId} />
+      <ChampagneLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Sparkling Wine</DishesHeader>
 
-      <GinLoop handleSelectId={handleSelectId} />
+      <SparklingWineLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Red Wine</DishesHeader>
 
-      <GinLoop handleSelectId={handleSelectId} />
+      <RedWineLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> White Wine</DishesHeader>
 
-      <GinLoop handleSelectId={handleSelectId} />
+      <WhiteWineLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Classic Cocktail</DishesHeader>
 
-      <GinLoop handleSelectId={handleSelectId} />
+      <ClassicLoop handleSelectId={handleSelectId} />
 
-      <DishesHeader> SMoothies</DishesHeader>
+      <DishesHeader> Smoothies</DishesHeader>
 
-      <GinLoop handleSelectId={handleSelectId} />
+      <SmoothiesLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Mocktails</DishesHeader>
 
-      <GinLoop handleSelectId={handleSelectId} />
+      <MockTailsLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Special Juice</DishesHeader>
 
-      <GinLoop handleSelectId={handleSelectId} />
+      <SpecialLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Milkshakes </DishesHeader>
 
-      <GinLoop handleSelectId={handleSelectId} />
+      <MilkShakesLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Parfait</DishesHeader>
 
-      <GinLoop handleSelectId={handleSelectId} />
+      <ParfaitLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Beer</DishesHeader>
 
-      <GinLoop handleSelectId={handleSelectId} />
+      <BeerLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Energy Drinks</DishesHeader>
 
-      <GinLoop handleSelectId={handleSelectId} />
+      <EnergyDrinksLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Shisha</DishesHeader>
 
-      <GinLoop handleSelectId={handleSelectId} />
+      <ShishaLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Soft Drinks</DishesHeader>
 
-      <GinLoop handleSelectId={handleSelectId} />
+      <SoftDrinksLoop handleSelectId={handleSelectId} />
 
       <HomeFooter />
     </div>
