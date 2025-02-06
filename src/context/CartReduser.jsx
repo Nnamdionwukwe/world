@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 export const totalItem = (cart) => {
   return cart.reduce((sum, product) => sum + product.quantity, 0);
 };

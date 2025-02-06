@@ -1,17 +1,17 @@
 /* eslint-disable react/prop-types */
-import TequileLoop from "./TequileLoop";
 
 import DishesHeader from "./DishesHeader";
 import FullPage from "./FullPage";
 import HomeFooter from "./HomeFooter";
+import MockTailsLoop from "./MocktailsLoop";
 
-export default function MockTails({ taco, handleSelectId, cart }) {
+export default function MockTails({ handleSelectId }) {
   return (
     <div>
       <FullPage />
       <DishesHeader>Mocktails </DishesHeader>
 
-      <TequileLoop cart={cart} handleSelectId={handleSelectId} taco={taco} />
+      <MockTailsLoop handleSelectId={handleSelectId} />
 
       <HomeFooter />
     </div>

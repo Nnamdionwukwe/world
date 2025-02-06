@@ -1,4 +1,4 @@
-import {  BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 
 import styles from "./App.module.css";
@@ -50,28 +50,6 @@ import SignUp from "./Components/SignUp";
 import { ShopContextProvider } from "./context/ShopContextProvider";
 import FooterHeader from "./Components/FotterHeader";
 
-const carts = [
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/3efc548a7601ac563d18cd3af549f31e.jpeg",
-    dishName: "Chefs Grilled Chicken Salad",
-    price: 10,
-    note: "Tossed",
-    id: crypto.randomUUID(),
-    qty: 2,
-  },
-
-  {
-    image:
-      "https://menu.stanfordelaze.ng/uploads/thumb/e3737de2f87a40b97f3eca0ff12e10c7.jpeg",
-    dishName: "Turkey and Egg Salad",
-    price: 12,
-    pri: 5,
-    id: crypto.randomUUID(),
-    qty: 1,
-  },
-];
-
 export default function App() {
   const [isLoading, setIsLoading] = useState(false);
 
@@ -80,88 +58,6 @@ export default function App() {
   function handleSelectId(dish) {
     setSelectedId(dish);
   }
-
-  // const [cart, setCart] = useState([]);
-
-  // useEffect(
-  //   function () {
-  //     localStorage.setItem("cart", JSON.stringify(cart));
-  //   },
-  //   [cart]
-  // );
-
-  // function handleAddToCart(dish) {
-  //   setCart((cart) => [...cart, dish]);
-
-  //   setSelectedId(null);
-  // }
-
-  // function handleSelectId(dish) {
-  //   setSelectedId(dish);
-  // }
-
-  // function handleDeleteItem(id) {
-  //   setCart((cart) => cart?.filter((cart) => cart.id !== id));
-  // }
-
-  // function handleDishClose() {
-  //   setSelectedId(null);
-  // }
-
-  // function handleBillSubmit(value) {
-  //   setCart((cart) =>
-  //     cart.map((cart) =>
-  //       cart.id === selectedId?.id ? { ...cart, qty: cart.qty + value } : cart
-  //     )
-  //   );
-  // }
-  //console.log(sidesExtra);
-
-  // const BASE_URL = "http://localhost:5000";
-
-  // useEffect(function () {
-  //   async function fetchSalads() {
-  //     try {
-  //       setIsLoading(true);
-  //       const res = await fetch(`${BASE_URL}/salads`);
-
-  //       if (!res.ok)
-  //         throw new Error("Something went wrong with fetching dishes");
-
-  //       const data = await res.json();
-
-  //       setSalad(data);
-  //     } catch (err) {
-  //       console.error(err.message);
-  //     } finally {
-  //       setIsLoading(false);
-  //     }
-  //   }
-
-  //   fetchSalads();
-  // }, []);
-
-  // useEffect(function () {
-  //   async function fetchSalads() {
-  //     try {
-  //       setIsLoading(true);
-  //       const res = await fetch(`${BASE_URL}/localDishes`);
-
-  //       if (!res.ok)
-  //         throw new Error("Something went wrong with fetching dishes");
-
-  //       const data = await res.json();
-
-  //       setLocalDish(data);
-  //     } catch (err) {
-  //       console.error(err.message);
-  //     } finally {
-  //       setIsLoading(false);
-  //     }
-  //   }
-
-  //   fetchSalads();
-  // }, []);
 
   return (
     <div className={styles.mainDiv}>

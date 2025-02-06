@@ -1,17 +1,17 @@
 /* eslint-disable react/prop-types */
-import TequileLoop from "./TequileLoop";
 
 import DishesHeader from "./DishesHeader";
 import FullPage from "./FullPage";
 import HomeFooter from "./HomeFooter";
+import SpecialLoop from "./SpecialLoop";
 
-export default function Special({ taco, handleSelectId, cart }) {
+export default function Special({ handleSelectId }) {
   return (
     <div>
       <FullPage />
       <DishesHeader>Special Juice </DishesHeader>
 
-      <TequileLoop cart={cart} handleSelectId={handleSelectId} taco={taco} />
+      <SpecialLoop handleSelectId={handleSelectId} />
 
       <HomeFooter />
     </div>

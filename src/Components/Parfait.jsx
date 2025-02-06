@@ -1,16 +1,16 @@
 /* eslint-disable react/prop-types */
-import TequileLoop from "./TequileLoop";
 
 import DishesHeader from "./DishesHeader";
 import FullPage from "./FullPage";
+import ParfaitLoop from "./ParfaitLoop";
 
-export default function Parfait({ taco, handleSelectId, cart }) {
+export default function Parfait({ handleSelectId }) {
   return (
     <div>
       <FullPage />
       <DishesHeader>Parfait </DishesHeader>
 
-      <TequileLoop cart={cart} handleSelectId={handleSelectId} taco={taco} />
+      <ParfaitLoop handleSelectId={handleSelectId} />
     </div>
   );
 }

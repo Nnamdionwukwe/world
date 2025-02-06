@@ -29,7 +29,7 @@ export const ShopContextProvider = ({ children }) => {
   const [mocktail, setMocktail] = useState(Data.mocktails);
   const [special, setSpecial] = useState(Data.specials);
   const [milkshake, setMilkshakes] = useState(Data.milkshakes);
-  // const [fresh, setFresh] = useState(freshJuices);
+  const [fresh, setFresh] = useState(Data.freshJuices);
   const [tequila, setTequila] = useState(Data.tequilas);
   const [parfait, setParfaits] = useState(Data.parfaits);
   const [beer, setBeer] = useState(Data.beers);
@@ -66,6 +66,7 @@ export const ShopContextProvider = ({ children }) => {
     special,
     milkshake,
     parfait,
+    fresh,
     beer,
     energyDrink,
     localDish,

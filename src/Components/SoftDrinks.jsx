@@ -1,17 +1,17 @@
 /* eslint-disable react/prop-types */
-import TequileLoop from "./TequileLoop";
 
 import DishesHeader from "./DishesHeader";
 import FullPage from "./FullPage";
 import HomeFooter from "./HomeFooter";
+import SoftDrinksLoop from "./SoftDrinksLoop";
 
-export default function SoftDrinks({ taco, handleSelectId, cart }) {
+export default function SoftDrinks({ handleSelectId }) {
   return (
     <div>
       <FullPage />
       <DishesHeader>Soft Drinks </DishesHeader>
 
-      <TequileLoop cart={cart} handleSelectId={handleSelectId} taco={taco} />
+      <SoftDrinksLoop handleSelectId={handleSelectId} />
 
       <HomeFooter />
     </div>

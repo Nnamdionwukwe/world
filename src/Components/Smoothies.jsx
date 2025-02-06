@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-import TequileLoop from "./TequileLoop";
 
 import DishesHeader from "./DishesHeader";
 import FullPage from "./FullPage";
 import HomeFooter from "./HomeFooter";
+import SmoothiesLoop from "./SmoothiesLoop";
 
 export default function Smoothies({ taco, handleSelectId, cart }) {
   return (
@@ -11,7 +11,7 @@ export default function Smoothies({ taco, handleSelectId, cart }) {
       <FullPage />
       <DishesHeader>Smoothies </DishesHeader>
 
-      <TequileLoop cart={cart} handleSelectId={handleSelectId} taco={taco} />
+      <SmoothiesLoop cart={cart} handleSelectId={handleSelectId} taco={taco} />
 
       <HomeFooter />
     </div>
