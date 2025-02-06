@@ -29,7 +29,7 @@ export default function SelectedDishMenu({ selectedId, setSelectedId }) {
 
             <div className={styles.nairaDi}>
               <i className="fa-solid fa-naira-sign"></i>
-              <h5 className={styles.nairaDiv}> {price},000.00</h5>
+              <h5 className={styles.nairaDiv}> {Number(price)}.00</h5>
             </div>
 
             <p>{note}</p>

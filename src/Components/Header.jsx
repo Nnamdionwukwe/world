@@ -9,13 +9,13 @@ export default function Header() {
 
   function handleIsOpen() {
     setIsOpen((is) => !is);
-    setIsOpen1(false);
+    setIsOpen1((is) => !is);
   }
 
   function handleIsOpen1() {
     setIsOpen1((is) => !is);
-    setIsOpen(false);
-    setIsOpen2(false);
+    setIsOpen((is) => !is);
+    setIsOpen2((is) => !is);
   }
 
   function handleIsOpen2() {
