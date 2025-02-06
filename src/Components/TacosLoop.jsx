@@ -1,8 +1,11 @@
 /* eslint-disable react/prop-types */
 import TacosItem from "./TacosItem";
 import styles from "./SaladLoop.module.css";
+import { ShopContext } from ".././context/ShopContextProvider";
+import { useContext } from "react";
 
-export default function StarterLoop({ taco, handleSelectId }) {
+export default function StarterLoop({ handleSelectId }) {
+  const { taco } = useContext(ShopContext);
   return (
     <div>
       <ul className={styles.saladMainDiv}>

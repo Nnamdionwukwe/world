@@ -5,8 +5,6 @@ import DishesHeader from "./DishesHeader";
 import SaladComponent from "./SaladComponentt";
 import SaladLoop from "./SaladLoop";
 import GrillHouseLoop from "./GrillHouseLoop";
-import FooterHeader from "./FotterHeader";
-import HomeFooter from "./HomeFooter";
 import SidesExtraDishLoop from "./SidesExtraDishLoop";
 import QuickChineseLoop from "./QuickChineseLoop";
 import PasterLoop from "./PasterLoop";
@@ -17,164 +15,127 @@ import WhiskeyLoop from "./WhiskeyLoop";
 import GinLoop from "./GinLoop";
 import VodkaLoop from "./VodkaLoop";
 import BrandyLoop from "./BrandyLoop";
+import TequilaLoop from "./TequileLoop";
+import HomeFooter from "./HomeFooter";
 
-export default function HomePages({
-  salad,
-  localDish,
-  handleSelectId,
-  cart,
-  sidesExtra,
-  grillHouse,
-  quickChinese,
-  paster,
-  starter,
-  taco,
-  quickEat,
-  whiskey,
-  brandy,
-  vodka,
-  gin,
-  tequila,
-  softDrink,
-  shisha,
-  champagne,
-  sparkling,
-  redWine,
-  whiteWine,
-  classic,
-  smoothies,
-  mocktail,
-  special,
-  milkshake,
-  parfait,
-  beer,
-  energyDrink,
-}) {
+export default function HomePages({ handleSelectId }) {
   return (
     <div>
       <FullPage />
 
       <SaladComponent>Salads</SaladComponent>
 
-      <SaladLoop handleSelectId={handleSelectId} salad={salad} />
+      <SaladLoop handleSelectId={handleSelectId} />
 
       <DishesHeader>Main Dishes / Local Dishes</DishesHeader>
 
-      <LocalDishLoop handleSelectId={handleSelectId} localDish={localDish} />
+      <LocalDishLoop handleSelectId={handleSelectId} />
 
       <DishesHeader>Sides / Extras </DishesHeader>
 
-      <SidesExtraDishLoop
-        handleSelectId={handleSelectId}
-        sidesExtra={sidesExtra}
-      />
+      <SidesExtraDishLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Grill House Specials</DishesHeader>
 
-      <GrillHouseLoop grillHouse={grillHouse} handleSelectId={handleSelectId} />
+      <GrillHouseLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Quick Chinese</DishesHeader>
 
-      <QuickChineseLoop
-        quickChinese={quickChinese}
-        handleSelectId={handleSelectId}
-      />
+      <QuickChineseLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Pasta Special</DishesHeader>
 
-      <PasterLoop paster={paster} handleSelectId={handleSelectId} />
+      <PasterLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Starter </DishesHeader>
 
-      <StarterLoop starter={starter} handleSelectId={handleSelectId} />
+      <StarterLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Tacos</DishesHeader>
 
-      <TacosLoop taco={taco} handleSelectId={handleSelectId} />
+      <TacosLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Quick Eats</DishesHeader>
 
-      <QuickEatsLoop taco={quickEat} handleSelectId={handleSelectId} />
+      <QuickEatsLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Whiskey</DishesHeader>
 
-      <WhiskeyLoop taco={whiskey} handleSelectId={handleSelectId} />
+      <WhiskeyLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Brandy</DishesHeader>
 
-      <BrandyLoop taco={brandy} handleSelectId={handleSelectId} />
+      <BrandyLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Vodka</DishesHeader>
 
-      <VodkaLoop taco={vodka} handleSelectId={handleSelectId} />
+      <VodkaLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Gin</DishesHeader>
 
-      <GinLoop taco={gin} handleSelectId={handleSelectId} />
+      <GinLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Tequila</DishesHeader>
 
-      <GinLoop taco={tequila} handleSelectId={handleSelectId} />
+      <TequilaLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Champagne</DishesHeader>
 
-      <GinLoop taco={champagne} handleSelectId={handleSelectId} />
+      <GinLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Sparkling Wine</DishesHeader>
 
-      <GinLoop taco={sparkling} handleSelectId={handleSelectId} />
+      <GinLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Red Wine</DishesHeader>
 
-      <GinLoop taco={redWine} handleSelectId={handleSelectId} />
+      <GinLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> White Wine</DishesHeader>
 
-      <GinLoop taco={whiteWine} handleSelectId={handleSelectId} />
+      <GinLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Classic Cocktail</DishesHeader>
 
-      <GinLoop taco={classic} handleSelectId={handleSelectId} />
+      <GinLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> SMoothies</DishesHeader>
 
-      <GinLoop taco={smoothies} handleSelectId={handleSelectId} />
+      <GinLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Mocktails</DishesHeader>
 
-      <GinLoop taco={mocktail} handleSelectId={handleSelectId} />
+      <GinLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Special Juice</DishesHeader>
 
-      <GinLoop taco={special} handleSelectId={handleSelectId} />
+      <GinLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Milkshakes </DishesHeader>
 
-      <GinLoop taco={milkshake} handleSelectId={handleSelectId} />
+      <GinLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Parfait</DishesHeader>
 
-      <GinLoop taco={parfait} handleSelectId={handleSelectId} />
+      <GinLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Beer</DishesHeader>
 
-      <GinLoop taco={beer} handleSelectId={handleSelectId} />
+      <GinLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Energy Drinks</DishesHeader>
 
-      <GinLoop taco={energyDrink} handleSelectId={handleSelectId} />
+      <GinLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Shisha</DishesHeader>
 
-      <GinLoop taco={shisha} handleSelectId={handleSelectId} />
+      <GinLoop handleSelectId={handleSelectId} />
 
       <DishesHeader> Soft Drinks</DishesHeader>
 
-      <GinLoop taco={softDrink} handleSelectId={handleSelectId} />
+      <GinLoop handleSelectId={handleSelectId} />
 
-      <FooterHeader cart={cart} />
-
-      <HomeFooter cart={cart} />
+      <HomeFooter />
     </div>
   );
 }

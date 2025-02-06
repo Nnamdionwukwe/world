@@ -1,12 +1,15 @@
 /* eslint-disable react/prop-types */
 import styles from "./SaladLoop.module.css";
 import TequilaItem from "./TequilaItem";
+import { ShopContext } from ".././context/ShopContextProvider";
+import { useContext } from "react";
 
-export default function TequilaLoop({ taco, handleSelectId }) {
+export default function TequilaLoop({ handleSelectId }) {
+  const { tequila } = useContext(ShopContext);
   return (
     <div>
       <ul className={styles.saladMainDiv}>
-        {taco.map((paster) => (
+        {tequila.map((paster) => (
           <TequilaItem
             handleSelectId={handleSelectId}
             quick={paster}

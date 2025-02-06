@@ -4,10 +4,17 @@ import styles from "./EmptyCart.module.css";
 import CartItem from "./CartItem";
 import CartHeader from "./CartHeader";
 import EmptyCart from "./EmptyCart";
-import { useState } from "react";
+import { ShopContext } from ".././context/ShopContextProvider";
+import { useContext } from "react";
+import { totalItem, totalPrice } from "../context/CartReduser";
 
-export default function CartLoop({ cart, handleDeleteItem, handleBillSubmit }) {
+export default function CartLoop({
+  handleDeleteItem,
+  handleBillSubmit,
+  selectedId,
+}) {
   // console.log(cartTotal);
+  const { cart } = useContext(ShopContext);
   return (
     <>
       {cart?.length === 0 ? (
@@ -21,7 +28,20 @@ export default function CartLoop({ cart, handleDeleteItem, handleBillSubmit }) {
           <CartHeader />
 
           <div className={styles.item}>
-            {cart?.map((cart) => (
+            {cart.map((cart) => {
+              if (cart[cart.id] !== 0) {
+                return (
+                  <CartItem
+                    data={cart}
+                    key={cart.id}
+                    handleDeleteItem={handleDeleteItem}
+                    handleBillSubmit={handleBillSubmit}
+                  />
+                );
+              }
+            })}
+
+            {/* {cart?.map((cart) => (
               <>
                 <div>
                   <CartItem
@@ -32,12 +52,12 @@ export default function CartLoop({ cart, handleDeleteItem, handleBillSubmit }) {
                   />
                 </div>
               </>
-            ))}
+            ))} */}
           </div>
 
           <div className={styles.mainDiv}>
             <div className={styles.totalSub}>
-              Total: qyt: {cart?.length} = Price #{cart.price}.00
+              Total: qyt: {totalItem(cart)} = Price #{totalPrice(cart)},000.00
             </div>
 
             <Link className={styles.mainLink} to="/checkout">

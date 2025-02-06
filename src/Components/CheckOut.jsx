@@ -1,14 +1,17 @@
 /* eslint-disable react/prop-types */
 import styles from "./CheckOutDetails.module.css";
 import CheckOutDetails from "./CheckOutDetails";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import AccountSignUp from "./AccountSignUp";
 import AccountSignIn from "./AccountSignIn";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import FooterHeader from "./FotterHeader";
+import { totalItem, totalPrice } from "../context/CartReduser";
+import { ShopContext } from "../context/ShopContextProvider";
 
-export default function CheckOut({ cart, handleDeleteItem, handleBillSubmit }) {
+export default function CheckOut() {
   const [isOpen, setIsOpen] = useState(false);
+  const { cart } = useContext(ShopContext);
 
   return (
     <>
@@ -21,7 +24,7 @@ export default function CheckOut({ cart, handleDeleteItem, handleBillSubmit }) {
                   <p>qty :</p>
                 </div>
                 <div>
-                  <h4>2</h4>
+                  <h4>{totalItem(cart)}</h4>
                 </div>
               </div>
 
@@ -29,8 +32,9 @@ export default function CheckOut({ cart, handleDeleteItem, handleBillSubmit }) {
                 <div>
                   <p>Sub Total :</p>
                 </div>
-                <div>
-                  <h4># 17,000.00</h4>
+                <div className={styles.nairaDi}>
+                  <i className="fa-solid fa-naira-sign"></i>
+                  <h4>{totalPrice(cart)},000.00</h4>
                 </div>
               </div>
             </div>
@@ -39,8 +43,9 @@ export default function CheckOut({ cart, handleDeleteItem, handleBillSubmit }) {
               <div>
                 <h4>Total :</h4>
               </div>
-              <div>
-                <p># 17,000.00</p>
+              <div className={styles.nairaDi}>
+                <i className="fa-solid fa-naira-sign"></i>
+                <h5>{totalPrice(cart)},000.00</h5>
               </div>
             </div>
           </div>
@@ -48,12 +53,7 @@ export default function CheckOut({ cart, handleDeleteItem, handleBillSubmit }) {
           {cart?.map((cart) => (
             <>
               <div>
-                <CheckOutDetails
-                  cart={cart}
-                  key={cart.image}
-                  handleDeleteItem={handleDeleteItem}
-                  handleBillSubmit={handleBillSubmit}
-                />
+                <CheckOutDetails data={cart} key={cart.image} />
               </div>
             </>
           ))}

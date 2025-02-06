@@ -1,37 +1,21 @@
 /* eslint-disable react/prop-types */
-import { Link, NavLink } from "react-router-dom";
 import styles from "./SelectedDishMenu.module.css";
-import { useState } from "react";
+import { ShopContext } from ".././context/ShopContextProvider";
+import { useContext } from "react";
 
-export default function SelectedDishMenu({
-  selectedId,
-  setHideForm,
-  handleAddToCart,
-  handleDishClose,
-  cart,
-  handleBillSubmit,
-}) {
-  const { dishName, price, image, note, id, qty } = selectedId;
+export default function SelectedDishMenu({ selectedId, setSelectedId }) {
+  const { dishName, price, image, note } = selectedId;
 
-  function handleSplitBill(e) {
-    e.preventDefault();
-    handleBillSubmit(qty);
-    handleAddDish();
-  }
-
-  function handleAddDish(e) {
-    const newDish = { dishName, price, image, id, qty: 1 };
-    handleAddToCart(newDish, id);
-  }
+  const { dispatch } = useContext(ShopContext);
 
   return (
     <div className={styles.selectMain1}>
-      <form onSubmit={handleSplitBill} className={styles.menu}>
+      <div className={styles.menu}>
         <ul className={styles.menuHeader}>
           <div className={styles.menuLi}>
             <h3>{dishName}</h3>
 
-            <button onClick={() => setHideForm((is) => !is)}>&times;</button>
+            <button onClick={() => setSelectedId(null)}>&times;</button>
           </div>
 
           <img
@@ -59,16 +43,19 @@ export default function SelectedDishMenu({
 
           <div className={styles.addMainDiv1}>
             <div className={styles.addMainDiv}>
-              <button onClick={handleDishClose}>Close</button>
+              <button onClick={() => setSelectedId(null)}>Close</button>
 
-              <div className={styles.cartLogo} onClick={handleSplitBill}>
+              <div
+                className={styles.cartLogo}
+                onClick={() => dispatch({ type: "Add", product: selectedId })}
+              >
                 <i className="fa-solid fa-cart-plus"></i>
                 <p>Add to Cart</p>
               </div>
             </div>
           </div>
         </ul>
-      </form>
+      </div>
     </div>
   );
 }

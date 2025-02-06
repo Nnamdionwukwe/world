@@ -2,7 +2,12 @@
 import { NavLink } from "react-router-dom";
 import styles from "./HomeFooter.module.css";
 
-export default function HomeFooter({ cart }) {
+import { ShopContext } from ".././context/ShopContextProvider";
+import { useContext } from "react";
+
+export default function HomeFooter() {
+  const { cart } = useContext(ShopContext);
+
   return (
     <div>
       <div className={styles.homeFooterMain}>

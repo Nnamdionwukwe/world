@@ -1,16 +1,14 @@
 /* eslint-disable react/prop-types */
-import FullPage from "./FullPage";
 import GrillHouseLoop from "./GrillHouseLoop";
-import FooterHeader from "./FotterHeader";
-import HomeFooter from "./HomeFooter";
 
 import DishesHeader from "./DishesHeader";
+import FullPage from "./FullPage";
+import HomeFooter from "./HomeFooter";
 
 export default function GrillHouse({ grillHouse, handleSelectId, cart }) {
   return (
     <div>
       <FullPage />
-
       <DishesHeader>Grill House Specials </DishesHeader>
 
       <GrillHouseLoop
@@ -19,9 +17,7 @@ export default function GrillHouse({ grillHouse, handleSelectId, cart }) {
         grillHouse={grillHouse}
       />
 
-      <FooterHeader cart={cart} />
-
-      <HomeFooter cart={cart} />
+      <HomeFooter />
     </div>
   );
 }

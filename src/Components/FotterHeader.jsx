@@ -2,10 +2,14 @@
 import { NavLink } from "react-router-dom";
 import styles from "./FotterHeader.module.css";
 import { useState } from "react";
+import { ShopContext } from ".././context/ShopContextProvider";
+import { useContext } from "react";
 
-export default function FooterHeader({ cart }) {
+export default function FooterHeader() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen1, setIsOpen1] = useState(false);
+
+  const { cart } = useContext(ShopContext);
 
   function handleIsOpen() {
     setIsOpen((is) => !is);

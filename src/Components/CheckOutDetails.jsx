@@ -1,23 +1,28 @@
 /* eslint-disable react/prop-types */
 import styles from "./CheckOutDetails.module.css";
-import { useState } from "react";
 
-export default function CartItem({ cart, handleDeleteItem }) {
-  const { dishName, price, image, id, qty } = cart;
-  const [quantity, setQuantity] = useState(qty);
+import { ShopContext } from ".././context/ShopContextProvider";
+import { useContext } from "react";
 
-  function handleIncreaseQuantity(count) {
-    if (quantity > 0) setQuantity(count);
-    if (quantity === 10) setQuantity(10);
-  }
+export default function CartItem({ data }) {
+  const { dishName, price, image, id, quantity } = data;
+  const { cart, dispatch } = useContext(ShopContext);
 
-  function handleDecreaseQuantity() {
-    if (quantity > 1) setQuantity((qty) => qty - 1);
-    if (quantity === 1) setQuantity(1);
-  }
+  const Increase = (id) => {
+    const Index = cart.findIndex((p) => p.id === id);
+    if (cart[Index].quantity < 10) {
+      dispatch({ type: "Increase", id });
+    }
+  };
 
-  const qtyTotal = price * quantity;
-  // setCartTotal(qtyTotal);
+  const Decrease = (id) => {
+    const Index = cart.findIndex((p) => p.id === id);
+    if (cart[Index].quantity > 1) {
+      dispatch({ type: "Decrease", id });
+    }
+  };
+
+  const itemTotalPrice = price * quantity;
 
   return (
     <div>
@@ -26,13 +31,11 @@ export default function CartItem({ cart, handleDeleteItem }) {
           <div className={styles.coverDiv}>
             <div className={styles.plusMain}>
               <div className={styles.plusDiv}>
-                <h5 onClick={() => handleIncreaseQuantity((qty) => qty + 1)}>
-                  +
-                </h5>
+                <h5 onClick={() => Increase(id)}>+</h5>
 
                 <p>{quantity}</p>
 
-                <h4 onClick={() => handleDecreaseQuantity()}>&minus;</h4>
+                <h4 onClick={() => Decrease(id)}>&minus;</h4>
               </div>
             </div>
 
@@ -49,14 +52,18 @@ export default function CartItem({ cart, handleDeleteItem }) {
                 <i className="fa-solid fa-naira-sign"></i>
 
                 <p>
-                  {Number(price)},000.00 &times; {quantity} = {Number(qtyTotal)}
+                  {Number(price)},000.00 &times; {quantity} ={" "}
+                  {Number(itemTotalPrice)}
                   ,000.00
                 </p>
               </div>
             </div>
           </div>
 
-          <button className={styles.btn} onClick={() => handleDeleteItem(id)}>
+          <button
+            className={styles.btn}
+            onClick={() => dispatch({ type: "Remove", id: id })}
+          >
             &times;
           </button>
         </div>

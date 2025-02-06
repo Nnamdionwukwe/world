@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
-import FullPage from "./FullPage";
 import LocalDishLoop from "./LocalDishLoop";
 import styles from "./HomePages.module.css";
 import SaladComponent from "./SaladComponentt";
-import FooterHeader from "./FotterHeader";
+import FullPage from "./FullPage";
 import HomeFooter from "./HomeFooter";
 
 export default function MainDishes({ localDish, handleSelectId, cart }) {
@@ -25,9 +24,7 @@ export default function MainDishes({ localDish, handleSelectId, cart }) {
         localDish={localDish}
       />
 
-      <FooterHeader cart={cart} />
-
-      <HomeFooter cart={cart} />
+      <HomeFooter />
     </div>
   );
 }

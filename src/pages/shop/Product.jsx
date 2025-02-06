@@ -1,7 +1,14 @@
+/* eslint-disable react/prop-types */
 import "./product.css";
+import { ShopContext } from "../../context/ShopContextProvider";
+import { useContext } from "react";
 
 export const Product = ({ data }) => {
   const { id, productName, price, productImage } = data;
+
+  const { addToCart, cartItem } = useContext(ShopContext);
+
+  const cartItemAmount = cartItem[id];
 
   return (
     <div className="product">
@@ -15,7 +22,9 @@ export const Product = ({ data }) => {
         <p>{price}</p>
       </div>
 
-      <button className="addToCartBttn">Add to Cart</button>
+      <button className="addToCartBttn" onClick={() => addToCart(id)}>
+        Add to Cart {cartItemAmount > 0 && <>({cartItemAmount})</>}
+      </button>
     </div>
   );
 };

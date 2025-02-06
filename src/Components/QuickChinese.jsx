@@ -1,16 +1,14 @@
 /* eslint-disable react/prop-types */
-import FullPage from "./FullPage";
 import QuickChineseLoop from "./QuickChineseLoop";
-import FooterHeader from "./FotterHeader";
-import HomeFooter from "./HomeFooter";
 
 import DishesHeader from "./DishesHeader";
+import FullPage from "./FullPage";
+import HomeFooter from "./HomeFooter";
 
 export default function QuickChinese({ quickChinese, handleSelectId, cart }) {
   return (
     <div>
       <FullPage />
-
       <DishesHeader>Quick Chinese </DishesHeader>
 
       <QuickChineseLoop
@@ -19,9 +17,7 @@ export default function QuickChinese({ quickChinese, handleSelectId, cart }) {
         quickChinese={quickChinese}
       />
 
-      <FooterHeader cart={cart} />
-
-      <HomeFooter cart={cart} />
+      <HomeFooter />
     </div>
   );
 }

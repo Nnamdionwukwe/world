@@ -1,16 +1,14 @@
 /* eslint-disable react/prop-types */
-import FullPage from "./FullPage";
 import StarterLoop from "./StarterLoop";
-import FooterHeader from "./FotterHeader";
-import HomeFooter from "./HomeFooter";
 
 import DishesHeader from "./DishesHeader";
+import FullPage from "./FullPage";
+import HomeFooter from "./HomeFooter";
 
 export default function Starter({ starter, handleSelectId, cart }) {
   return (
     <div>
       <FullPage />
-
       <DishesHeader>Stater </DishesHeader>
 
       <StarterLoop
@@ -18,10 +16,7 @@ export default function Starter({ starter, handleSelectId, cart }) {
         handleSelectId={handleSelectId}
         starter={starter}
       />
-
-      <FooterHeader cart={cart} />
-
-      <HomeFooter cart={cart} />
+      <HomeFooter />
     </div>
   );
 }

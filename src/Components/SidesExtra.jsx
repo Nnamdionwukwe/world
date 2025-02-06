@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
-import FullPage from "./FullPage";
 import SidesExtraDishLoop from "./SidesExtraDishLoop";
-import FooterHeader from "./FotterHeader";
-import HomeFooter from "./HomeFooter";
 
 import DishesHeader from "./DishesHeader";
+import FullPage from "./FullPage";
+import HomeFooter from "./HomeFooter";
 
 export default function SidesExtra({ sidesExtra, handleSelectId, cart }) {
   return (
@@ -19,9 +18,7 @@ export default function SidesExtra({ sidesExtra, handleSelectId, cart }) {
         sidesExtra={sidesExtra}
       />
 
-      <FooterHeader cart={cart} />
-
-      <HomeFooter cart={cart} />
+      <HomeFooter />
     </div>
   );
 }
