@@ -5,10 +5,8 @@ import CartReduser from "./CartReduser";
 
 export const ShopContext = createContext();
 
-// const BASE_URL = localhost:5000
-
 export const ShopContextProvider = ({ children }) => {
-  const [salad, setSalad] = useState([]);
+  const [salad, setSalad] = useState(Data.salads);
   const [localDish, setLocalDish] = useState(Data.localDishes);
   const [sidesExtra, setSidesExtra] = useState(Data.sidesExtras);
   const [grillHouse, setGrillHouse] = useState(Data.grillHouses);
