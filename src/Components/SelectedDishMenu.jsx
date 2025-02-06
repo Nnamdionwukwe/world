@@ -50,7 +50,7 @@ export default function SelectedDishMenu({ selectedId, setSelectedId }) {
                 onClick={() => dispatch({ type: "Add", product: selectedId })}
               >
                 <i className="fa-solid fa-cart-plus"></i>
-                <p>Add to Cart</p>
+                <p onClick={() => setSelectedId(null)}>Add to Cart</p>
               </div>
             </div>
           </div>

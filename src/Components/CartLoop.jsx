@@ -8,11 +8,7 @@ import { ShopContext } from ".././context/ShopContextProvider";
 import { useContext } from "react";
 import { totalItem, totalPrice } from "../context/CartReduser";
 
-export default function CartLoop({
-  handleDeleteItem,
-  handleBillSubmit,
-  selectedId,
-}) {
+export default function CartLoop({ handleDeleteItem, handleBillSubmit }) {
   // console.log(cartTotal);
   const { cart } = useContext(ShopContext);
   return (
