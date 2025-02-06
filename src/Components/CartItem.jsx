@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import styles from "./CartItem.module.css";
-
 import { ShopContext } from ".././context/ShopContextProvider";
 import { useContext } from "react";
 
@@ -53,6 +52,7 @@ export default function CartItem({ data }) {
 
                 <p>
                   {Math.floor(price)},000.00 &times; {quantity} ={" "}
+                  <i className="fa-solid fa-naira-sign"></i>
                   {itemTotalPrice}
                   ,000.00
                 </p>

@@ -4,16 +4,18 @@ import DishesHeader from "./DishesHeader";
 import FullPage from "./FullPage";
 import HomeFooter from "./HomeFooter";
 import ClassicLoop from "./ClassicLoop";
+import FooterHeader from "./FotterHeader";
 
-export default function Classic({ taco, handleSelectId, cart }) {
+export default function Classic({ handleSelectId }) {
   return (
     <div>
       <FullPage />
       <DishesHeader>Classic Cocktail </DishesHeader>
 
-      <ClassicLoop cart={cart} handleSelectId={handleSelectId} taco={taco} />
+      <ClassicLoop handleSelectId={handleSelectId} />
 
       <HomeFooter />
+      <FooterHeader />
     </div>
   );
 }

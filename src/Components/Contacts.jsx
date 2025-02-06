@@ -2,12 +2,12 @@
 import FooterHeader from "./FotterHeader";
 import HomeFooter from "./HomeFooter";
 import styles from "./Contacts.module.css";
-import PagesHeader from "./PagesHeader";
+import HeaderHeader from "./HeaderHeader";
 
 export default function Contacts({ cart }) {
   return (
     <div>
-      <PagesHeader />
+      <HeaderHeader />
 
       <div>
         <div className={styles.menuLetter}>

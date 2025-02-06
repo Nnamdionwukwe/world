@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import FooterHeader from "./FotterHeader";
 import { totalItem, totalPrice } from "../context/CartReduser";
 import { ShopContext } from "../context/ShopContextProvider";
+import HeaderHeader from "./HeaderHeader";
 
 export default function CheckOut() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +16,8 @@ export default function CheckOut() {
 
   return (
     <>
+      <HeaderHeader />
+
       <div className={styles.quantityMain}>
         <div className={styles.item}>
           <div>

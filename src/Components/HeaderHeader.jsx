@@ -1,21 +1,21 @@
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
-import { NavLink } from "react-router-dom";
 
-export default function PagesHeader() {
+const HeaderHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
 
   function handleIsOpen() {
     setIsOpen((is) => !is);
-    setIsOpen1(false);
+    setIsOpen1((is) => !is);
   }
 
   function handleIsOpen1() {
     setIsOpen1((is) => !is);
-    setIsOpen(false);
-    setIsOpen2(false);
+    setIsOpen((is) => !is);
+    setIsOpen2((is) => !is);
   }
 
   function handleIsOpen2() {
@@ -26,7 +26,7 @@ export default function PagesHeader() {
     <>
       <div className={styles.mainHeader}>
         <div>
-          <NavLink to="/">
+          <NavLink to="/homepages">
             <img
               className={styles.headerLogo1}
               src="https://menu.stanfordelaze.ng/uploads/thumb/6ca252f775ee8306d1981e6ee2d0d3c7.png"
@@ -79,42 +79,58 @@ export default function PagesHeader() {
           {isOpen1 && (
             <div className={styles.moreDiv}>
               <div>
-                <p>Menu</p>
+                <Link className={styles.moreDivLink} to="/homepages">
+                  <p>Menu</p>
+                </Link>
               </div>
 
               <div>
-                <p>Packages</p>
+                <Link className={styles.moreDivLink} to="/Packages">
+                  <p>Packages</p>
+                </Link>
               </div>
 
               <div>
-                <p>Specialities</p>
+                <Link className={styles.moreDivLink} to="/Specialities">
+                  <p>Specialities</p>
+                </Link>
               </div>
 
               <div className={styles.arrowDiv} onClick={handleIsOpen2}>
                 More
-                <button>&darr;</button>
+                {isOpen2 ? <button>&uarr;</button> : <button>&darr;</button>}
               </div>
 
               {isOpen2 && (
                 <div className={styles.trackDiv}>
                   <div>
-                    <p>Track Order</p>
+                    <Link className={styles.moreDivLink} to="/TrackOrder">
+                      <p>Track Order</p>
+                    </Link>
                   </div>
 
                   <div>
-                    <p>Reservation</p>
+                    <Link className={styles.moreDivLink} to="/Reservations">
+                      <p>Reservation</p>
+                    </Link>
                   </div>
 
                   <div>
-                    <p>Contacts</p>
+                    <Link className={styles.moreDivLink} to="/Contacts">
+                      <p>Contacts</p>
+                    </Link>
                   </div>
 
                   <div>
-                    <p>About Us</p>
+                    <Link className={styles.moreDivLink} to="/AboutUs">
+                      <p>About Us</p>
+                    </Link>
                   </div>
 
                   <div>
-                    <p> Login</p>
+                    <Link className={styles.moreDivLink} to="/">
+                      <p> Login</p>
+                    </Link>
                   </div>
                 </div>
               )}
@@ -127,7 +143,7 @@ export default function PagesHeader() {
         <div className={styles.thirdHeaderSubDiv}>
           <div>
             <div>
-              <NavLink to="/">
+              <NavLink to="/homepages">
                 <img
                   className={styles.dis}
                   src="https://menu.stanfordelaze.ng/uploads/thumb/6ca252f775ee8306d1981e6ee2d0d3c7.png"
@@ -137,7 +153,7 @@ export default function PagesHeader() {
           </div>
 
           <div>
-            <NavLink to="/">
+            <NavLink to="/homepages">
               <button className={styles.menuButtons}>Menu</button>
             </NavLink>
 
@@ -162,7 +178,7 @@ export default function PagesHeader() {
           </div>
 
           <div>
-            <NavLink className={styles.logoDiv} to="/Login">
+            <NavLink className={styles.logoDiv} to="/">
               <i className="fa fa-sign-in" aria-hidden="true"></i>
             </NavLink>
           </div>
@@ -170,4 +186,6 @@ export default function PagesHeader() {
       </div>
     </>
   );
-}
+};
+
+export default HeaderHeader;

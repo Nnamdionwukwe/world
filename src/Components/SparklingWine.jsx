@@ -1,19 +1,21 @@
 /* eslint-disable react/prop-types */
 
 import DishesHeader from "./DishesHeader";
+import FooterHeader from "./FotterHeader";
 import FullPage from "./FullPage";
 import HomeFooter from "./HomeFooter";
 import SparklingWine from "./SparklingWineLoop";
 
-export default function Tequila({ taco, handleSelectId, cart }) {
+export default function Tequila({ handleSelectId }) {
   return (
     <div>
       <FullPage />
       <DishesHeader>Sparkling Wine </DishesHeader>
 
-      <SparklingWine cart={cart} handleSelectId={handleSelectId} taco={taco} />
+      <SparklingWine handleSelectId={handleSelectId} />
 
       <HomeFooter />
+      <FooterHeader />
     </div>
   );
 }

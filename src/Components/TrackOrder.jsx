@@ -1,14 +1,14 @@
 import { useState } from "react";
 import FooterHeader from "./FotterHeader";
-import PagesHeader from "./PagesHeader";
 import styles from "./TrackOrder.module.css";
+import HeaderHeader from "./HeaderHeader";
 
 export default function TrackOrder(cart) {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [orderId, setOrderId] = useState("");
   return (
     <>
-      <PagesHeader />
+      <HeaderHeader />
 
       <div className={styles.main}>
         <div className={styles.mainSub}>

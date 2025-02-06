@@ -4,6 +4,7 @@ import styles from "./HomePages.module.css";
 import SaladComponent from "./SaladComponentt";
 import FullPage from "./FullPage";
 import HomeFooter from "./HomeFooter";
+import FooterHeader from "./FotterHeader";
 
 export default function MainDishes({ localDish, handleSelectId, cart }) {
   return (
@@ -25,6 +26,7 @@ export default function MainDishes({ localDish, handleSelectId, cart }) {
       />
 
       <HomeFooter />
+      <FooterHeader />
     </div>
   );
 }

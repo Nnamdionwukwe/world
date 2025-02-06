@@ -4,6 +4,7 @@ import QuickChineseLoop from "./QuickChineseLoop";
 import DishesHeader from "./DishesHeader";
 import FullPage from "./FullPage";
 import HomeFooter from "./HomeFooter";
+import FooterHeader from "./FotterHeader";
 
 export default function QuickChinese({ quickChinese, handleSelectId, cart }) {
   return (
@@ -18,6 +19,7 @@ export default function QuickChinese({ quickChinese, handleSelectId, cart }) {
       />
 
       <HomeFooter />
+      <FooterHeader />
     </div>
   );
 }

@@ -53,6 +53,7 @@ export default function CartItem({ data }) {
 
                 <p>
                   {Number(price)},000.00 &times; {quantity} ={" "}
+                  <i className="fa-solid fa-naira-sign"></i>
                   {Number(itemTotalPrice)}
                   ,000.00
                 </p>

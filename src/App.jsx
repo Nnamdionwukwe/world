@@ -48,7 +48,6 @@ import FullDishImg from "./Components/FullDishImg";
 import CheckOut from "./Components/CheckOut";
 import SignUp from "./Components/SignUp";
 import { ShopContextProvider } from "./context/ShopContextProvider";
-import FooterHeader from "./Components/FotterHeader";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -304,8 +303,6 @@ export default function App() {
 
             <Route path="*" element={<PageNotFound />} />
           </Routes>
-
-          <FooterHeader />
         </BrowserRouter>
       </ShopContextProvider>
     </div>

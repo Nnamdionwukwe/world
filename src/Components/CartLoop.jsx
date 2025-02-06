@@ -7,12 +7,15 @@ import EmptyCart from "./EmptyCart";
 import { ShopContext } from ".././context/ShopContextProvider";
 import { useContext } from "react";
 import { totalItem, totalPrice } from "../context/CartReduser";
+import FooterHeader from "./FotterHeader";
+import HeaderHeader from "./HeaderHeader";
 
 export default function CartLoop({ handleDeleteItem, handleBillSubmit }) {
   // console.log(cartTotal);
   const { cart } = useContext(ShopContext);
   return (
     <>
+      <HeaderHeader />
       {cart?.length === 0 ? (
         <>
           <CartHeader />
@@ -40,7 +43,9 @@ export default function CartLoop({ handleDeleteItem, handleBillSubmit }) {
 
           <div className={styles.mainDiv}>
             <div className={styles.totalSub}>
-              Total: qyt: {totalItem(cart)} = Price #{totalPrice(cart)},000.00
+              Total qyt: {totalItem(cart)} = Total price:
+              <i className="fa-solid fa-naira-sign"></i>
+              {totalPrice(cart)},000.00
             </div>
 
             <Link className={styles.mainLink} to="/checkout">
@@ -51,6 +56,8 @@ export default function CartLoop({ handleDeleteItem, handleBillSubmit }) {
           </div>
         </div>
       )}
+
+      <FooterHeader />
     </>
   );
 }

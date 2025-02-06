@@ -4,6 +4,7 @@ import DishesHeader from "./DishesHeader";
 import FullPage from "./FullPage";
 import HomeFooter from "./HomeFooter";
 import ChampagneLoop from "./ChampagneLoop";
+import FooterHeader from "./FotterHeader";
 
 export default function Champagne({ handleSelectId }) {
   return (
@@ -14,6 +15,7 @@ export default function Champagne({ handleSelectId }) {
       <ChampagneLoop handleSelectId={handleSelectId} />
 
       <HomeFooter />
+      <FooterHeader />
     </div>
   );
 }

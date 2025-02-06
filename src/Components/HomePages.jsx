@@ -31,6 +31,7 @@ import BeerLoop from "./BeerLoop";
 import EnergyDrinksLoop from "./EnergyDrinksLoop";
 import ShishaLoop from "./ShishaLoop";
 import SoftDrinksLoop from "./SoftDrinksLoop";
+import FooterHeader from "./FotterHeader";
 
 export default function HomePages({ handleSelectId }) {
   return (
@@ -150,6 +151,7 @@ export default function HomePages({ handleSelectId }) {
       <SoftDrinksLoop handleSelectId={handleSelectId} />
 
       <HomeFooter />
+      <FooterHeader />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import DishesHeader from "./DishesHeader";
+import FooterHeader from "./FotterHeader";
 import FullPage from "./FullPage";
 import HomeFooter from "./HomeFooter";
 import MockTailsLoop from "./MocktailsLoop";
@@ -14,6 +15,7 @@ export default function MockTails({ handleSelectId }) {
       <MockTailsLoop handleSelectId={handleSelectId} />
 
       <HomeFooter />
+      <FooterHeader />
     </div>
   );
 }

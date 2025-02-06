@@ -3,6 +3,7 @@ import SaladComponent from "./SaladComponentt";
 import SaladLoop from "./SaladLoop";
 import FullPage from "./FullPage";
 import HomeFooter from "./HomeFooter";
+import FooterHeader from "./FotterHeader";
 
 export default function Salads({ handleSelectId }) {
   return (
@@ -12,6 +13,7 @@ export default function Salads({ handleSelectId }) {
       <SaladLoop handleSelectId={handleSelectId} />
 
       <HomeFooter />
+      <FooterHeader />
     </div>
   );
 }

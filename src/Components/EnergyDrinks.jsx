@@ -4,6 +4,7 @@ import DishesHeader from "./DishesHeader";
 import FullPage from "./FullPage";
 import HomeFooter from "./HomeFooter";
 import EnergyDrinksLoop from "./EnergyDrinksLoop";
+import FooterHeader from "./FotterHeader";
 
 export default function EnergyDrinks({ handleSelectId }) {
   return (
@@ -14,6 +15,7 @@ export default function EnergyDrinks({ handleSelectId }) {
       <EnergyDrinksLoop handleSelectId={handleSelectId} />
 
       <HomeFooter />
+      <FooterHeader />
     </div>
   );
 }
