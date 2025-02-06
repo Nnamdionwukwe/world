@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { createContext, useReducer, useState } from "react";
+import { createContext, useEffect, useReducer, useState } from "react";
 import Data from "../Data.json";
 import CartReduser from "./CartReduser";
 
@@ -17,7 +17,7 @@ export const ShopContextProvider = ({ children }) => {
   const [quickEat, setQuckEats] = useState(Data.quickEats);
   const [whiskey, setWhiskey] = useState(Data.whiskeys);
   const [brandy, setBrandy] = useState(Data.brandys);
-  const [vodka, stVodka] = useState(Data.vodkas);
+  const [vodka, setVodka] = useState(Data.vodkas);
   const [gin, setGin] = useState(Data.gins);
 
   const [champagne, setChampagne] = useState(Data.champagnes);
@@ -37,7 +37,19 @@ export const ShopContextProvider = ({ children }) => {
   const [shisha, setShisha] = useState(Data.shishas);
   const [softDrink, setSoftDrink] = useState(Data.softDrinks);
 
-  const [cart, dispatch] = useReducer(CartReduser, []);
+  function store() {
+    const storedValue = localStorage.getItem("cart");
+    return JSON.parse(storedValue);
+  }
+
+  const [cart, dispatch] = useReducer(CartReduser, store() || []);
+
+  useEffect(
+    function () {
+      localStorage.setItem("cart", JSON.stringify(cart));
+    },
+    [cart]
+  );
 
   const contextValue = {
     cart,
