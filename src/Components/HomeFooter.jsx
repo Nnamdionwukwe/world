@@ -114,7 +114,7 @@ export default function HomeFooter() {
 
       <div className={styles.barcodeDiv}>
         <div>
-          <h3 className={styles.stanforde}>Stanford Laze</h3>
+          <h3 className={styles.stanforde}>FurstClass Menu</h3>
 
           <div className={styles.independDiv}>
             <div>
@@ -128,7 +128,7 @@ export default function HomeFooter() {
           <div className={styles.mailDiv}>
             <i className="fa fa-envelope" aria-hidden="true"></i>
             <a className={styles.email} href="www.gmail.com">
-              <p>standfordlaze&#64;gmail.com</p>
+              <p>furstmenu&#64;gmail.com</p>
             </a>
           </div>
         </div>
